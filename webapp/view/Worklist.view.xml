@@ -1,0 +1,220 @@
+<mvc:View controllerName="hpa.cei.digital_account.controller.Worklist" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.m.semantic" xmlns:m="sap.m" xmlns:core="sap.ui.core" xmlns="sap.ui.table" xmlns:smartTable="sap.ui.comp.smarttable">
+	<semantic:FullscreenPage id="paPage" navButtonPress="onNavBack" showFooter="false" showNavButton="true" title="{i18n>worklistViewTitle}">
+		<semantic:subHeader>
+			<m:Bar>
+				<m:contentLeft>
+					<m:SegmentedButton id="myAllContentSegmentedButton" select="onMyAllFilterSelect">
+						<m:items>
+							<m:SegmentedButtonItem id="allPAsButton" key="AllPas" text="{i18n>labelAllAccounts}" tooltip="{i18n>labelAllAccounts}"/>
+							<m:SegmentedButtonItem id="myPAsButton" key="MyPas" text="{i18n>labelMyAccounts}" tooltip="{i18n>labelMyAccounts}"/>
+						</m:items>
+					</m:SegmentedButton>
+				</m:contentLeft>
+			</m:Bar>
+		</semantic:subHeader>
+		<semantic:content>
+			<m:IconTabBar headerMode="Inline" applyContentPadding="true" class="sapUiResponsiveContentPadding" expandable="false" id="paListIconTabBar"
+				select="onIconTabFilterSelected" stretchContentHeight="true">
+				<m:items>
+					<m:IconTabFilter count='0' showAll="false" id="iconTabFilterALL" key="ALL" text="{i18n>allTypes}" tooltip="{i18n>allTypes}"/>
+					<m:IconTabSeparator/>
+					<m:IconTabFilter count='0' design="Vertical" />
+					<!--<m:IconTabFilter count='0' design="Vertical" id="iconFilterLine" key="LINE" text="{i18n>line}" tooltip="{i18n>line}"/>-->
+					<!--<IconTabFilter count='0' design="Horizontal" icon="sap-icon://family-protection" id="iconFilterEnterprise" key="es" text="{i18n>enterprise}"-->
+					<!--	tooltip="{i18n>enterprise}"/>-->
+				</m:items>
+				<m:content>
+					<smartTable:SmartTable id="smartDATable" class="sapUiMediumMarginBegin sapUiMediumMarginEnd" tableType="Table" editable="false"
+						entitySet="DigitalAccounts" beforeRebindTable="onUpdateFinished" dataReceived="onDataReceived" header="{i18n>worklistTableTitle}"
+						useVariantManagement="true" showRowCount="true" useTablePersonalisation="true" useExportToExcel="true" enableAutoBinding="true"
+						persistencyKey="DigitalAccountOwl" 
+						ignoreFromPersonalisation="ApiUserId,CAUUID,CAName,HostPath,Key,DigaccTechnicalId,PhoneNumber,EmailAddr,MarketingAreaId,MarketingAreaDescription,ApiUserPassword,InboundToken,CreatedOn,ChangedOn,ChangedByUserId,StatusCode,Type,IconUrl,SearchTerm,AuthMethod,Avatar,CommunicationMedium">
+						<smartTable:customToolbar>
+							<m:OverflowToolbar design="Transparent" class="sapUiSmallMarginTop">
+								<m:ToolbarSpacer/>
+								<m:SearchField id="searchField" search="onSearch" tooltip="{i18n>worklistSearchTooltip}" width="auto"></m:SearchField>
+								<m:Button id="createPAButton" press="onCreatePAPress" text="{i18n>createAccount}" class="sapMBarChild sapMBtn sapMBtnBase"
+									tooltip="{i18n>createAccountButtonTooltip}" visible="{worklistView>/canCreate}"/>
+								<!--<m:Button icon="sap-icon://drop-down-list" id="filterButton" press="onFilter" tooltip="{i18n>filterButtonTooltip}"/>-->
+								<!--<m:Button icon="sap-icon://action-settings" id="personalizeButton" press="onPersonalize" tooltip="{i18n>personlaizeButtonTooltip}"/>-->
+							</m:OverflowToolbar>
+						</smartTable:customToolbar>
+						<Table id="publicAccountTable" rowHeight="58" selectionMode="None" threshold="100" showColumnVisibilityMenu="true" 
+							enableBusyIndicator="true" visibleRowCountMode="Auto" busyStateChanged="onChange">
+							<columns>
+								<!--<Column id="iconColumn" width="60px" hAlign="Center">-->
+								<!--	<customData>-->
+								<!--		<core:CustomData key="p13nData"-->
+								<!--			value='\{"columnKey": "IconUrl", "columnIndex":"0","leadingProperty": "IconUrl"}'/>-->
+								<!--	</customData>-->
+								<!--									<m:Text wrapping="false" tooltip="{i18n>daIconColumnTitle}" text="{i18n>daIconColumnTitle}" visible="false"/>-->
+								<!--	<template>-->
+								<!--<m:Image width="50px" height="50px"  src="{IconUrl}" visible="{= ${IconUrl} !== ''}" ></m:Image>-->
+								<!--				<core:Icon size="2em"  id="noIcon" width="45px" height="45px" src="sap-icon://discussion" ></core:Icon>-->
+								<!--		</template>-->
+								<!--	</Column>-->
+								<Column hAlign="Left" sortProperty="DigaccName" filterProperty="DigaccName" width="18%">
+									<customData>
+										<core:CustomData key="p13nData"
+											value='\{"columnKey": "DigaccName", "columnIndex":"1", "sortProperty": "DigaccName", "filterProperty": "DigaccName", "type":"string", "leadingProperty": "DigaccName", "additionalProperty" : "DigaccName,DigaccId,IconUrl,Type,MarketingAreaId"}'/>
+									</customData>
+									<m:Text wrapping="false" tooltip="{i18n>daNameColumnTitle}" text="{i18n>daNameColumnTitle}"/>
+									<template>
+										<m:FlexBox alignItems="Center" justifyContent="Start" class="sapUiContentPadding">
+											<m:items>
+												<m:Image src="{IconUrl}" tooltip="{DigaccName}" visible="{= ${IconUrl} !== ''}" class="sapUiSmallMarginEnd" width="2.8rem"/>
+												<core:Icon id="noIcon" class="sapUiSmallMarginEnd owlIcon" size="2.8rem" src="sap-icon://discussion" visible="{= ${IconUrl} === ''}"></core:Icon>
+												<m:Link wrapping="false" text="{DigaccName}" class="sapUiTinyMarginTop sapUiTinyMarginBottom" press="onPress"/>
+											</m:items>
+										</m:FlexBox>
+									</template>
+								</Column>
+								<Column sortProperty="DigaccId" filterProperty="DigaccId" width="10%">
+									<customData>
+										<core:CustomData key="p13nData"
+											value='\{"columnKey": "DigaccId", "columnIndex":"2","sortProperty": "DigaccId", "filterProperty": "DigaccId", "type":"string", "leadingProperty": "DigaccId"}'/>
+									</customData>
+									<m:Text wrapping="false" tooltip="{i18n>daIdColumnTitle}" text="{i18n>daIdColumnTitle}"/>
+									<template>
+										<m:Text wrapping="false" text="{DigaccId}"/>
+									</template>
+								</Column>
+								<Column filterProperty="DigaccDesc" width="13%">
+									<customData>
+										<core:CustomData key="p13nData"
+											value='\{"columnKey": "DigaccDesc","columnIndex":"3", "filterProperty": "DigaccDesc", "type":"string", "leadingProperty": "DigaccDesc"}'/>
+									</customData>
+									<m:Text wrapping="false" tooltip="{i18n>daDescColumnTitle}" text="{i18n>daDescColumnTitle}"/>
+									<template>
+										<m:Text wrapping="false" text="{DigaccDesc}"/>
+									</template>
+								</Column>
+								<Column id="totalNumColumn" hAlign="Right" sortProperty="MemberCount" width="8%">
+									<customData>
+										<core:CustomData key="p13nData"
+											value='\{"columnKey": "MemberCount", "columnIndex":"4", "sortProperty": "MemberCount", "type":"numeric", "leadingProperty": "MemberCount"}'/>
+									</customData>
+									<m:Text id="totalNumText" wrapping="false" tooltip="{i18n>daTotalNumColumnTitle}" text="{i18n>daTotalNumColumnTitle}"/>
+									<template>
+										<m:Text wrapping="false" text="{MemberCount}"/>
+									</template>
+								</Column>
+								<Column id="monthlyIncreasedRateColumn" hAlign="Right" sortProperty="Rate" width="10%">
+									<customData>
+										<core:CustomData key="p13nData"
+											value='\{"columnKey": "Rate", "columnIndex":"5", "sortProperty": "Rate", "type":"numeric", "leadingProperty": "Rate"}'/>
+									</customData>
+									<m:Text id="rateText" wrapping="false" tooltip="{i18n>daMonthlyIncreasedRateColumnTitle}" text="{i18n>daMonthlyIncreasedRateColumnTitle}"/>
+									<template>
+										<m:Text wrapping="false" text="{path:'Rate', formatter: '.formatter.formatNumberToPercent'}"/>
+									</template>
+								</Column>
+								<Column id="newMemberColumn" hAlign="Right" sortProperty="NewSubscriberCount" width="8%">
+									<customData>
+										<core:CustomData key="p13nData"
+											value='\{"columnKey": "NewSubscriberCount", "columnIndex":"6", "sortProperty": "NewSubscriberCount", "type":"numeric", "leadingProperty": "NewSubscriberCount"}'/>
+									</customData>
+									<m:Text id="newMemberText" wrapping="false" tooltip="{i18n>daNewMemberColumnTitle}" text="{i18n>daNewMemberColumnTitle}"/>
+									<template>
+										<m:Text wrapping="false" text="{NewSubscriberCount}"/>
+									</template>
+								</Column>
+								<Column id="ownerColumn" sortProperty="CreatedByUserId" width="8%">
+									<customData>
+										<core:CustomData key="p13nData"
+											value='\{"columnKey": "CreatedByUserId", "columnIndex":"7", "sortProperty": "CreatedByUserId", "type":"string", "leadingProperty": "CreatedByUserId"}'/>
+									</customData>
+									<m:Text wrapping="false" tooltip="{i18n>daOwnerColumnTitle}" text="{i18n>daOwnerColumnTitle}"/>
+									<template>
+										<m:Text wrapping="false" text="{CreatedByUserId}"/>
+									</template>
+								</Column>
+								<Column id="typeColumn" sortProperty="Type" width="12%">
+									<customData>
+										<core:CustomData key="p13nData"
+											value='\{"columnKey": "TypeDescription", "columnIndex":"8", "sortProperty": "Type", "type":"string", "leadingProperty": "TypeDescription"}'/>
+									</customData>
+									<m:Text wrapping="false" tooltip="{i18n>daTypeColumnTitle}" text="{i18n>daTypeColumnTitle}"/>
+									<template>
+										<m:Text wrapping="false" text="{TypeDescription}"/>
+									</template>
+								</Column>
+								<Column id="registerStatusColumn" hAlign="Center" sortProperty="StatusCode" width="5%">
+									<customData>
+										<core:CustomData key="p13nData"
+											value='\{"columnKey": "StatusDescription", "columnIndex":"9", "sortProperty": "StatusCode", "type":"string", "leadingProperty": "StatusDescription","additionalProperty": "StatusCode"}'/>
+									</customData>
+									<m:Text wrapping="false" tooltip="{i18n>daRegisterStatusColumnTitle}" text="{i18n>daRegisterStatusColumnTitle}"/>
+									<template>
+										<m:ObjectStatus text="{StatusDescription}" state="{path:'StatusCode', formatter: '.formatter.getStatusState'}"/>
+									</template>
+								</Column>
+							</columns>
+						</Table>
+					</smartTable:SmartTable>
+					<!--<Table busyIndicatorDelay="{worklistView>/tableBusyDelay}" inset="true"   growing="true" growingScrollToLoad="true"-->
+					<!--	id="publicAccountTable" items="{ path: '/DigitalAccounts', sorter: { path: 'DigaccName', descending: true } }"-->
+					<!--	noDataText="{worklistView>/tableNoDataText}" updateFinished="onUpdateFinished"  >-->
+					<!--	<headerToolbar>-->
+					<!--		<Toolbar id="digitalAccountListToolbar">-->
+					<!--			<ToolbarSpacer/>-->
+					<!--		</Toolbar>-->
+					<!--	</headerToolbar>-->
+					<!--	<columns>-->
+					<!--		<Column id="iconColumn" width="50px" hAlign="Center">-->
+					<!--				<Text id="iconColumnTitle" text="{i18n>daIconColumnTitle}" visible="false"/>-->
+					<!--				</Column>-->
+					<!--		<Column id="nameColumn" minScreenWidth="Tablet" hAlign="Left" demandPopin="true">-->
+					<!--			<Text id="nameColumnTitle" text="{i18n>daNameColumnTitle}"/>-->
+					<!--		</Column>-->
+					<!--		<Column id="idColumn" minScreenWidth="Tablet" demandPopin="true">-->
+					<!--			<Text id="idColumnTitle" text="{i18n>daIdColumnTitle}"/>-->
+					<!--		</Column>-->
+					<!--		<Column id="descColumn" minScreenWidth="Tablet" demandPopin="false">-->
+					<!--			<Text id="descColumnTitle" text="{i18n>daDescColumnTitle}"/>-->
+					<!--		</Column>-->
+					<!--		<Column id="totalNumColumn" hAlign="Right">-->
+					<!--			<Text id="totalNumColumnTitle" text="{i18n>daTotalNumColumnTitle}"/>-->
+					<!--		</Column>-->
+					<!--		<Column id="monthlyIncreasedRateColumn" minScreenWidth="Tablet" hAlign="Right" demandPopin="false">-->
+					<!--			<Text id="monthlyIncreasedRateColumnTitle" text="{i18n>daMonthlyIncreasedRateColumnTitle}"/>-->
+					<!--		</Column>-->
+					<!--		<Column id="newMemberColumn" hAlign="Right" minScreenWidth="Tablet" demandPopin="false">-->
+					<!--			<Text id="newMemberColumnTitle" text="{i18n>daNewMemberColumnTitle}"/>-->
+					<!--		</Column>-->
+					<!--		<Column id="ownerColumn" minScreenWidth="Tablet" demandPopin="true">-->
+					<!--			<Text id="ownerColumnTitle" text="{i18n>daOwnerColumnTitle}"/>-->
+					<!--		</Column>-->
+					<!--		<Column id="typeColumn" minScreenWidth="Tablet" demandPopin="true">-->
+					<!--			<Text id="typeColumnTitle" text="{i18n>daTypeColumnTitle}"/>-->
+					<!--		</Column>-->
+					<!--		<Column id="registerStatusColumn" minScreenWidth="Tablet" hAlign="Center" demandPopin="false">-->
+					<!--			<Text id="registerStatusColumnTitle" text="{i18n>daRegisterStatusColumnTitle}"/>-->
+					<!--		</Column>-->
+					<!--	</columns>-->
+					<!--	<items>-->
+					<!--		<ColumnListItem press="onPress" type="Navigation">-->
+					<!--			<cells>-->
+					<!--					<HBox>-->
+					<!--						<Image width="50px" height="50px" alt="sap-icon://camera" src="{IconUrl}" error="_onNoImage"></Image>-->
+					<!--						<core:Icon size="4em" color="lightGrey" visible="false" id="noIcon" width="50px" height="50px" src="sap-icon://camera"></core:Icon>-->
+					<!--					</HBox>-->
+					<!--					<ObjectIdentifier title="{DigaccName}"/>-->
+					<!--				<Text text="{DigaccId}"/>-->
+					<!--				<Text text="{DigaccDesc}" maxLines="1"/>-->
+					<!--				<Text text="{MemberCount}"/>-->
+					<!--				<Text text="{path:'Rate', formatter: '.formatter.formatNumberToPercent'}"/>-->
+					<!--				<Text text="{NewSubscriberCount}"/>-->
+					<!--				<Text text="{CreatedByUserId}"/>-->
+					<!--				<Text text="{TypeDescription}"/>-->
+					<!--				<ObjectStatus text="{StatusDescription}" state="{path:'StatusCode', formatter: '.formatter.getStatusState'}"/>-->
+					<!--			</cells>-->
+					<!--		</ColumnListItem>-->
+					<!--	</items>-->
+					<!--</Table>-->
+				</m:content>
+			</m:IconTabBar>
+		</semantic:content>
+	</semantic:FullscreenPage>
+</mvc:View>

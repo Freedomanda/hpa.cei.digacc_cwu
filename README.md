@@ -1,2 +1,1 @@
-# hpa.cei.digacc_cwu
-Digital Account Fiori Apps
+# hpa.cei.digital_account_cwu

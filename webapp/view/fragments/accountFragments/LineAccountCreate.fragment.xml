@@ -1,0 +1,20 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<f:SimpleForm id="lineSpecContent" minWidth="512" maxContainerCols="2" editable="true" layout="ResponsiveLayout"  labelMinWidth="256">
+		<!--<Label id="accountChannelIdInputLabel" labelFor="accountChannelIdInput" text="{i18n>createChannelId}" tooltip="{i18n>createChannelId}"-->
+		<!--	required="true" width="auto"/>-->
+		<!--<Input id="accountChannelIdInput" valueState="None" type="Password" valueStateText="{i18n>channelIdPlaceholder}" liveChange="onAccountCreateChanged"-->
+		<!--	maxLength="50"/>-->
+		<!--<Label id="accountCreateSecretInputLabel" labelFor="accountCreateSecretInput" text="{i18n>createAccountSecret}"-->
+		<!--	tooltip="{i18n>createAccountSecret}" required="true" width="auto"/>-->
+		<!--<Input id="accountCreateSecretInput" valueState="None" type="Password" valueStateText="{i18n>accountSecretPlaceholder}"-->
+		<!--	liveChange="onAccountCreateChanged" maxLength="255"/>-->
+		<!--<Label id="accountCreateLongTokenInputLabel" labelFor="accountCreatLongTokenInput" text="{i18n>createAccountLongToken}"-->
+		<!--	tooltip="{i18n>createAccountLongToken}" required="true" width="auto"/>-->
+		<!--<VBox id="authMethodRadio">-->
+		<!--	<Input id="accountCreateLongTokenInput" valueState="None" type="Password" valueStateText="{i18n>accountLongTokenPlaceholder}"-->
+		<!--		liveChange="onAccountCreateChanged" maxLength="255" width="100%"/>-->
+			<!--<RadioButton id="longTermAuthMethod" text="{i18n>longTermMethodRadioText}" selected="true"/>-->
+			<!--<RadioButton id="dynamicAuthMethod" text="{i18n>dynamicMethodRadioText}" enabled="false"/>-->
+		<!--</VBox>-->
+	</f:SimpleForm>
+</core:FragmentDefinition>

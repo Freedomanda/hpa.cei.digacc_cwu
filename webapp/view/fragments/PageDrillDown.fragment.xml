@@ -1,0 +1,19 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Popover
+		title="{i18n>shakeTableContentBeacon}"
+		class="sapUiContentPadding"
+		placement="Bottom">
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Link
+					text="{i18n>drillDown}"
+					press="handlePageDrillDownPress" />
+				<ToolbarSpacer/>
+			</Toolbar>
+		</footer>
+		<Text text="{ContentTitle}"></Text>
+	</Popover>
+</core:FragmentDefinition>

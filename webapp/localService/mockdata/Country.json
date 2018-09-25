@@ -1,0 +1,71 @@
+[{
+	"Country": "Country 1",
+	"CountryText": "CountryText 1",
+	"__metadata": {
+		"uri": "Country(Country='Country%201',Country='Country%201')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Country"
+	}
+}, {
+	"Country": "Country 2",
+	"CountryText": "CountryText 2",
+	"__metadata": {
+		"uri": "Country(Country='Country%202',Country='Country%202')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Country"
+	}
+}, {
+	"Country": "Country 3",
+	"CountryText": "CountryText 3",
+	"__metadata": {
+		"uri": "Country(Country='Country%203',Country='Country%203')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Country"
+	}
+}, {
+	"Country": "Country 4",
+	"CountryText": "CountryText 4",
+	"__metadata": {
+		"uri": "Country(Country='Country%204',Country='Country%204')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Country"
+	}
+}, {
+	"Country": "Country 5",
+	"CountryText": "CountryText 5",
+	"__metadata": {
+		"uri": "Country(Country='Country%205',Country='Country%205')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Country"
+	}
+}, {
+	"Country": "Country 6",
+	"CountryText": "CountryText 6",
+	"__metadata": {
+		"uri": "Country(Country='Country%206',Country='Country%206')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Country"
+	}
+}, {
+	"Country": "Country 7",
+	"CountryText": "CountryText 7",
+	"__metadata": {
+		"uri": "Country(Country='Country%207',Country='Country%207')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Country"
+	}
+}, {
+	"Country": "Country 8",
+	"CountryText": "CountryText 8",
+	"__metadata": {
+		"uri": "Country(Country='Country%208',Country='Country%208')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Country"
+	}
+}, {
+	"Country": "Country 9",
+	"CountryText": "CountryText 9",
+	"__metadata": {
+		"uri": "Country(Country='Country%209',Country='Country%209')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Country"
+	}
+}, {
+	"Country": "Country 10",
+	"CountryText": "CountryText 10",
+	"__metadata": {
+		"uri": "Country(Country='Country%2010',Country='Country%2010')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Country"
+	}
+}]

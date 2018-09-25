@@ -1,0 +1,26 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Dialog title="{i18n>createTargetGroupTitle}">
+		<content>
+			<f:SimpleForm id="targetGroupForm" title="" maxContainerCols="2" layout="ResponsiveLayout" labelMinWidth="250" editable="true"
+				labelSpanL="1" labelSpanM="1" columnsL="2" columnsM="2">
+				<f:content>
+					<Label id="targetGroupNameInputLabel" labelFor="targetGroupNameInput" text="{i18n>targetGroupName}" required="true"/>
+					<Input id="targetGroupNameInput" valueState="None" valueStateText="{i18n>targetGroupNameInputPlaceholder}"
+						liveChange="onTargetGroupNameChanged" maxLength="40"/>
+					<Label id="targetGroupDescriptionLabel" labelFor="targetGroupDescription" text="{i18n>targetGroupDescription}" required="false"/>
+					<TextArea id="targetGroupDescription" value="" rows="6" maxLength="1000"/>
+					<Label id="targetGroupMktAreaSelectLabel" labelFor="targetGroupMktAreaSelect" text="{i18n>marketingArea}" required="true"/>
+					<Select id="targetGroupMktAreaSelect" selectedKey="{MarketingArea}"
+						items="{path: '/MarketingAreas', sorter: { path: 'MarketingAreaDescription' }}" enabled="false">
+						<core:Item key="{MarketingAreaId}" text="{MarketingAreaDescription}"/>
+					</Select>
+				</f:content>
+			</f:SimpleForm>
+		</content>
+		<buttons>
+			<Button id="targetGroupOkAndOpenButton" text="{i18n>okOpenButton}" tooltip="{i18n>okOpenButton}" press="onCreateTargetGroup" enabled="false"/>
+			<Button id="targetGroupOkButton" text="{i18n>okButton}" tooltip="{i18n>okButton}" press="onCreateTargetGroup" enabled="false"/>
+			<Button id="targetGroupCancelButton" text="{i18n>cancelButton}" tooltip="{i18n>cancelButton}" press="onCancelTargetGroup"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

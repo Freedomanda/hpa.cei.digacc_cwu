@@ -1,0 +1,73 @@
+[{
+	"TypeCode": "WEC_SERACC",
+	"TypeDescription": "TypeDescription 1",
+	"__metadata": {
+		"uri": "DigitalAccountTypes('TypeCode 1')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountType"
+	},
+	"CommMedium": "WEC"
+}, {
+	"TypeCode": "WEC_SUBACC",
+	"TypeDescription": "TypeDescription 2",
+	"__metadata": {
+		"uri": "DigitalAccountTypes('TypeCode 2')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountType"
+	},
+	"CommMedium": "WEC"
+}, {
+	"TypeCode": "TypeCode 3",
+	"TypeDescription": "TypeDescription 3",
+	"__metadata": {
+		"uri": "DigitalAccountTypes('TypeCode 3')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountType"
+	}
+}, {
+	"TypeCode": "TypeCode 4",
+	"TypeDescription": "TypeDescription 4",
+	"__metadata": {
+		"uri": "DigitalAccountTypes('TypeCode 4')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountType"
+	}
+}, {
+	"TypeCode": "TypeCode 5",
+	"TypeDescription": "TypeDescription 5",
+	"__metadata": {
+		"uri": "DigitalAccountTypes('TypeCode 5')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountType"
+	}
+}, {
+	"TypeCode": "TypeCode 6",
+	"TypeDescription": "TypeDescription 6",
+	"__metadata": {
+		"uri": "DigitalAccountTypes('TypeCode 6')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountType"
+	}
+}, {
+	"TypeCode": "TypeCode 7",
+	"TypeDescription": "TypeDescription 7",
+	"__metadata": {
+		"uri": "DigitalAccountTypes('TypeCode 7')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountType"
+	}
+}, {
+	"TypeCode": "TypeCode 8",
+	"TypeDescription": "TypeDescription 8",
+	"__metadata": {
+		"uri": "DigitalAccountTypes('TypeCode 8')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountType"
+	}
+}, {
+	"TypeCode": "TypeCode 9",
+	"TypeDescription": "TypeDescription 9",
+	"__metadata": {
+		"uri": "DigitalAccountTypes('TypeCode 9')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountType"
+	}
+}, {
+	"TypeCode": "TypeCode 10",
+	"TypeDescription": "TypeDescription 10",
+	"__metadata": {
+		"uri": "DigitalAccountTypes('TypeCode 10')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountType"
+	}
+}]

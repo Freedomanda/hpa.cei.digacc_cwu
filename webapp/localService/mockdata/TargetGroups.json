@@ -1,0 +1,181 @@
+[{
+	"DBKey": "DBKey 1",
+	"Id": "Id 1",
+	"TargetGroupName": "TargetGroupName 1",
+	"LifeCycleStatus": "LifeCycleStatus 1",
+	"Description": "Description 1",
+	"Origin": "Origin 1",
+	"MemberType": "MemberType 1",
+	"MktAreaId": "MktAreaId 1",
+	"__metadata": {
+		"uri": "TargetGroups('DBKey 1')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroup"
+	},
+	"TargetGroupMembers": {
+		"__deferred": {
+			"uri": "TargetGroups('DBKey 1')/TargetGroupMembers"
+		}
+	}
+}, {
+	"DBKey": "DBKey 2",
+	"Id": "Id 2",
+	"TargetGroupName": "TargetGroupName 2",
+	"LifeCycleStatus": "LifeCycleStatus 2",
+	"Description": "Description 2",
+	"Origin": "Origin 2",
+	"MemberType": "MemberType 2",
+	"MktAreaId": "MktAreaId 2",
+	"__metadata": {
+		"uri": "TargetGroups('DBKey 2')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroup"
+	},
+	"TargetGroupMembers": {
+		"__deferred": {
+			"uri": "TargetGroups('DBKey 2')/TargetGroupMembers"
+		}
+	}
+}, {
+	"DBKey": "DBKey 3",
+	"Id": "Id 3",
+	"TargetGroupName": "TargetGroupName 3",
+	"LifeCycleStatus": "LifeCycleStatus 3",
+	"Description": "Description 3",
+	"Origin": "Origin 3",
+	"MemberType": "MemberType 3",
+	"MktAreaId": "MktAreaId 3",
+	"__metadata": {
+		"uri": "TargetGroups('DBKey 3')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroup"
+	},
+	"TargetGroupMembers": {
+		"__deferred": {
+			"uri": "TargetGroups('DBKey 3')/TargetGroupMembers"
+		}
+	}
+}, {
+	"DBKey": "DBKey 4",
+	"Id": "Id 4",
+	"TargetGroupName": "TargetGroupName 4",
+	"LifeCycleStatus": "LifeCycleStatus 4",
+	"Description": "Description 4",
+	"Origin": "Origin 4",
+	"MemberType": "MemberType 4",
+	"MktAreaId": "MktAreaId 4",
+	"__metadata": {
+		"uri": "TargetGroups('DBKey 4')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroup"
+	},
+	"TargetGroupMembers": {
+		"__deferred": {
+			"uri": "TargetGroups('DBKey 4')/TargetGroupMembers"
+		}
+	}
+}, {
+	"DBKey": "DBKey 5",
+	"Id": "Id 5",
+	"TargetGroupName": "TargetGroupName 5",
+	"LifeCycleStatus": "LifeCycleStatus 5",
+	"Description": "Description 5",
+	"Origin": "Origin 5",
+	"MemberType": "MemberType 5",
+	"MktAreaId": "MktAreaId 5",
+	"__metadata": {
+		"uri": "TargetGroups('DBKey 5')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroup"
+	},
+	"TargetGroupMembers": {
+		"__deferred": {
+			"uri": "TargetGroups('DBKey 5')/TargetGroupMembers"
+		}
+	}
+}, {
+	"DBKey": "DBKey 6",
+	"Id": "Id 6",
+	"TargetGroupName": "TargetGroupName 6",
+	"LifeCycleStatus": "LifeCycleStatus 6",
+	"Description": "Description 6",
+	"Origin": "Origin 6",
+	"MemberType": "MemberType 6",
+	"MktAreaId": "MktAreaId 6",
+	"__metadata": {
+		"uri": "TargetGroups('DBKey 6')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroup"
+	},
+	"TargetGroupMembers": {
+		"__deferred": {
+			"uri": "TargetGroups('DBKey 6')/TargetGroupMembers"
+		}
+	}
+}, {
+	"DBKey": "DBKey 7",
+	"Id": "Id 7",
+	"TargetGroupName": "TargetGroupName 7",
+	"LifeCycleStatus": "LifeCycleStatus 7",
+	"Description": "Description 7",
+	"Origin": "Origin 7",
+	"MemberType": "MemberType 7",
+	"MktAreaId": "MktAreaId 7",
+	"__metadata": {
+		"uri": "TargetGroups('DBKey 7')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroup"
+	},
+	"TargetGroupMembers": {
+		"__deferred": {
+			"uri": "TargetGroups('DBKey 7')/TargetGroupMembers"
+		}
+	}
+}, {
+	"DBKey": "DBKey 8",
+	"Id": "Id 8",
+	"TargetGroupName": "TargetGroupName 8",
+	"LifeCycleStatus": "LifeCycleStatus 8",
+	"Description": "Description 8",
+	"Origin": "Origin 8",
+	"MemberType": "MemberType 8",
+	"MktAreaId": "MktAreaId 8",
+	"__metadata": {
+		"uri": "TargetGroups('DBKey 8')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroup"
+	},
+	"TargetGroupMembers": {
+		"__deferred": {
+			"uri": "TargetGroups('DBKey 8')/TargetGroupMembers"
+		}
+	}
+}, {
+	"DBKey": "DBKey 9",
+	"Id": "Id 9",
+	"TargetGroupName": "TargetGroupName 9",
+	"LifeCycleStatus": "LifeCycleStatus 9",
+	"Description": "Description 9",
+	"Origin": "Origin 9",
+	"MemberType": "MemberType 9",
+	"MktAreaId": "MktAreaId 9",
+	"__metadata": {
+		"uri": "TargetGroups('DBKey 9')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroup"
+	},
+	"TargetGroupMembers": {
+		"__deferred": {
+			"uri": "TargetGroups('DBKey 9')/TargetGroupMembers"
+		}
+	}
+}, {
+	"DBKey": "DBKey 10",
+	"Id": "Id 10",
+	"TargetGroupName": "TargetGroupName 10",
+	"LifeCycleStatus": "LifeCycleStatus 10",
+	"Description": "Description 10",
+	"Origin": "Origin 10",
+	"MemberType": "MemberType 10",
+	"MktAreaId": "MktAreaId 10",
+	"__metadata": {
+		"uri": "TargetGroups('DBKey 10')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroup"
+	},
+	"TargetGroupMembers": {
+		"__deferred": {
+			"uri": "TargetGroups('DBKey 10')/TargetGroupMembers"
+		}
+	}
+}]

@@ -1,0 +1,100 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Dialog contentWidth="28rem" contentHeight="45rem" id="createAccoutDialog" horizontalScrolling="false" showHeader="false" title=""
+		afterClose="onAfterCloseCreateAccountDialog" class="sapUiSizeCozy">
+		<NavContainer id="navCon" navigate="onCreateAccountNavigationStarted" afterNavigate="onCreateAccountAfterNavigate">
+			<Page id="master" title="{i18n>selectTypeTitle}" showHeader="true" class="sapUiContentPadding sapUiSizeCozy">
+				<ScrollContainer content="{path: '/IconTabFilters',sorter:{path:'Key'}}" width="100%" id="AccountTypeList">
+					<CustomTile id="custTileId" class="sapMGT sapUiTinyMargin custom-long-tile" press="onNavToDetail" visible="{data>bIsTileVisible}">
+						<HBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom cursorPointer" alignItems="Start" justifyContent="Center">
+						
+							<Image id="commImage" src="{path:'CommMediumIcon', formatter: '.formatter.getCommIcon'}" width="3rem" height="3.25rem" class="cursorPointer" alt="{path:'CommMediumIcon', formatter: '.formatter.getCommIcon'}" error="onImageError"/>
+								<core:Icon id="commIcon" src="{path:'CommMediumIcon', formatter: '.formatter.getCommIcon'}" size="3rem" class="cursorPointer" />
+							<VBox class="sapUiSmallMarginBegin" alignItems="Start" justifyContent="Start">
+								<Title level="H3" text="{CommMediumDesc}" class="cursorPointer"/>
+								<FlexBox class="sapUiTinyMarginTopBottom" width="19.5rem">
+									<Text maxLines="3" text="{path:'CommMedium', formatter: '.getCommMediaDesc'}" class="cursorPointer"/>
+								</FlexBox>
+							</VBox>
+						</HBox>
+					</CustomTile>
+				</ScrollContainer>
+				<!--<List id="AccountTypeList" itemPress="onNavToDetail" items="{path: '/IconTabFilters',sorter:{path:'Key'}}">-->
+				<!--	<items>-->
+				<!--		<CustomListItem type="Active">-->
+				<!--			<HBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom">-->
+				<!--				<core:Icon src="{path:'CommMediumIcon', formatter: '.formatter.getIcon'}" size="5rem"/>-->
+				<!--				<VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom">-->
+				<!--					<Title level="H3" text="{CommMediumDesc}"/>-->
+				<!--					<Text maxLines="3" text="{path:'CommMedium', formatter: '.getCommMediaDesc'}"/>-->
+				<!--				</VBox>-->
+				<!--			</HBox>-->
+				<!--			<attributes>-->
+				<!--	<ObjectAttribute text="Create a Wechat Service Account or Wechat subscribe account" />-->
+				<!--</attributes>-->
+				<!--		</CustomListItem>-->
+				<!--	</items>-->
+				<!--</List>-->
+			</Page>
+			<Page id="detail" showNavButton="true" navButtonPress="onNavToMaster" title="" showHeader="true">
+				<f:SimpleForm id="createSimpleForm" minWidth="512" labelMinWidth="256" maxContainerCols="2" layout="ResponsiveLayout" editable="true">
+					<f:content>
+						<Label id="accountCreateNameInputLabel" labelFor="accountCreateNameInput" text="{i18n>createAccountName}" required="true"
+							tooltip="{i18n>createAccountName}" width="auto"/>
+						<Input id="accountCreateNameInput" valueState="None" valueStateText="{i18n>AccountNamePlaceholder}" liveChange="onAccountCreateChanged"
+							maxLength="80" />
+						<Label id="accountCreateCodeInputLabel" labelFor="accountCreateCodeInput" text="{i18n>createAccountCode}" tooltip="{i18n>createAccountCode}"
+							required="true" width="auto"/>
+						<Input id="accountCreateCodeInput" valueState="None" valueStateText="{i18n>AccountCodePlaceholder}" liveChange="onAccountCreateChanged"
+							maxLength="40"/>
+						<Label id="accountCreateTypeSelectLabel" labelFor="accountCreateTypeSelect" text="{i18n>createTypeName}" tooltip="{i18n>createTypeName}"
+							required="true" width="auto"/>
+						<Select id="accountCreateTypeSelect" items="{path: '/DigitalAccountTypes',sorter:{path:'TypeDescription'}}">
+							<core:Item key="{TypeCode}" text="{TypeDescription}"/>
+							<!--items="{path: '/MarketingAreas', sorter: { path: 'MarketingAreaText' }}">-->
+							<!--<core:Item key="{MarketingAreaId}" text="{MarketingAreaText}" />-->
+						</Select>
+						<Label id="accountCreateMarketingAreaSelectLabel" labelFor="accountCreateMarketingAreaSelect" text="{i18n>createMarketingAreaName}"
+							tooltip="{i18n>createMarketingAreaName}" required="false" width="auto"/>
+						<Select id="accountCreateMarketingAreaSelect" items="{path: '/MarketingAreas', sorter: { path: 'MarketingAreaDescription' }}">
+							<core:Item key="{MarketingAreaId}" text="{MarketingAreaDescription}"/>
+						</Select>
+		<!--				<Label id="accountCreateIdInputLabel" labelFor="accountCreateIdInput" text="{i18n>createAccountId}" tooltip="{i18n>createAccountId}"-->
+		<!--	required="true" width="auto"/>-->
+		<!--<Input id="accountCreateIdInput" valueState="None" valueStateText="{i18n>AccountIdPlaceholder}" liveChange="onAccountCreateChanged"-->
+		<!--	maxLength="50"/>-->
+					</f:content>
+				</f:SimpleForm>
+				<f:SimpleForm id="typeSpecContent" minWidth="512" maxContainerCols="2" layout="ResponsiveLayout" editable="true" labelMinWidth="256">
+					</f:SimpleForm>
+			</Page>
+			<!--<f:content>-->
+			<!--		<Label id="accountCreateIdInputLabel" labelFor="accountCreateIdInput" text="{i18n>createAccountId}" tooltip="{i18n>createAccountId}"-->
+			<!--		required="true"/>-->
+			<!--	<Input id="accountCreateIdInput"  valueState="None"-->
+			<!--		valueStateText="{i18n>AccountIdPlaceholder}" liveChange="onAccountCreateChanged" maxLength="50"/>-->
+			<!--	<Label id="accountCreateHSTokenInputLabel" labelFor="accountCreateHSTokenInput" text="{i18n>createAccountHSToken}"-->
+			<!--		tooltip="{i18n>createAccountHSToken}" required="true"/>-->
+			<!--	<Input id="accountCreateHSTokenInput"  valueState="None" type="Password"-->
+			<!--		valueStateText="{i18n>AccountHSTokenPlaceholder}" liveChange="onAccountCreateChanged" maxLength="255"/>-->
+			<!--	<Label id="accountCreateAppIdInputLabel" labelFor="accountCreateAppIdInput" text="{i18n>createAccountAppId}"-->
+			<!--		tooltip="{i18n>createAccountAppId}" required="true" />-->
+			<!--	<Input id="accountCreateAppIdInput"  valueState="None" type="Password"-->
+			<!--		valueStateText="{i18n>AccountAppIdPlaceholder}" liveChange="onAccountCreateChanged" maxLength="50" />-->
+			<!--	<Label id="accountCreateSecIdInputLabel" labelFor="accountCreateSecIdInput" text="{i18n>createAccountAppSec}"-->
+			<!--		tooltip="{i18n>createAccountAppSec}" required="true" />-->
+			<!--	<Input id="accountCreateSecIdInput"  valueState="None" type="Password"-->
+			<!--		valueStateText="{i18n>AccountSecIdPlaceholder}" liveChange="onAccountCreateChanged" maxLength="50" />-->
+			<!--		</f:content>-->
+			<!--	<Label id="accountCreateCommArrangeSelectLabel" labelFor="accountCreateCommArrangeSelect" text="{i18n>createAccountCommArrange}"-->
+			<!--	tooltip="{i18n>createAccountCommArrange}" required="true" visible="{systemView>/isCloud}"/>-->
+			<!--<Select id="accountCreateCommArrangeSelect"  items="{path: '/CommunicationArrangements', sorter: { path: 'CommArrgmtName' }}" visible="{systemView>/isCloud}">-->
+			<!--	<core:Item  key="{CommArrgmtUUID}" text="{CommArrgmtName}" enabled="{BindStatus}"/>-->
+			<!--	</Select>-->
+		</NavContainer>
+		<buttons>
+			<Button id="accountCreateOkButton" tooltip="{i18n>saveButton}" text="{i18n>saveButton}" press="onCreateOkButton" enabled="false"
+				visible="false"/>
+			<Button id="accountCreateCancelButton" tooltip="{i18n>closeButton}" text="{i18n>closeButton}" press="onCreateCancelButton"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

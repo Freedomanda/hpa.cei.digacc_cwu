@@ -1,0 +1,300 @@
+<mvc:View controllerName="hpa.cei.digital_account.controller.Object" xmlns:core="sap.ui.core" xmlns:footerbar="sap.ushell.ui.footerbar"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:m="sap.m" xmlns:filterbar="sap.ui.comp.filterbar"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:coms="sap.suite.ui.commons" xmlns:viz.data="sap.viz.ui5.data"
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns="sap.uxap" xmlns:layout="sap.ui.layout" xmlns:smartForm="sap.ui.comp.smartform"
+	xmlns:smartField="sap.ui.comp.smartfield" xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<m:Page id="DigitalAccountPage" navButtonPress="onWorkProtectNavBack" showNavButton="true" title="{i18n>objectTitle}" showHeader="false"
+		busy="{objectView>/busy}">
+		<m:content>
+			<ObjectPageLayout id="detailDAObjectHeader" useIconTabBar="true" showAnchorBarPopover="true" navigate="onNavigate">
+				<headerTitle>
+					<ObjectPageHeader objectTitle="{DigaccName}" id="DAObjectPageLayoutHeaderTitle" isObjectIconAlwaysVisible="false"
+						objectImageURI="{parts :['IconUrl','Avatar'], formatter: '.formatter.getIcon'}" isActionAreaAlwaysVisible="true">
+						<actions>
+							<ObjectPageHeaderActionButton text="{i18n>editButton}" id="Edit" press="onBasicEditPress" visible="{objectView>/basicnormalmode}"
+								hideIcon="true" hideText="false" tooltip="{i18n>editButton}"/>
+							<!--<ObjectPageHeaderActionButton text="{i18n>saveButton}" id="Save" press="onBasicSavePress" visible="{objectView>/basiceditmode}" hideIcon="true"-->
+							<!--	hideText="false" tooltip="{i18n>saveButton}"/>-->
+							<!--<ObjectPageHeaderActionButton text="{i18n>cancelButton}" id="Cancel" press="onBasicCancelPress" visible="{objectView>/basiceditmode}"-->
+							<!--	hideIcon="true" hideText="false" tooltip="{i18n>cancelButton}"/>-->
+							<ObjectPageHeaderActionButton text="{i18n>inprepareText}" id="inPreparation" press="onWorkProtectPreparePress" visible="{objectView>/canPrepare}"
+								hideIcon="true" hideText="false" tooltip="{i18n>inprepareText}"/>
+							<ObjectPageHeaderActionButton text="{i18n>activeText}" enabled="{ScreenState>/DeleteEnabled}" id="active" press="onWorkProtectActivePress"
+								visible="{objectView>/canActive}" hideIcon="true" hideText="false" tooltip="{i18n>activeText}"/>
+							<ObjectPageHeaderActionButton text="{i18n>inactiveText}" enabled="{ScreenState>/DeleteEnabled}" id="archive" press="onWorkProtectArchivePress"
+								visible="{objectView>/canArchive}" hideIcon="true" hideText="false" tooltip="{i18n>inactiveText}"/>
+						</actions>
+					</ObjectPageHeader>
+				</headerTitle>
+				<headerContent>
+					<layout:VerticalLayout class="header-vertical-spacing">
+						<m:FlexBox alignItems="Center" justifyContent="Start">
+							<m:items>
+								<m:Image src="{IconUrl}" tooltip="{DigaccName}" visible="{= ${IconUrl} !== ''}" class="sapUiTinyMarginEnd" width="3rem"/>
+								<core:Icon src="sap-icon://discussion" visible="{= ${IconUrl} === ''}" tooltip="{DigaccName}" class="sapUiSmallMarginEnd" size="3rem"/>
+							</m:items>
+						</m:FlexBox>
+					</layout:VerticalLayout>
+					<layout:VerticalLayout>
+						<m:ObjectStatus title="{i18n>daTypeColumnTitle}" text="{TypeDescription}"/>
+						<m:ObjectStatus id="HeaderStatusText" title="{i18n>daRegisterStatusColumnTitle}" text="{StatusDescription}"
+							state="{path:'StatusCode', formatter: '.formatter.getStatusState'}"/>
+						<!--<layout:HorizontalLayout>-->
+						<!--	<m:Text id="HeaderTypeText" text="{TypeDescription}"/>-->
+						<!--</layout:HorizontalLayout>-->
+						<!--<layout:HorizontalLayout>-->
+						<!--	<m:ObjectStatus id="HeaderStatusText" text="{StatusDescription}" state="{path:'StatusCode', formatter: '.formatter.getStatusState'}"/>-->
+						<!--</layout:HorizontalLayout>-->
+					</layout:VerticalLayout>
+					<layout:VerticalLayout>
+						<layout:layoutData>
+							<ObjectPageHeaderLayoutData showSeparatorAfter="false"/>
+						</layout:layoutData>
+						<m:Label id="newMemLabel" text="{i18n>newMem}" labelFor="newMemText"/>
+						<m:ObjectNumber id="newMemText" number="{NewSubscriberCount}"/>
+					</layout:VerticalLayout>
+					<layout:VerticalLayout>
+						<layout:layoutData>
+							<ObjectPageHeaderLayoutData visibleS="false" showSeparatorAfter="false"/>
+						</layout:layoutData>
+						<m:Label id="rateLabel" text="{i18n>rate}" labelFor="rateText"/>
+						<m:ObjectNumber id="rateText" number="{path:'Rate', formatter: '.formatter.formatNumberToPercent'}"/>
+					</layout:VerticalLayout>
+					<layout:VerticalLayout>
+						<layout:layoutData>
+							<ObjectPageHeaderLayoutData visibleM="false" showSeparatorAfter="false"/>
+						</layout:layoutData>
+						<m:Label id="totalNumLabel" text="{i18n>totalNum}" labelFor="totalNumText"/>
+						<m:ObjectNumber id="totalNumText" number="{MemberCount}"/>
+					</layout:VerticalLayout>
+					<!--<layout:VerticalLayout>-->
+					<!--	<m:Text text="{MemberCount}" id="HeaderMemberCountField"/>-->
+					<!--	<m:Text text="{i18n>contacts}" id="HeaderCountUnitField"/>-->
+					<!--</layout:VerticalLayout>-->
+				</headerContent>
+				<sections>
+					<ObjectPageSection id="ObjectPageSectionInfo" title="{i18n>info}" tooltip="{i18n>info}">
+						<subSections>
+							<ObjectPageSubSection id="ObjectPageSubSectionBasic" title="{i18n>basic}" tooltip="{i18n>basic}">
+								<!--<actions>-->
+								<!--	<m:Button text="{i18n>editButton}" visible="{objectView>/basicnormalmode}" type="Transparent" press="onBasicEditPress"/>-->
+								<!--	<m:Button visible="{objectView>/basiceditmode}" text="{i18n>saveButton}" type="Transparent" press="onBasicSavePress"/>-->
+								<!--	<m:Button visible="{objectView>/basiceditmode}" text="{i18n>cancelButton}" type="Transparent" press="onBasicCancelPress"/>-->
+								<!--</actions>-->
+								<blocks>
+									<smartForm:SmartForm id="ObjectPageInfoBasicSmartForm" editTogglable="false" flexEnabled="true" editable="true">
+										<smartForm:Group >
+											<smartForm:GroupElement id="accIdGroupElement">
+												<layout:VerticalLayout >
+													<smartField:SmartLabel id="accIdLabel" text="{i18n>accountID}" labelFor="accIdText"/>
+													<smartField:SmartField id="accIdText" value="{DigaccId}" editable="false"/>
+												</layout:VerticalLayout>
+											</smartForm:GroupElement>
+										</smartForm:Group>
+										<smartForm:Group>
+											<smartForm:GroupElement id="crDateGroupElement">
+												<layout:VerticalLayout >
+													<smartField:SmartLabel id="crDateLabel" text="{i18n>createdDate}" labelFor="crDateText"/>
+													<smartField:SmartField id="crDateText" value="{path:'CreatedOn', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short' } }"
+														editable="false"/>
+												</layout:VerticalLayout>
+											</smartForm:GroupElement>
+										</smartForm:Group>
+										<smartForm:Group>
+											<!--		<smartForm:GroupElement id="orignalIdGroupElement">-->
+											<!--			<layout:VerticalLayout>-->
+											<!--		<m:Label id="orignalIdLabel" text="{i18n>originalId}" labelFor="originalIdInput"/>-->
+											<!--		<smartField:SmartField id="originalIdInput" value="{DigaccTechnicalId}" contextEditable="{objectView>/basiceditmode}" maxLength="50"/>-->
+											<!--<m:Text/>-->
+											<!--	</layout:VerticalLayout>-->
+											<!--	</smartForm:GroupElement>-->
+											<smartForm:GroupElement id="ServerUrlGroupElement">
+												<layout:VerticalLayout>
+													<m:Label id="ServerUrlLabel" text="{i18n>serverUrl}" labelFor="serverUrlLink"/>
+													<m:Link id="serverUrlLink" text="{i18n>showServerUrl}" press="onShowServerUrl" width="200px"/>
+												</layout:VerticalLayout>
+											</smartForm:GroupElement>
+										</smartForm:Group>
+										<smartForm:Group>
+											<smartForm:GroupElement id="ownerGroupElement">
+												<layout:VerticalLayout >
+													<smartField:SmartLabel id="ownerLabel" text="{i18n>owner}" labelFor="ownerText"/>
+													<smartField:SmartField id="ownerText" value="{CreatedByUserId}" editable="false"/>
+												</layout:VerticalLayout>
+											</smartForm:GroupElement>
+										</smartForm:Group>
+										<smartForm:Group>
+											<smartForm:GroupElement id="chDateGroupElement">
+												<layout:VerticalLayout >
+													<smartField:SmartLabel id="chDateLabel" text="{i18n>changedDate}" labelFor="chDateText"/>
+													<smartField:SmartField id="chDateText" value="{ path: 'ChangedOn', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short' } }"
+														editable="false"/>
+												</layout:VerticalLayout>
+											</smartForm:GroupElement>
+										</smartForm:Group>
+										<smartForm:Group>
+											<smartForm:GroupElement id="emailGroupElement">
+												<layout:VerticalLayout >
+													<smartField:SmartLabel id="emailLabel" text="{i18n>email}" labelFor="emailInput"/>
+													<smartField:SmartField id="emailInput" value="{EmailAddr}" editable="true" contextEditable="{objectView>/basiceditmode}" maxLength="241"
+														width="100%"></smartField:SmartField>
+												</layout:VerticalLayout>
+											</smartForm:GroupElement>
+										</smartForm:Group>
+										<smartForm:Group>
+											<smartForm:GroupElement id="marketingAreaGroupElement">
+												<layout:VerticalLayout >
+													<smartField:SmartLabel id="marketingAreaLabel" text="{i18n>marketingarea}" labelFor="marketingAreaText"/>
+													<smartField:SmartField id="marketingAreaText" value="{MarketingAreaDescription}" editable="false"/>
+												</layout:VerticalLayout>
+											</smartForm:GroupElement>
+										</smartForm:Group>
+										<smartForm:Group>
+											<smartForm:GroupElement id="avatarGroupElement">
+												<layout:VerticalLayout >
+													<smartField:SmartLabel id="avatarLabel" text="{i18n>avatar}" labelFor="avatarText"/>
+													<smartField:SmartField id="avatarText" value="{Avatar}" editable="true" contextEditable="{objectView>/basiceditmode}" maxLength="255"/>
+												</layout:VerticalLayout>
+											</smartForm:GroupElement>
+										</smartForm:Group>
+										<smartForm:Group>
+											<smartForm:GroupElement id="descGroupElement">
+												<layout:VerticalLayout >
+													<smartField:SmartLabel id="descLabel" text="{i18n>description}" labelFor="descInput"/>
+													<smartField:SmartField id="descInput" value="{DigaccDesc}" width="100%" editable="true" contextEditable="{objectView>/basiceditmode}"
+														maxLength="255" app:multiLineSettings="{ rows: 6}"/>
+												</layout:VerticalLayout>
+											</smartForm:GroupElement>
+										</smartForm:Group>
+									</smartForm:SmartForm>
+								</blocks>
+							</ObjectPageSubSection>
+							<ObjectPageSubSection id="ObjectPageSubSectionAddProperty" title="{i18n>additionalField}">
+								<blocks>
+									<smartForm:SmartForm id="ObjectPageInfoAddFieldSmartForm"  flexEnabled="false" editable="false">
+									<smartForm:layout>
+									<smartForm:Layout singleGroupFullSize="false" >
+										
+									</smartForm:Layout>	
+									</smartForm:layout>
+									</smartForm:SmartForm>
+								</blocks>
+							</ObjectPageSubSection>
+							<!--<ObjectPageSubSection id="ObjectPageSubSectionCredential" title="{i18n>credential}" tooltip="{i18n>credential}">-->
+							<!--<actions>-->
+							<!--	<m:Button text="{i18n>editButton}" visible="{objectView>/crenormalmode}" type="Transparent" press="onCredentialEditPress"/>-->
+							<!--	<m:Button visible="{objectView>/creeditmode}" text="{i18n>saveButton}" type="Transparent" press="onCredentialSavePress"/>-->
+							<!--	<m:Button visible="{objectView>/creeditmode}" text="{i18n>cancelButton}" type="Transparent" press="onCredentialCancelPress"/>-->
+							<!--</actions>-->
+							<!--	<blocks>-->
+							<!--		<smartForm:SmartForm id="ObjectPageInfoCredentialSmartForm"  editable="true" editTogglable="false" flexEnabled="true">-->
+							<!--			<smartForm:Group id="tokenGroup">-->
+							<!--				<smartForm:GroupElement id="hsTokenGroupElement">-->
+							<!--					<layout:VerticalLayout>-->
+							<!--					<smartField:SmartLabel id="hsTokenLabel" text="{i18n>hsToken}" labelFor="hsTokenInput"/>-->
+							<!--					<smartField:SmartField id="hsTokenInput" value="{InboundToken}" contextEditable="{objectView>/basiceditmode}"  maxLength="255"/>-->
+							<!--					<m:Text/>-->
+							<!--						</layout:VerticalLayout>-->
+							<!--				</smartForm:GroupElement>-->
+							<!--				<smartForm:GroupElement id="orignalIdGroupElement">-->
+							<!--						<layout:VerticalLayout>-->
+							<!--					<smartField:SmartLabel id="orignalIdLabel" text="{i18n>originalId}" labelFor="originalIdInput"/>-->
+							<!--					<smartField:SmartField id="originalIdInput" value="{DigaccTechnicalId}" contextEditable="{objectView>/basiceditmode}" maxLength="50"/>-->
+							<!--				</layout:VerticalLayout>-->
+							<!--				</smartForm:GroupElement>-->
+							<!--			</smartForm:Group>-->
+							<!--			<smartForm:Group id="credentialGroup">-->
+							<!--				<smartForm:GroupElement id="appIdGroupElement">-->
+							<!--						<layout:VerticalLayout>-->
+							<!--					<smartField:SmartLabel id="appIdLabel" text="{i18n>appId}" labelFor="appIdInput" visible="{objectView>/isOnPremise}"/>-->
+							<!--					<smartField:SmartField id="appIdInput" value="{ApiUserId}"  editable="true" contextEditable="{objectView>/basiceditmode}" maxLength="50"-->
+							<!--						visible="{objectView>/isOnPremise}"/>-->
+							<!--				<m:Text/>-->
+							<!--						</layout:VerticalLayout>-->
+							<!--				</smartForm:GroupElement>-->
+							<!--				<smartForm:GroupElement id="securityIdGroupElement">-->
+							<!--					<layout:VerticalLayout>-->
+							<!--					<smartField:SmartLabel id="securityIdLabel" text="{i18n>securityId}" labelFor="securityIdInput" visible="{objectView>/isOnPremise}"/>-->
+							<!--					<smartField:SmartField id="securityIdInput" value="{ApiUserPassword}"  editable="true" contextEditable="{objectView>/basiceditmode}" maxLength="50"-->
+							<!--						visible="{objectView>/isOnPremise}"/>-->
+							<!--							</layout:VerticalLayout>-->
+							<!--				</smartForm:GroupElement>-->
+							<!--				<smartForm:GroupElement id="commArrGroupElement">-->
+							<!--						<layout:VerticalLayout>-->
+							<!--					<m:Label id="commArrLabel" text="{i18n>createAccountCommArrange}" labelFor="commArrInput" visible="{objectView>/isCloud}"/>-->
+							<!--					<m:Select id="commArrInput" selectedKey="{CAUUID}" visible="{objectView>/isCloud}"-->
+							<!--						items="{path: 'CAWithNoneModel>/CAList' }" enabled="{objectView>/basiceditmode}">-->
+							<!--						<core:Item key="{CAWithNoneModel>CommArrgmtUUID}" text="{CAWithNoneModel>CommArrgmtName}" enabled="{CAWithNoneModel>BindStatus}"/>-->
+							<!--					</m:Select>-->
+							<!--						</layout:VerticalLayout>-->
+							<!--				</smartForm:GroupElement>-->
+							<!--			</smartForm:Group>-->
+							<!--			<smartForm:Group id="urlGroup">-->
+							<!--				<smartForm:GroupElement id="ServerUrlGroupElement">-->
+							<!--						<layout:VerticalLayout>-->
+							<!--					<m:Label id="ServerUrlLabel" text="{i18n>serverUrl}" labelFor="serverUrlLink"/>-->
+							<!--					<m:Link id="serverUrlLink" text="{i18n>showServerUrl}" press="onShowServerUrl" width="200px"/>-->
+							<!--				</layout:VerticalLayout>-->
+							<!--				</smartForm:GroupElement>-->
+							<!--			</smartForm:Group>-->
+							<!--		</smartForm:SmartForm>-->
+							<!--	</blocks>-->
+							<!--</ObjectPageSubSection>-->
+						</subSections>
+					</ObjectPageSection>
+					<ObjectPageSection id="ObjectPageSectionContactList" title="{i18n>contactList}" tooltip="{i18n>contactList}"
+						visible="{objectView>/contactList}">
+						<subSections>
+							<ObjectPageSubSection id="ObjectPageSubSectionContactList">
+								<blocks>
+									<mvc:XMLView viewName="hpa.cei.digital_account.view.ContactList"/>
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+					<ObjectPageSection id="ObjectPageSectionContactAnaly" title="{i18n>contactAnalysis}" titleUppercase="false" tooltip="{i18n>contactAnalysis}"
+						visible="{objectView>/contactAnaly}">
+						<subSections>
+							<ObjectPageSubSection id="ObjectPageSubSectionContactAnaly">
+								<blocks>
+									<mvc:XMLView viewName="hpa.cei.digital_account.view.ContactAnaly" class="sapUiResponsiveContentPadding"/>
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+					<ObjectPageSection id="ObjectPageSectionIntAnaly" title="{i18n>messageAnalysis}" titleUppercase="false" tooltip="{i18n>messageAnalysis}"
+						visible="{objectView>/interactionAnaly}">
+						<subSections>
+							<ObjectPageSubSection id="ObjectPageSubSectionIntAnaly">
+								<blocks>
+									<mvc:XMLView viewName="hpa.cei.digital_account.view.InteractionAnaly"/>
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+					<ObjectPageSection id="ObjectPageSectionShakeNearbyAnaly" title="{i18n>shakeNearbyAnalysis}" tooltip="{i18n>shakeNearbyAnalysis}"
+						visible="{objectView>/shakeNearbyAnaly}">
+						<subSections>
+							<ObjectPageSubSection id="ObjectPageSubSectionShakeNearbyAnaly">
+								<blocks>
+									<mvc:XMLView viewName="hpa.cei.digital_account.view.ShakeNearbyAnaly"/>
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+				</sections>
+			</ObjectPageLayout>
+		</m:content>
+		<m:footer>
+			<m:Bar>
+				<m:contentRight>
+					<m:ToolbarSpacer/>
+					<m:Button id="Footer-SaveButton" tooltip="{i18n>saveButton}" press="onBasicSavePress" visible="{objectView>/basiceditmode}"
+						text="{i18n>saveButton}" type="Emphasized"/>
+					<m:Button text="{i18n>cancelButton}" id="Footer-CancelButton" press="onBasicCancelPress" visible="{objectView>/basiceditmode}"
+						tooltip="{i18n>cancelButton}"/>
+				</m:contentRight>
+			</m:Bar>
+		</m:footer>
+	</m:Page>
+</mvc:View>

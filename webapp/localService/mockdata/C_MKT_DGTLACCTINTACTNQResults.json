@@ -1,0 +1,751 @@
+[{
+	"ID": "ID 1",
+	"TotaledProperties": "TotaledProperties 1",
+	"EmailAddress": "EmailAddress 1",
+	"DigitalAccountUUID": "Key 1",
+	"Country": "Country 1",
+	"CountryName": "CountryName 1",
+	"CityName": "CityName 1",
+	"FullName": "FullName 1",
+	"StreetName": "StreetName 1",
+	"YearMonth": "YearMonth 1",
+	"YearWeek": "YearWeek 1",
+	"DigitalAccountType": "DigitalAccountType 1",
+	"DigitalAccountTypeName": "DigitalAccountTypeName 1",
+	"GenderCode": "GenderCode 1",
+	"GenderCodeName": "GenderCodeName 1",
+	"InteractionType": "InteractionType 1",
+	"InteractionTypeName": "InteractionTypeName 1",
+	"ItemOfInterest": "ItemOfInterest 1",
+	"ItemOfInterestName": "ItemOfInterestName 1",
+	"MarketingArea": "MarketingArea 1",
+	"MarketingAreaName": "MarketingAreaName 1",
+	"AddressRegion": "AddressRegion 1",
+	"RegionName": "RegionName 1",
+	"DigitalAccountName": "DigitalAccountName 1",
+	"InteractionUTCDate": "InteractionUTCDate 1",
+	"InteractionUTCDate_T": "InteractionUTCDate_T 1",
+	"AddressHouseNumber": "AddressHouseNumber 1",
+	"YearQuarter": "YearQuarter 1",
+	"CalendarYear": "CalendarYear 1",
+	"DigitalAccount": "DigitalAccount 1",
+	"MobileNumber": "MobileNumber 1",
+	"NumberOfInteractions": 2944.8,
+	"NumberOfInteractions_F": "NumberOfInteractions_F 1",
+	"NumberOfInteractionContacts": 315.03,
+	"NumberOfInteractionContacts_F": "NumberOfInteractionContacts_F 1",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%201')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult"
+	},
+	"Parameters": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%201')/Parameters"
+		}
+	},
+	"DigitalAccountTypeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%201')/DigitalAccountTypeDetails"
+		}
+	},
+	"MarketingAreaDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%201')/MarketingAreaDetails"
+		}
+	},
+	"CountryDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%201')/CountryDetails"
+		}
+	},
+	"AddressRegionDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%201')/AddressRegionDetails"
+		}
+	},
+	"GenderCodeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%201')/GenderCodeDetails"
+		}
+	},
+	"ItemOfInterestDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%201')/ItemOfInterestDetails"
+		}
+	}
+}, {
+	"ID": "ID 2",
+	"TotaledProperties": "TotaledProperties 2",
+	"EmailAddress": "EmailAddress 2",
+	"DigitalAccountUUID": "Key 2",
+	"Country": "Country 2",
+	"CountryName": "CountryName 2",
+	"CityName": "CityName 2",
+	"FullName": "FullName 2",
+	"StreetName": "StreetName 2",
+	"YearMonth": "YearMonth 2",
+	"YearWeek": "YearWeek 2",
+	"DigitalAccountType": "DigitalAccountType 2",
+	"DigitalAccountTypeName": "DigitalAccountTypeName 2",
+	"GenderCode": "GenderCode 2",
+	"GenderCodeName": "GenderCodeName 2",
+	"InteractionType": "InteractionType 2",
+	"InteractionTypeName": "InteractionTypeName 2",
+	"ItemOfInterest": "ItemOfInterest 2",
+	"ItemOfInterestName": "ItemOfInterestName 2",
+	"MarketingArea": "MarketingArea 2",
+	"MarketingAreaName": "MarketingAreaName 2",
+	"AddressRegion": "AddressRegion 2",
+	"RegionName": "RegionName 2",
+	"DigitalAccountName": "DigitalAccountName 2",
+	"InteractionUTCDate": "InteractionUTCDate 2",
+	"InteractionUTCDate_T": "InteractionUTCDate_T 2",
+	"AddressHouseNumber": "AddressHouseNumber 2",
+	"YearQuarter": "YearQuarter 2",
+	"CalendarYear": "CalendarYear 2",
+	"DigitalAccount": "DigitalAccount 2",
+	"MobileNumber": "MobileNumber 2",
+	"NumberOfInteractions": 724.1,
+	"NumberOfInteractions_F": "NumberOfInteractions_F 2",
+	"NumberOfInteractionContacts": 9327.73,
+	"NumberOfInteractionContacts_F": "NumberOfInteractionContacts_F 2",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%202')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult"
+	},
+	"Parameters": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%202')/Parameters"
+		}
+	},
+	"DigitalAccountTypeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%202')/DigitalAccountTypeDetails"
+		}
+	},
+	"MarketingAreaDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%202')/MarketingAreaDetails"
+		}
+	},
+	"CountryDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%202')/CountryDetails"
+		}
+	},
+	"AddressRegionDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%202')/AddressRegionDetails"
+		}
+	},
+	"GenderCodeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%202')/GenderCodeDetails"
+		}
+	},
+	"ItemOfInterestDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%202')/ItemOfInterestDetails"
+		}
+	}
+}, {
+	"ID": "ID 3",
+	"TotaledProperties": "TotaledProperties 3",
+	"EmailAddress": "EmailAddress 3",
+	"DigitalAccountUUID": "Key 3",
+	"Country": "Country 3",
+	"CountryName": "CountryName 3",
+	"CityName": "CityName 3",
+	"FullName": "FullName 3",
+	"StreetName": "StreetName 3",
+	"YearMonth": "YearMonth 3",
+	"YearWeek": "YearWeek 3",
+	"DigitalAccountType": "DigitalAccountType 3",
+	"DigitalAccountTypeName": "DigitalAccountTypeName 3",
+	"GenderCode": "GenderCode 3",
+	"GenderCodeName": "GenderCodeName 3",
+	"InteractionType": "InteractionType 3",
+	"InteractionTypeName": "InteractionTypeName 3",
+	"ItemOfInterest": "ItemOfInterest 3",
+	"ItemOfInterestName": "ItemOfInterestName 3",
+	"MarketingArea": "MarketingArea 3",
+	"MarketingAreaName": "MarketingAreaName 3",
+	"AddressRegion": "AddressRegion 3",
+	"RegionName": "RegionName 3",
+	"DigitalAccountName": "DigitalAccountName 3",
+	"InteractionUTCDate": "InteractionUTCDate 3",
+	"InteractionUTCDate_T": "InteractionUTCDate_T 3",
+	"AddressHouseNumber": "AddressHouseNumber 3",
+	"YearQuarter": "YearQuarter 3",
+	"CalendarYear": "CalendarYear 3",
+	"DigitalAccount": "DigitalAccount 3",
+	"MobileNumber": "MobileNumber 3",
+	"NumberOfInteractions": 9409.34,
+	"NumberOfInteractions_F": "NumberOfInteractions_F 3",
+	"NumberOfInteractionContacts": 46.82,
+	"NumberOfInteractionContacts_F": "NumberOfInteractionContacts_F 3",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%203')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult"
+	},
+	"Parameters": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%203')/Parameters"
+		}
+	},
+	"DigitalAccountTypeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%203')/DigitalAccountTypeDetails"
+		}
+	},
+	"MarketingAreaDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%203')/MarketingAreaDetails"
+		}
+	},
+	"CountryDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%203')/CountryDetails"
+		}
+	},
+	"AddressRegionDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%203')/AddressRegionDetails"
+		}
+	},
+	"GenderCodeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%203')/GenderCodeDetails"
+		}
+	},
+	"ItemOfInterestDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%203')/ItemOfInterestDetails"
+		}
+	}
+}, {
+	"ID": "ID 4",
+	"TotaledProperties": "TotaledProperties 4",
+	"EmailAddress": "EmailAddress 4",
+	"DigitalAccountUUID": "Key 4",
+	"Country": "Country 4",
+	"CountryName": "CountryName 4",
+	"CityName": "CityName 4",
+	"FullName": "FullName 4",
+	"StreetName": "StreetName 4",
+	"YearMonth": "YearMonth 4",
+	"YearWeek": "YearWeek 4",
+	"DigitalAccountType": "DigitalAccountType 4",
+	"DigitalAccountTypeName": "DigitalAccountTypeName 4",
+	"GenderCode": "GenderCode 4",
+	"GenderCodeName": "GenderCodeName 4",
+	"InteractionType": "InteractionType 4",
+	"InteractionTypeName": "InteractionTypeName 4",
+	"ItemOfInterest": "ItemOfInterest 4",
+	"ItemOfInterestName": "ItemOfInterestName 4",
+	"MarketingArea": "MarketingArea 4",
+	"MarketingAreaName": "MarketingAreaName 4",
+	"AddressRegion": "AddressRegion 4",
+	"RegionName": "RegionName 4",
+	"DigitalAccountName": "DigitalAccountName 4",
+	"InteractionUTCDate": "InteractionUTCDate 4",
+	"InteractionUTCDate_T": "InteractionUTCDate_T 4",
+	"AddressHouseNumber": "AddressHouseNumber 4",
+	"YearQuarter": "YearQuarter 4",
+	"CalendarYear": "CalendarYear 4",
+	"DigitalAccount": "DigitalAccount 4",
+	"MobileNumber": "MobileNumber 4",
+	"NumberOfInteractions": 130.94,
+	"NumberOfInteractions_F": "NumberOfInteractions_F 4",
+	"NumberOfInteractionContacts": 7495,
+	"NumberOfInteractionContacts_F": "NumberOfInteractionContacts_F 4",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%204')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult"
+	},
+	"Parameters": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%204')/Parameters"
+		}
+	},
+	"DigitalAccountTypeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%204')/DigitalAccountTypeDetails"
+		}
+	},
+	"MarketingAreaDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%204')/MarketingAreaDetails"
+		}
+	},
+	"CountryDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%204')/CountryDetails"
+		}
+	},
+	"AddressRegionDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%204')/AddressRegionDetails"
+		}
+	},
+	"GenderCodeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%204')/GenderCodeDetails"
+		}
+	},
+	"ItemOfInterestDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%204')/ItemOfInterestDetails"
+		}
+	}
+}, {
+	"ID": "ID 5",
+	"TotaledProperties": "TotaledProperties 5",
+	"EmailAddress": "EmailAddress 5",
+	"DigitalAccountUUID": "Key 5",
+	"Country": "Country 5",
+	"CountryName": "CountryName 5",
+	"CityName": "CityName 5",
+	"FullName": "FullName 5",
+	"StreetName": "StreetName 5",
+	"YearMonth": "YearMonth 5",
+	"YearWeek": "YearWeek 5",
+	"DigitalAccountType": "DigitalAccountType 5",
+	"DigitalAccountTypeName": "DigitalAccountTypeName 5",
+	"GenderCode": "GenderCode 5",
+	"GenderCodeName": "GenderCodeName 5",
+	"InteractionType": "InteractionType 5",
+	"InteractionTypeName": "InteractionTypeName 5",
+	"ItemOfInterest": "ItemOfInterest 5",
+	"ItemOfInterestName": "ItemOfInterestName 5",
+	"MarketingArea": "MarketingArea 5",
+	"MarketingAreaName": "MarketingAreaName 5",
+	"AddressRegion": "AddressRegion 5",
+	"RegionName": "RegionName 5",
+	"DigitalAccountName": "DigitalAccountName 5",
+	"InteractionUTCDate": "InteractionUTCDate 5",
+	"InteractionUTCDate_T": "InteractionUTCDate_T 5",
+	"AddressHouseNumber": "AddressHouseNumber 5",
+	"YearQuarter": "YearQuarter 5",
+	"CalendarYear": "CalendarYear 5",
+	"DigitalAccount": "DigitalAccount 5",
+	"MobileNumber": "MobileNumber 5",
+	"NumberOfInteractions": 6192.69,
+	"NumberOfInteractions_F": "NumberOfInteractions_F 5",
+	"NumberOfInteractionContacts": 1053.58,
+	"NumberOfInteractionContacts_F": "NumberOfInteractionContacts_F 5",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%205')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult"
+	},
+	"Parameters": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%205')/Parameters"
+		}
+	},
+	"DigitalAccountTypeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%205')/DigitalAccountTypeDetails"
+		}
+	},
+	"MarketingAreaDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%205')/MarketingAreaDetails"
+		}
+	},
+	"CountryDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%205')/CountryDetails"
+		}
+	},
+	"AddressRegionDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%205')/AddressRegionDetails"
+		}
+	},
+	"GenderCodeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%205')/GenderCodeDetails"
+		}
+	},
+	"ItemOfInterestDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%205')/ItemOfInterestDetails"
+		}
+	}
+}, {
+	"ID": "ID 6",
+	"TotaledProperties": "TotaledProperties 6",
+	"EmailAddress": "EmailAddress 6",
+	"DigitalAccountUUID": "Key 6",
+	"Country": "Country 6",
+	"CountryName": "CountryName 6",
+	"CityName": "CityName 6",
+	"FullName": "FullName 6",
+	"StreetName": "StreetName 6",
+	"YearMonth": "YearMonth 6",
+	"YearWeek": "YearWeek 6",
+	"DigitalAccountType": "DigitalAccountType 6",
+	"DigitalAccountTypeName": "DigitalAccountTypeName 6",
+	"GenderCode": "GenderCode 6",
+	"GenderCodeName": "GenderCodeName 6",
+	"InteractionType": "InteractionType 6",
+	"InteractionTypeName": "InteractionTypeName 6",
+	"ItemOfInterest": "ItemOfInterest 6",
+	"ItemOfInterestName": "ItemOfInterestName 6",
+	"MarketingArea": "MarketingArea 6",
+	"MarketingAreaName": "MarketingAreaName 6",
+	"AddressRegion": "AddressRegion 6",
+	"RegionName": "RegionName 6",
+	"DigitalAccountName": "DigitalAccountName 6",
+	"InteractionUTCDate": "InteractionUTCDate 6",
+	"InteractionUTCDate_T": "InteractionUTCDate_T 6",
+	"AddressHouseNumber": "AddressHouseNumber 6",
+	"YearQuarter": "YearQuarter 6",
+	"CalendarYear": "CalendarYear 6",
+	"DigitalAccount": "DigitalAccount 6",
+	"MobileNumber": "MobileNumber 6",
+	"NumberOfInteractions": 5629.45,
+	"NumberOfInteractions_F": "NumberOfInteractions_F 6",
+	"NumberOfInteractionContacts": 4082.74,
+	"NumberOfInteractionContacts_F": "NumberOfInteractionContacts_F 6",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%206')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult"
+	},
+	"Parameters": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%206')/Parameters"
+		}
+	},
+	"DigitalAccountTypeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%206')/DigitalAccountTypeDetails"
+		}
+	},
+	"MarketingAreaDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%206')/MarketingAreaDetails"
+		}
+	},
+	"CountryDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%206')/CountryDetails"
+		}
+	},
+	"AddressRegionDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%206')/AddressRegionDetails"
+		}
+	},
+	"GenderCodeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%206')/GenderCodeDetails"
+		}
+	},
+	"ItemOfInterestDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%206')/ItemOfInterestDetails"
+		}
+	}
+}, {
+	"ID": "ID 7",
+	"TotaledProperties": "TotaledProperties 7",
+	"EmailAddress": "EmailAddress 7",
+	"DigitalAccountUUID": "Key 7",
+	"Country": "Country 7",
+	"CountryName": "CountryName 7",
+	"CityName": "CityName 7",
+	"FullName": "FullName 7",
+	"StreetName": "StreetName 7",
+	"YearMonth": "YearMonth 7",
+	"YearWeek": "YearWeek 7",
+	"DigitalAccountType": "DigitalAccountType 7",
+	"DigitalAccountTypeName": "DigitalAccountTypeName 7",
+	"GenderCode": "GenderCode 7",
+	"GenderCodeName": "GenderCodeName 7",
+	"InteractionType": "InteractionType 7",
+	"InteractionTypeName": "InteractionTypeName 7",
+	"ItemOfInterest": "ItemOfInterest 7",
+	"ItemOfInterestName": "ItemOfInterestName 7",
+	"MarketingArea": "MarketingArea 7",
+	"MarketingAreaName": "MarketingAreaName 7",
+	"AddressRegion": "AddressRegion 7",
+	"RegionName": "RegionName 7",
+	"DigitalAccountName": "DigitalAccountName 7",
+	"InteractionUTCDate": "InteractionUTCDate 7",
+	"InteractionUTCDate_T": "InteractionUTCDate_T 7",
+	"AddressHouseNumber": "AddressHouseNumber 7",
+	"YearQuarter": "YearQuarter 7",
+	"CalendarYear": "CalendarYear 7",
+	"DigitalAccount": "DigitalAccount 7",
+	"MobileNumber": "MobileNumber 7",
+	"NumberOfInteractions": 3693.51,
+	"NumberOfInteractions_F": "NumberOfInteractions_F 7",
+	"NumberOfInteractionContacts": 9727.87,
+	"NumberOfInteractionContacts_F": "NumberOfInteractionContacts_F 7",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%207')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult"
+	},
+	"Parameters": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%207')/Parameters"
+		}
+	},
+	"DigitalAccountTypeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%207')/DigitalAccountTypeDetails"
+		}
+	},
+	"MarketingAreaDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%207')/MarketingAreaDetails"
+		}
+	},
+	"CountryDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%207')/CountryDetails"
+		}
+	},
+	"AddressRegionDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%207')/AddressRegionDetails"
+		}
+	},
+	"GenderCodeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%207')/GenderCodeDetails"
+		}
+	},
+	"ItemOfInterestDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%207')/ItemOfInterestDetails"
+		}
+	}
+}, {
+	"ID": "ID 8",
+	"TotaledProperties": "TotaledProperties 8",
+	"EmailAddress": "EmailAddress 8",
+	"DigitalAccountUUID": "Key 8",
+	"Country": "Country 8",
+	"CountryName": "CountryName 8",
+	"CityName": "CityName 8",
+	"FullName": "FullName 8",
+	"StreetName": "StreetName 8",
+	"YearMonth": "YearMonth 8",
+	"YearWeek": "YearWeek 8",
+	"DigitalAccountType": "DigitalAccountType 8",
+	"DigitalAccountTypeName": "DigitalAccountTypeName 8",
+	"GenderCode": "GenderCode 8",
+	"GenderCodeName": "GenderCodeName 8",
+	"InteractionType": "InteractionType 8",
+	"InteractionTypeName": "InteractionTypeName 8",
+	"ItemOfInterest": "ItemOfInterest 8",
+	"ItemOfInterestName": "ItemOfInterestName 8",
+	"MarketingArea": "MarketingArea 8",
+	"MarketingAreaName": "MarketingAreaName 8",
+	"AddressRegion": "AddressRegion 8",
+	"RegionName": "RegionName 8",
+	"DigitalAccountName": "DigitalAccountName 8",
+	"InteractionUTCDate": "InteractionUTCDate 8",
+	"InteractionUTCDate_T": "InteractionUTCDate_T 8",
+	"AddressHouseNumber": "AddressHouseNumber 8",
+	"YearQuarter": "YearQuarter 8",
+	"CalendarYear": "CalendarYear 8",
+	"DigitalAccount": "DigitalAccount 8",
+	"MobileNumber": "MobileNumber 8",
+	"NumberOfInteractions": 8385.79,
+	"NumberOfInteractions_F": "NumberOfInteractions_F 8",
+	"NumberOfInteractionContacts": 2999.59,
+	"NumberOfInteractionContacts_F": "NumberOfInteractionContacts_F 8",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%208')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult"
+	},
+	"Parameters": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%208')/Parameters"
+		}
+	},
+	"DigitalAccountTypeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%208')/DigitalAccountTypeDetails"
+		}
+	},
+	"MarketingAreaDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%208')/MarketingAreaDetails"
+		}
+	},
+	"CountryDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%208')/CountryDetails"
+		}
+	},
+	"AddressRegionDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%208')/AddressRegionDetails"
+		}
+	},
+	"GenderCodeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%208')/GenderCodeDetails"
+		}
+	},
+	"ItemOfInterestDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%208')/ItemOfInterestDetails"
+		}
+	}
+}, {
+	"ID": "ID 9",
+	"TotaledProperties": "TotaledProperties 9",
+	"EmailAddress": "EmailAddress 9",
+	"DigitalAccountUUID": "Key 9",
+	"Country": "Country 9",
+	"CountryName": "CountryName 9",
+	"CityName": "CityName 9",
+	"FullName": "FullName 9",
+	"StreetName": "StreetName 9",
+	"YearMonth": "YearMonth 9",
+	"YearWeek": "YearWeek 9",
+	"DigitalAccountType": "DigitalAccountType 9",
+	"DigitalAccountTypeName": "DigitalAccountTypeName 9",
+	"GenderCode": "GenderCode 9",
+	"GenderCodeName": "GenderCodeName 9",
+	"InteractionType": "InteractionType 9",
+	"InteractionTypeName": "InteractionTypeName 9",
+	"ItemOfInterest": "ItemOfInterest 9",
+	"ItemOfInterestName": "ItemOfInterestName 9",
+	"MarketingArea": "MarketingArea 9",
+	"MarketingAreaName": "MarketingAreaName 9",
+	"AddressRegion": "AddressRegion 9",
+	"RegionName": "RegionName 9",
+	"DigitalAccountName": "DigitalAccountName 9",
+	"InteractionUTCDate": "InteractionUTCDate 9",
+	"InteractionUTCDate_T": "InteractionUTCDate_T 9",
+	"AddressHouseNumber": "AddressHouseNumber 9",
+	"YearQuarter": "YearQuarter 9",
+	"CalendarYear": "CalendarYear 9",
+	"DigitalAccount": "DigitalAccount 9",
+	"MobileNumber": "MobileNumber 9",
+	"NumberOfInteractions": 256.85,
+	"NumberOfInteractions_F": "NumberOfInteractions_F 9",
+	"NumberOfInteractionContacts": 3768.14,
+	"NumberOfInteractionContacts_F": "NumberOfInteractionContacts_F 9",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%209')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult"
+	},
+	"Parameters": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%209')/Parameters"
+		}
+	},
+	"DigitalAccountTypeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%209')/DigitalAccountTypeDetails"
+		}
+	},
+	"MarketingAreaDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%209')/MarketingAreaDetails"
+		}
+	},
+	"CountryDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%209')/CountryDetails"
+		}
+	},
+	"AddressRegionDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%209')/AddressRegionDetails"
+		}
+	},
+	"GenderCodeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%209')/GenderCodeDetails"
+		}
+	},
+	"ItemOfInterestDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%209')/ItemOfInterestDetails"
+		}
+	}
+}, {
+	"ID": "ID 10",
+	"TotaledProperties": "TotaledProperties 10",
+	"EmailAddress": "EmailAddress 10",
+	"DigitalAccountUUID": "Key 10",
+	"Country": "Country 10",
+	"CountryName": "CountryName 10",
+	"CityName": "CityName 10",
+	"FullName": "FullName 10",
+	"StreetName": "StreetName 10",
+	"YearMonth": "YearMonth 10",
+	"YearWeek": "YearWeek 10",
+	"DigitalAccountType": "DigitalAccountType 10",
+	"DigitalAccountTypeName": "DigitalAccountTypeName 10",
+	"GenderCode": "GenderCode 10",
+	"GenderCodeName": "GenderCodeName 10",
+	"InteractionType": "InteractionType 10",
+	"InteractionTypeName": "InteractionTypeName 10",
+	"ItemOfInterest": "ItemOfInterest 10",
+	"ItemOfInterestName": "ItemOfInterestName 10",
+	"MarketingArea": "MarketingArea 10",
+	"MarketingAreaName": "MarketingAreaName 10",
+	"AddressRegion": "AddressRegion 10",
+	"RegionName": "RegionName 10",
+	"DigitalAccountName": "DigitalAccountName 10",
+	"InteractionUTCDate": "InteractionUTCDate 10",
+	"InteractionUTCDate_T": "InteractionUTCDate_T 10",
+	"AddressHouseNumber": "AddressHouseNumber 10",
+	"YearQuarter": "YearQuarter 10",
+	"CalendarYear": "CalendarYear 10",
+	"DigitalAccount": "DigitalAccount 10",
+	"MobileNumber": "MobileNumber 10",
+	"NumberOfInteractions": 4611.87,
+	"NumberOfInteractions_F": "NumberOfInteractions_F 10",
+	"NumberOfInteractionContacts": 8298.57,
+	"NumberOfInteractionContacts_F": "NumberOfInteractionContacts_F 10",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%2010')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult"
+	},
+	"Parameters": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%2010')/Parameters"
+		}
+	},
+	"DigitalAccountTypeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%2010')/DigitalAccountTypeDetails"
+		}
+	},
+	"MarketingAreaDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%2010')/MarketingAreaDetails"
+		}
+	},
+	"CountryDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%2010')/CountryDetails"
+		}
+	},
+	"AddressRegionDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%2010')/AddressRegionDetails"
+		}
+	},
+	"GenderCodeDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%2010')/GenderCodeDetails"
+		}
+	},
+	"ItemOfInterestDetails": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQResults('ID%2010')/ItemOfInterestDetails"
+		}
+	}
+}]

@@ -1,0 +1,71 @@
+[{
+	"MarketingAreaId": "MarketingAreaId 1",
+	"MarketingAreaDescription": "MarketingAreaDescription 1",
+	"__metadata": {
+		"uri": "MarketingAreas('MarketingAreaId 1')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.MarketingArea"
+	}
+}, {
+	"MarketingAreaId": "MarketingAreaId 2",
+	"MarketingAreaDescription": "MarketingAreaDescription 2",
+	"__metadata": {
+		"uri": "MarketingAreas('MarketingAreaId 2')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.MarketingArea"
+	}
+}, {
+	"MarketingAreaId": "MarketingAreaId 3",
+	"MarketingAreaDescription": "MarketingAreaDescription 3",
+	"__metadata": {
+		"uri": "MarketingAreas('MarketingAreaId 3')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.MarketingArea"
+	}
+}, {
+	"MarketingAreaId": "MarketingAreaId 4",
+	"MarketingAreaDescription": "MarketingAreaDescription 4",
+	"__metadata": {
+		"uri": "MarketingAreas('MarketingAreaId 4')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.MarketingArea"
+	}
+}, {
+	"MarketingAreaId": "MarketingAreaId 5",
+	"MarketingAreaDescription": "MarketingAreaDescription 5",
+	"__metadata": {
+		"uri": "MarketingAreas('MarketingAreaId 5')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.MarketingArea"
+	}
+}, {
+	"MarketingAreaId": "MarketingAreaId 6",
+	"MarketingAreaDescription": "MarketingAreaDescription 6",
+	"__metadata": {
+		"uri": "MarketingAreas('MarketingAreaId 6')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.MarketingArea"
+	}
+}, {
+	"MarketingAreaId": "MarketingAreaId 7",
+	"MarketingAreaDescription": "MarketingAreaDescription 7",
+	"__metadata": {
+		"uri": "MarketingAreas('MarketingAreaId 7')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.MarketingArea"
+	}
+}, {
+	"MarketingAreaId": "MarketingAreaId 8",
+	"MarketingAreaDescription": "MarketingAreaDescription 8",
+	"__metadata": {
+		"uri": "MarketingAreas('MarketingAreaId 8')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.MarketingArea"
+	}
+}, {
+	"MarketingAreaId": "MarketingAreaId 9",
+	"MarketingAreaDescription": "MarketingAreaDescription 9",
+	"__metadata": {
+		"uri": "MarketingAreas('MarketingAreaId 9')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.MarketingArea"
+	}
+}, {
+	"MarketingAreaId": "MarketingAreaId 10",
+	"MarketingAreaDescription": "MarketingAreaDescription 10",
+	"__metadata": {
+		"uri": "MarketingAreas('MarketingAreaId 10')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.MarketingArea"
+	}
+}]

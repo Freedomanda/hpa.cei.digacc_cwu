@@ -1,0 +1,341 @@
+[{
+	"Date": "/Date(1359700905000)/",
+	"NewSubscriberCount": 1343,
+	"NewUnSubscriberCount": 1032,
+	"NetNewSubscriberCount": 4104,
+	"MemberCount": 2008,
+	"DigitalAccountKey": "Key 1",
+	"Key": "Key 1",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key 1')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key 1')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1184827305000)/",
+	"NewSubscriberCount": 4176,
+	"NewUnSubscriberCount": 6541,
+	"NetNewSubscriberCount": 7545,
+	"MemberCount": 863,
+	"DigitalAccountKey": "Key 2",
+	"Key": "Key 2",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key 2')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key 2')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1572331305000)/",
+	"NewSubscriberCount": 4602,
+	"NewUnSubscriberCount": 4402,
+	"NetNewSubscriberCount": 727,
+	"MemberCount": 5700,
+	"DigitalAccountKey": "Key 3",
+	"Key": "Key 3",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key 3')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key 3')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1530600105000)/",
+	"NewSubscriberCount": 7074,
+	"NewUnSubscriberCount": 5027,
+	"NetNewSubscriberCount": 199,
+	"MemberCount": 9485,
+	"DigitalAccountKey": "Key 4",
+	"Key": "Key 4",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key 4')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key 4')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1451198505000)/",
+	"NewSubscriberCount": 2240,
+	"NewUnSubscriberCount": 333,
+	"NetNewSubscriberCount": 8736,
+	"MemberCount": 7598,
+	"DigitalAccountKey": "Key 5",
+	"Key": "Key 5",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key 5')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key 5')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(983083305000)/",
+	"NewSubscriberCount": 2724,
+	"NewUnSubscriberCount": 9724,
+	"NetNewSubscriberCount": 9889,
+	"MemberCount": 3646,
+	"DigitalAccountKey": "Key 6",
+	"Key": "Key 6",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key 6')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key 6')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1123483305000)/",
+	"NewSubscriberCount": 9058,
+	"NewUnSubscriberCount": 9063,
+	"NetNewSubscriberCount": 1214,
+	"MemberCount": 9581,
+	"DigitalAccountKey": "Key 7",
+	"Key": "Key 7",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key 7')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key 7')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1388126505000)/",
+	"NewSubscriberCount": 3620,
+	"NewUnSubscriberCount": 4610,
+	"NetNewSubscriberCount": 7185,
+	"MemberCount": 7153,
+	"DigitalAccountKey": "Key 8",
+	"Key": "Key 8",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key 8')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key 8')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1298443305000)/",
+	"NewSubscriberCount": 5931,
+	"NewUnSubscriberCount": 8791,
+	"NetNewSubscriberCount": 1853,
+	"MemberCount": 4085,
+	"DigitalAccountKey": "Key 9",
+	"Key": "Key 9",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key 9')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key 9')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1210056105000)/",
+	"NewSubscriberCount": 5865,
+	"NewUnSubscriberCount": 5366,
+	"NetNewSubscriberCount": 6437,
+	"MemberCount": 6261,
+	"DigitalAccountKey": "Key 10",
+	"Key": "Key 10",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key 10')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key 10')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1378520523000)/",
+	"NewSubscriberCount": 6923,
+	"NewUnSubscriberCount": 1255,
+	"NetNewSubscriberCount": 6465,
+	"MemberCount": 2720,
+	"DigitalAccountKey": "Key 1",
+	"Key": "Key 1",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key%201')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key%201')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1495333323000)/",
+	"NewSubscriberCount": 4367,
+	"NewUnSubscriberCount": 1314,
+	"NetNewSubscriberCount": 2669,
+	"MemberCount": 2759,
+	"DigitalAccountKey": "Key 2",
+	"Key": "Key 2",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key%202')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key%202')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1307154123000)/",
+	"NewSubscriberCount": 1055,
+	"NewUnSubscriberCount": 2499,
+	"NetNewSubscriberCount": 5038,
+	"MemberCount": 222,
+	"DigitalAccountKey": "Key 3",
+	"Key": "Key 3",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key%203')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key%203')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1263867723000)/",
+	"NewSubscriberCount": 3249,
+	"NewUnSubscriberCount": 4613,
+	"NetNewSubscriberCount": 3794,
+	"MemberCount": 2978,
+	"DigitalAccountKey": "Key 4",
+	"Key": "Key 4",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key%204')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key%204')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1257992523000)/",
+	"NewSubscriberCount": 9042,
+	"NewUnSubscriberCount": 7246,
+	"NetNewSubscriberCount": 8473,
+	"MemberCount": 2515,
+	"DigitalAccountKey": "Key 5",
+	"Key": "Key 5",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key%205')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key%205')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1504491723000)/",
+	"NewSubscriberCount": 4706,
+	"NewUnSubscriberCount": 4326,
+	"NetNewSubscriberCount": 3408,
+	"MemberCount": 9560,
+	"DigitalAccountKey": "Key 6",
+	"Key": "Key 6",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key%206')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key%206')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1014949323000)/",
+	"NewSubscriberCount": 5082,
+	"NewUnSubscriberCount": 3766,
+	"NetNewSubscriberCount": 1378,
+	"MemberCount": 3169,
+	"DigitalAccountKey": "Key 7",
+	"Key": "Key 7",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key%207')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key%207')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1576376523000)/",
+	"NewSubscriberCount": 4494,
+	"NewUnSubscriberCount": 5235,
+	"NetNewSubscriberCount": 8062,
+	"MemberCount": 3004,
+	"DigitalAccountKey": "Key 8",
+	"Key": "Key 8",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key%208')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key%208')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1399429323000)/",
+	"NewSubscriberCount": 7269,
+	"NewUnSubscriberCount": 9552,
+	"NetNewSubscriberCount": 5600,
+	"MemberCount": 3781,
+	"DigitalAccountKey": "Key 9",
+	"Key": "Key 9",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key%209')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key%209')/DigitalAccountDaContactAnaly"
+		}
+	}
+}, {
+	"Date": "/Date(1221963723000)/",
+	"NewSubscriberCount": 7868,
+	"NewUnSubscriberCount": 4756,
+	"NetNewSubscriberCount": 7910,
+	"MemberCount": 6248,
+	"DigitalAccountKey": "Key 10",
+	"Key": "Key 10",
+	"__metadata": {
+		"uri": "SubscriberAnalysis('Key%2010')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis"
+	},
+	"DigitalAccountDaContactAnaly": {
+		"__deferred": {
+			"uri": "SubscriberAnalysis('Key%2010')/DigitalAccountDaContactAnaly"
+		}
+	}
+}]

@@ -1,0 +1,141 @@
+[{
+	"P_StartDate": "/Date(1391243243000)/",
+	"P_StartDateText": "P_StartDateText 1",
+	"P_EndDate": "/Date(1076228843000)/",
+	"P_EndDateText": "P_EndDateText 1",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2014-02-01T08%3A27%3A23',P_EndDate=datetime'2004-02-08T08%3A27%3A23')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQParameters"
+	},
+	"Results": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2014-02-01T08%3A27%3A23',P_EndDate=datetime'2004-02-08T08%3A27%3A23')/Results"
+		}
+	}
+}, {
+	"P_StartDate": "/Date(1399278443000)/",
+	"P_StartDateText": "P_StartDateText 2",
+	"P_EndDate": "/Date(1490603243000)/",
+	"P_EndDateText": "P_EndDateText 2",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2014-05-05T08%3A27%3A23',P_EndDate=datetime'2017-03-27T08%3A27%3A23')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQParameters"
+	},
+	"Results": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2014-05-05T08%3A27%3A23',P_EndDate=datetime'2017-03-27T08%3A27%3A23')/Results"
+		}
+	}
+}, {
+	"P_StartDate": "/Date(1529224043000)/",
+	"P_StartDateText": "P_StartDateText 3",
+	"P_EndDate": "/Date(1216369643000)/",
+	"P_EndDateText": "P_EndDateText 3",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2018-06-17T08%3A27%3A23',P_EndDate=datetime'2008-07-18T08%3A27%3A23')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQParameters"
+	},
+	"Results": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2018-06-17T08%3A27%3A23',P_EndDate=datetime'2008-07-18T08%3A27%3A23')/Results"
+		}
+	}
+}, {
+	"P_StartDate": "/Date(997604843000)/",
+	"P_StartDateText": "P_StartDateText 4",
+	"P_EndDate": "/Date(1542616043000)/",
+	"P_EndDateText": "P_EndDateText 4",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2001-08-12T08%3A27%3A23',P_EndDate=datetime'2018-11-19T08%3A27%3A23')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQParameters"
+	},
+	"Results": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2001-08-12T08%3A27%3A23',P_EndDate=datetime'2018-11-19T08%3A27%3A23')/Results"
+		}
+	}
+}, {
+	"P_StartDate": "/Date(1252398443000)/",
+	"P_StartDateText": "P_StartDateText 5",
+	"P_EndDate": "/Date(1350289643000)/",
+	"P_EndDateText": "P_EndDateText 5",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2009-09-08T08%3A27%3A23',P_EndDate=datetime'2012-10-15T08%3A27%3A23')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQParameters"
+	},
+	"Results": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2009-09-08T08%3A27%3A23',P_EndDate=datetime'2012-10-15T08%3A27%3A23')/Results"
+		}
+	}
+}, {
+	"P_StartDate": "/Date(1295080043000)/",
+	"P_StartDateText": "P_StartDateText 6",
+	"P_EndDate": "/Date(1183710443000)/",
+	"P_EndDateText": "P_EndDateText 6",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2011-01-15T08%3A27%3A23',P_EndDate=datetime'2007-07-06T08%3A27%3A23')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQParameters"
+	},
+	"Results": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2011-01-15T08%3A27%3A23',P_EndDate=datetime'2007-07-06T08%3A27%3A23')/Results"
+		}
+	}
+}, {
+	"P_StartDate": "/Date(959934443000)/",
+	"P_StartDateText": "P_StartDateText 7",
+	"P_EndDate": "/Date(1081758443000)/",
+	"P_EndDateText": "P_EndDateText 7",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2000-06-02T08%3A27%3A23',P_EndDate=datetime'2004-04-12T08%3A27%3A23')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQParameters"
+	},
+	"Results": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2000-06-02T08%3A27%3A23',P_EndDate=datetime'2004-04-12T08%3A27%3A23')/Results"
+		}
+	}
+}, {
+	"P_StartDate": "/Date(1369816043000)/",
+	"P_StartDateText": "P_StartDateText 8",
+	"P_EndDate": "/Date(1522744043000)/",
+	"P_EndDateText": "P_EndDateText 8",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2013-05-29T08%3A27%3A23',P_EndDate=datetime'2018-04-03T08%3A27%3A23')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQParameters"
+	},
+	"Results": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2013-05-29T08%3A27%3A23',P_EndDate=datetime'2018-04-03T08%3A27%3A23')/Results"
+		}
+	}
+}, {
+	"P_StartDate": "/Date(1456820843000)/",
+	"P_StartDateText": "P_StartDateText 9",
+	"P_EndDate": "/Date(1424593643000)/",
+	"P_EndDateText": "P_EndDateText 9",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2016-03-01T08%3A27%3A23',P_EndDate=datetime'2015-02-22T08%3A27%3A23')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQParameters"
+	},
+	"Results": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2016-03-01T08%3A27%3A23',P_EndDate=datetime'2015-02-22T08%3A27%3A23')/Results"
+		}
+	}
+}, {
+	"P_StartDate": "/Date(1214123243000)/",
+	"P_StartDateText": "P_StartDateText 10",
+	"P_EndDate": "/Date(1322468843000)/",
+	"P_EndDateText": "P_EndDateText 10",
+	"__metadata": {
+		"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2008-06-22T08%3A27%3A23',P_EndDate=datetime'2011-11-28T08%3A27%3A23')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQParameters"
+	},
+	"Results": {
+		"__deferred": {
+			"uri": "C_MKT_DGTLACCTINTACTNQ(P_StartDate=datetime'2008-06-22T08%3A27%3A23',P_EndDate=datetime'2011-11-28T08%3A27%3A23')/Results"
+		}
+	}
+}]

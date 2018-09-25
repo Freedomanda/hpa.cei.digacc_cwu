@@ -1,0 +1,39 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<ViewSettingsDialog id="accountCreateViewSetting" confirm="onFilterConfirm" sortDescending="true" title="{i18n>accountFilterDialogTitle}">
+		<filterItems>
+			<ViewSettingsCustomItem id="accountFilterId" key="DigaccId" text="{i18n>accountListFilterId}">
+				<customControl>
+					<Label id="accountFilterIdLabel" text="{i18n>accountListFilterId}" labelFor="accountFilterIdInput"/>
+					<Input id="accountFilterIdInput"/>
+				</customControl>
+			</ViewSettingsCustomItem>
+			<ViewSettingsCustomItem key="DigaccDesc" text="{i18n>accountListFilterDesc}">
+				<customControl>
+					<Label id="accountFilterDescLabel" text="{i18n>accountListFilterDesc}" labelFor="accountFilterDeInput"/>
+					<Input id="accountFilterDeInput"/>
+				</customControl>
+			</ViewSettingsCustomItem>
+			<ViewSettingsFilterItem key="StatusCode" text="{i18n>accountListFilterStatus}">
+				<items>
+					<ViewSettingsItem key="1" text="{i18n>inPreparationItem}"/>
+					<ViewSettingsItem key="2" text="{i18n>activeItem}"/>
+					<ViewSettingsItem key="3" text="{i18n>inactiveItem}"/>
+				</items>
+			</ViewSettingsFilterItem>
+			<!--<ViewSettingsCustomItem  key="StatusCode"-->
+			<!--	text="{i18n>accountListFilterStatus}">-->
+			<!--	<customControl>-->
+			<!--	<Label id="accountFilterStatusLabel" text="{i18n>accountListFilterStatus}" labelFor="accountFilterStatusInput"/>-->
+			<!--	<Input id="accountFilterStatusInput" /> -->
+			<!--	</customControl>-->
+			<!--</ViewSettingsCustomItem>-->
+		</filterItems>
+		<sortItems>
+			<ViewSettingsItem text="{i18n>accountListSortName}" key="DigaccName" selected="true"/>
+			<ViewSettingsItem text="{i18n>accountListSortId}" key="DigaccId"/>
+			<ViewSettingsItem text="{i18n>accountListSortTotal}" key="MemberCount"/>
+			<ViewSettingsItem text="{i18n>accountListSortMonth}" key="Rate"/>
+			<ViewSettingsItem text="{i18n>accountListSortNew}" key="NewSubscriberCount"/>
+		</sortItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

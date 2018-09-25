@@ -1,0 +1,45 @@
+[{
+	"Tooltip": "test1",
+	"Sequence": "1",
+	"AttributeLabel": "test",
+	"IsMandatory": "X",
+	"MaxLength": "100",
+	"IsVisible": "X",
+	"IsSecure": "X",
+	"CommunicationMedium": "WEC",
+	"AttributeName": "test"
+},
+{
+	"Tooltip": "test2",
+	"Sequence": "2",
+	"AttributeLabel": "test",
+	"IsMandatory": "",
+	"MaxLength": "100",
+	"IsVisible": "X",
+	"IsSecure": "X",
+	"CommunicationMedium": "WEC",
+	"AttributeName": "test"
+},
+{
+	"Tooltip": "test3",
+	"Sequence": "3",
+	"AttributeLabel": "test",
+	"IsMandatory": "X",
+	"MaxLength": "100",
+	"IsVisible": "",
+	"IsSecure": "X",
+	"CommunicationMedium": "WEC",
+	"AttributeName": "test"
+},
+{
+	"Tooltip": "test4",
+	"Sequence": "4",
+	"AttributeLabel": "test",
+	"IsMandatory": "X",
+	"MaxLength": "100",
+	"IsVisible": "X",
+	"IsSecure": "",
+	"CommunicationMedium": "WEC",
+	"AttributeName": "test"
+}
+]

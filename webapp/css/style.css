@@ -1,0 +1,10 @@
+.custom-long-tile {
+    width: 25rem;
+    height: 7.0rem;
+    outline: none;
+    cursor: pointer;
+} 
+
+.cursorPointer {
+    cursor: pointer;
+}

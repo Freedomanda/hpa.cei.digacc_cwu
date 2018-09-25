@@ -1,0 +1,56 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<ViewSettingsDialog confirm="onFilterSortConfirm" sortDescending="true" title="{i18n>contactFilterSortDialogTitle}">
+		<filterItems>
+			<ViewSettingsCustomItem id="contactFilterId"  key="ContactName"
+				text="{i18n>contactListFilterName}">
+				<customControl>
+				<Label id="contactFilterNameLabel" text="{i18n>contactListFilterName}" labelFor="contactFilterNameInput"/>
+				<Input id="contactFilterNameInput" /> 
+				</customControl>
+			</ViewSettingsCustomItem>
+				<ViewSettingsCustomItem  key="SubscriberName"
+				text="{i18n>contactListFilterWeName}">
+				<customControl>
+				<Label id="contactFilterWeNameLabel" text="{i18n>contactListFilterWeName}" labelFor="contactFilterWeNameInput"/>
+				<Input id="contactFilterWeNameInput" /> 
+				</customControl>
+			</ViewSettingsCustomItem>
+			<ViewSettingsCustomItem  key="MobilePhoneNumner"
+				text="{i18n>contactListFilterMobile}">
+				<customControl>
+				<Label id="contactFilterMobileLabel" text="{i18n>contactListFilterMobile}" labelFor="contactFilterMobileInput"/>
+				<Input id="contactFilterMobileInput" /> 
+				</customControl>
+			</ViewSettingsCustomItem>
+				<ViewSettingsCustomItem  key="CountryDescription"
+				text="{i18n>contactListFilterCountry}">
+				<customControl>
+				<Label id="contactFilterCountryLabel" text="{i18n>contactListFilterCountry}" labelFor="contactFilterCountryInput"/>
+				<Input id="contactFilterCountryInput" /> 
+				</customControl>
+			</ViewSettingsCustomItem>
+				<ViewSettingsCustomItem  key="RegionDescription"
+				text="{i18n>contactListFilterRegion}">
+				<customControl>
+				<Label id="contactFilterRegionLabel" text="{i18n>contactListFilterRegion}" labelFor="contactFilterRegionInput"/>
+				<Input id="contactFilterRegionInput" /> 
+				</customControl>
+			</ViewSettingsCustomItem>
+				<ViewSettingsCustomItem  key="City"
+				text="{i18n>contactListFilterCity}">
+				<customControl>
+				<Label id="contactFilterCityLabel" text="{i18n>contactListFilterCity}" labelFor="contactFilterCityInput"/>
+				<Input id="contactFilterCityInput" /> 
+				</customControl>
+			</ViewSettingsCustomItem>
+		</filterItems>
+			<sortItems>
+			<ViewSettingsItem text="{i18n>contactListSortName}" key="ContactName" selected="true"/>
+				<ViewSettingsItem text="{i18n>contactListWechatName}" key="SubscriberName" />
+			<ViewSettingsItem text="{i18n>contactListSortMobile}" key="MobilePhoneNumner"/>
+			<ViewSettingsItem text="{i18n>contactListSortCountry}" key="CountryDescription"/>
+			<ViewSettingsItem text="{i18n>contactListSortRegion}" key="RegionDescription"/>
+			    	<ViewSettingsItem text="{i18n>contactListSortCity}" key="City"/>
+		</sortItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

@@ -1,0 +1,17 @@
+[{
+	"Count": 12,
+	"CommMedium": "WEC",
+	"CommMediumDesc": "WECHAT",
+	"Key": "1",
+	"Type": " ",
+	"CommMediumIcon": " ",
+	"CREA_UNAME": " "
+}, {
+	"Key": "2",
+	"Count": 20,
+	"CommMedium": "LINE",
+	"CommMediumDesc": "LINE",
+	"Type": " ",
+	"CommMediumIcon": " ",
+	"CREA_UNAME": " "
+}]

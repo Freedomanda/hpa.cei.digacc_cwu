@@ -1,0 +1,121 @@
+[{
+	"InteractionTypeCode": "InteractionTypeCode 1",
+	"InteractionTypeDescription": "InteractionTypeDescription 1",
+	"InteractionCount": 394,
+	"ContactCount": 2252,
+	"DigitalAccountKey": "Key 1",
+	"Date": "/Date(1285915302000)/",
+	"Key": "Key 1",
+	"__metadata": {
+		"uri": "InteractionAnalysis('Key 1')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionAnalysis"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 2",
+	"InteractionTypeDescription": "InteractionTypeDescription 2",
+	"InteractionCount": 6253,
+	"ContactCount": 313,
+	"DigitalAccountKey": "Key 2",
+	"Date": "/Date(1288766502000)/",
+	"Key": "Key 2",
+	"__metadata": {
+		"uri": "InteractionAnalysis('Key 2')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionAnalysis"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 3",
+	"InteractionTypeDescription": "InteractionTypeDescription 3",
+	"InteractionCount": 7736,
+	"ContactCount": 4519,
+	"DigitalAccountKey": "Key 3",
+	"Date": "/Date(1168497702000)/",
+	"Key": "Key 3",
+	"__metadata": {
+		"uri": "InteractionAnalysis('Key 3')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionAnalysis"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 4",
+	"InteractionTypeDescription": "InteractionTypeDescription 4",
+	"InteractionCount": 6930,
+	"ContactCount": 8296,
+	"DigitalAccountKey": "Key 4",
+	"Date": "/Date(974097702000)/",
+	"Key": "Key 4",
+	"__metadata": {
+		"uri": "InteractionAnalysis('Key 4')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionAnalysis"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 5",
+	"InteractionTypeDescription": "InteractionTypeDescription 5",
+	"InteractionCount": 5610,
+	"ContactCount": 4664,
+	"DigitalAccountKey": "Key 5",
+	"Date": "/Date(1173336102000)/",
+	"Key": "Key 5",
+	"__metadata": {
+		"uri": "InteractionAnalysis('Key 5')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionAnalysis"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 6",
+	"InteractionTypeDescription": "InteractionTypeDescription 6",
+	"InteractionCount": 404,
+	"ContactCount": 9994,
+	"DigitalAccountKey": "Key 6",
+	"Date": "/Date(1301553702000)/",
+	"Key": "Key 6",
+	"__metadata": {
+		"uri": "InteractionAnalysis('Key 6')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionAnalysis"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 7",
+	"InteractionTypeDescription": "InteractionTypeDescription 7",
+	"InteractionCount": 1882,
+	"ContactCount": 8750,
+	"DigitalAccountKey": "Key 7",
+	"Date": "/Date(1549867302000)/",
+	"Key": "Key 7",
+	"__metadata": {
+		"uri": "InteractionAnalysis('Key 7')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionAnalysis"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 8",
+	"InteractionTypeDescription": "InteractionTypeDescription 8",
+	"InteractionCount": 4829,
+	"ContactCount": 8745,
+	"DigitalAccountKey": "Key 8",
+	"Date": "/Date(1332484902000)/",
+	"Key": "Key 8",
+	"__metadata": {
+		"uri": "InteractionAnalysis('Key 8')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionAnalysis"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 9",
+	"InteractionTypeDescription": "InteractionTypeDescription 9",
+	"InteractionCount": 9731,
+	"ContactCount": 8326,
+	"DigitalAccountKey": "Key 9",
+	"Date": "/Date(1387521702000)/",
+	"Key": "Key 9",
+	"__metadata": {
+		"uri": "InteractionAnalysis('Key 9')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionAnalysis"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 10",
+	"InteractionTypeDescription": "InteractionTypeDescription 10",
+	"InteractionCount": 8730,
+	"ContactCount": 3578,
+	"DigitalAccountKey": "Key 10",
+	"Date": "/Date(1156660902000)/",
+	"Key": "Key 10",
+	"__metadata": {
+		"uri": "InteractionAnalysis('Key 10')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionAnalysis"
+	}
+}]

@@ -1,0 +1,71 @@
+[{
+	"SystemTypeName": "SystemTypeName 1",
+	"SystemTypeCode": "SystemTypeCode 1",
+	"__metadata": {
+		"uri": "SystemTypeSet('SystemTypeCode%201')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SystemType"
+	}
+}, {
+	"SystemTypeName": "SystemTypeName 2",
+	"SystemTypeCode": "SystemTypeCode 2",
+	"__metadata": {
+		"uri": "SystemTypeSet('SystemTypeCode%202')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SystemType"
+	}
+}, {
+	"SystemTypeName": "SystemTypeName 3",
+	"SystemTypeCode": "SystemTypeCode 3",
+	"__metadata": {
+		"uri": "SystemTypeSet('SystemTypeCode%203')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SystemType"
+	}
+}, {
+	"SystemTypeName": "SystemTypeName 4",
+	"SystemTypeCode": "SystemTypeCode 4",
+	"__metadata": {
+		"uri": "SystemTypeSet('SystemTypeCode%204')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SystemType"
+	}
+}, {
+	"SystemTypeName": "SystemTypeName 5",
+	"SystemTypeCode": "SystemTypeCode 5",
+	"__metadata": {
+		"uri": "SystemTypeSet('SystemTypeCode%205')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SystemType"
+	}
+}, {
+	"SystemTypeName": "SystemTypeName 6",
+	"SystemTypeCode": "SystemTypeCode 6",
+	"__metadata": {
+		"uri": "SystemTypeSet('SystemTypeCode%206')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SystemType"
+	}
+}, {
+	"SystemTypeName": "SystemTypeName 7",
+	"SystemTypeCode": "SystemTypeCode 7",
+	"__metadata": {
+		"uri": "SystemTypeSet('SystemTypeCode%207')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SystemType"
+	}
+}, {
+	"SystemTypeName": "SystemTypeName 8",
+	"SystemTypeCode": "SystemTypeCode 8",
+	"__metadata": {
+		"uri": "SystemTypeSet('SystemTypeCode%208')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SystemType"
+	}
+}, {
+	"SystemTypeName": "SystemTypeName 9",
+	"SystemTypeCode": "SystemTypeCode 9",
+	"__metadata": {
+		"uri": "SystemTypeSet('SystemTypeCode%209')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SystemType"
+	}
+}, {
+	"SystemTypeName": "SystemTypeName 10",
+	"SystemTypeCode": "SystemTypeCode 10",
+	"__metadata": {
+		"uri": "SystemTypeSet('SystemTypeCode%2010')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.SystemType"
+	}
+}]

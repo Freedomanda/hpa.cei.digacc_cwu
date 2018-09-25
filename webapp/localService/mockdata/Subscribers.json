@@ -1,0 +1,171 @@
+[{
+	"Key": "Key 1",
+	"ContactName": "ContactName 1",
+	"SubscriberName": "SubscriberName 1",
+	"MobilePhoneNumner": "MobilePhoneNumner 1",
+	"CountryCode": "CountryCode 1",
+	"CountryDescription": "CountryDescription 1",
+	"RegionCode": "RegionCode 1",
+	"RegionDescription": "RegionDescription 1",
+	"City": "City 1",
+	"Email": "Email 1",
+	"Street": "Street 1",
+	"HouseNumber": "HouseNumber 1",
+	"__metadata": {
+		"uri": "Subscribers('Key 1')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Subscriber"
+	}
+}, {
+	"Key": "Key 2",
+	"ContactName": "ContactName 2",
+	"SubscriberName": "SubscriberName 2",
+	"MobilePhoneNumner": "MobilePhoneNumner 2",
+	"CountryCode": "CountryCode 2",
+	"CountryDescription": "CountryDescription 2",
+	"RegionCode": "RegionCode 2",
+	"RegionDescription": "RegionDescription 2",
+	"City": "City 2",
+	"Email": "Email 2",
+	"Street": "Street 2",
+	"HouseNumber": "HouseNumber 2",
+	"__metadata": {
+		"uri": "Subscribers('Key 2')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Subscriber"
+	}
+}, {
+	"Key": "Key 3",
+	"ContactName": "ContactName 3",
+	"SubscriberName": "SubscriberName 3",
+	"MobilePhoneNumner": "MobilePhoneNumner 3",
+	"CountryCode": "CountryCode 3",
+	"CountryDescription": "CountryDescription 3",
+	"RegionCode": "RegionCode 3",
+	"RegionDescription": "RegionDescription 3",
+	"City": "City 3",
+	"Email": "Email 3",
+	"Street": "Street 3",
+	"HouseNumber": "HouseNumber 3",
+	"__metadata": {
+		"uri": "Subscribers('Key 3')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Subscriber"
+	}
+}, {
+	"Key": "Key 4",
+	"ContactName": "ContactName 4",
+	"SubscriberName": "SubscriberName 4",
+	"MobilePhoneNumner": "MobilePhoneNumner 4",
+	"CountryCode": "CountryCode 4",
+	"CountryDescription": "CountryDescription 4",
+	"RegionCode": "RegionCode 4",
+	"RegionDescription": "RegionDescription 4",
+	"City": "City 4",
+	"Email": "Email 4",
+	"Street": "Street 4",
+	"HouseNumber": "HouseNumber 4",
+	"__metadata": {
+		"uri": "Subscribers('Key 4')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Subscriber"
+	}
+}, {
+	"Key": "Key 5",
+	"ContactName": "ContactName 5",
+	"SubscriberName": "SubscriberName 5",
+	"MobilePhoneNumner": "MobilePhoneNumner 5",
+	"CountryCode": "CountryCode 5",
+	"CountryDescription": "CountryDescription 5",
+	"RegionCode": "RegionCode 5",
+	"RegionDescription": "RegionDescription 5",
+	"City": "City 5",
+	"Email": "Email 5",
+	"Street": "Street 5",
+	"HouseNumber": "HouseNumber 5",
+	"__metadata": {
+		"uri": "Subscribers('Key 5')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Subscriber"
+	}
+}, {
+	"Key": "Key 6",
+	"ContactName": "ContactName 6",
+	"SubscriberName": "SubscriberName 6",
+	"MobilePhoneNumner": "MobilePhoneNumner 6",
+	"CountryCode": "CountryCode 6",
+	"CountryDescription": "CountryDescription 6",
+	"RegionCode": "RegionCode 6",
+	"RegionDescription": "RegionDescription 6",
+	"City": "City 6",
+	"Email": "Email 6",
+	"Street": "Street 6",
+	"HouseNumber": "HouseNumber 6",
+	"__metadata": {
+		"uri": "Subscribers('Key 6')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Subscriber"
+	}
+}, {
+	"Key": "Key 7",
+	"ContactName": "ContactName 7",
+	"SubscriberName": "SubscriberName 7",
+	"MobilePhoneNumner": "MobilePhoneNumner 7",
+	"CountryCode": "CountryCode 7",
+	"CountryDescription": "CountryDescription 7",
+	"RegionCode": "RegionCode 7",
+	"RegionDescription": "RegionDescription 7",
+	"City": "City 7",
+	"Email": "Email 7",
+	"Street": "Street 7",
+	"HouseNumber": "HouseNumber 7",
+	"__metadata": {
+		"uri": "Subscribers('Key 7')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Subscriber"
+	}
+}, {
+	"Key": "Key 8",
+	"ContactName": "ContactName 8",
+	"SubscriberName": "SubscriberName 8",
+	"MobilePhoneNumner": "MobilePhoneNumner 8",
+	"CountryCode": "CountryCode 8",
+	"CountryDescription": "CountryDescription 8",
+	"RegionCode": "RegionCode 8",
+	"RegionDescription": "RegionDescription 8",
+	"City": "City 8",
+	"Email": "Email 8",
+	"Street": "Street 8",
+	"HouseNumber": "HouseNumber 8",
+	"__metadata": {
+		"uri": "Subscribers('Key 8')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Subscriber"
+	}
+}, {
+	"Key": "Key 9",
+	"ContactName": "ContactName 9",
+	"SubscriberName": "SubscriberName 9",
+	"MobilePhoneNumner": "MobilePhoneNumner 9",
+	"CountryCode": "CountryCode 9",
+	"CountryDescription": "CountryDescription 9",
+	"RegionCode": "RegionCode 9",
+	"RegionDescription": "RegionDescription 9",
+	"City": "City 9",
+	"Email": "Email 9",
+	"Street": "Street 9",
+	"HouseNumber": "HouseNumber 9",
+	"__metadata": {
+		"uri": "Subscribers('Key 9')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Subscriber"
+	}
+}, {
+	"Key": "Key 10",
+	"ContactName": "ContactName 10",
+	"SubscriberName": "SubscriberName 10",
+	"MobilePhoneNumner": "MobilePhoneNumner 10",
+	"CountryCode": "CountryCode 10",
+	"CountryDescription": "CountryDescription 10",
+	"RegionCode": "RegionCode 10",
+	"RegionDescription": "RegionDescription 10",
+	"City": "City 10",
+	"Email": "Email 10",
+	"Street": "Street 10",
+	"HouseNumber": "HouseNumber 10",
+	"__metadata": {
+		"uri": "Subscribers('Key 10')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.Subscriber"
+	}
+}]

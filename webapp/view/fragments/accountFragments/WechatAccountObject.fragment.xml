@@ -1,0 +1,67 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:footerbar="sap.ushell.ui.footerbar" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.m.semantic" xmlns:m="sap.m" xmlns:filterbar="sap.ui.comp.filterbar" xmlns:viz="sap.viz.ui5.controls"
+	xmlns:coms="sap.suite.ui.commons" xmlns:viz.data="sap.viz.ui5.data" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns="sap.uxap"
+	xmlns:layout="sap.ui.layout" xmlns:smartForm="sap.ui.comp.smartform" xmlns:smartField="sap.ui.comp.smartfield"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<ObjectPageSubSection id="ObjectPageSubSectionCredential" title="{i18n>additionalField}" tooltip="{i18n>credential}">
+								<!--<actions>-->
+								<!--	<m:Button text="{i18n>editButton}" visible="{objectView>/crenormalmode}" type="Transparent" press="onCredentialEditPress"/>-->
+								<!--	<m:Button visible="{objectView>/creeditmode}" text="{i18n>saveButton}" type="Transparent" press="onCredentialSavePress"/>-->
+								<!--	<m:Button visible="{objectView>/creeditmode}" text="{i18n>cancelButton}" type="Transparent" press="onCredentialCancelPress"/>-->
+								<!--</actions>-->
+								<blocks>
+									<smartForm:SmartForm id="ObjectPageInfoCredentialSmartForm"  editable="true" editTogglable="false" flexEnabled="true">
+										<smartForm:Group id="tokenGroup">
+											
+											<smartForm:GroupElement id="hsTokenGroupElement">
+												<layout:VerticalLayout>
+												<m:Label id="hsTokenLabel" text="{i18n>hsToken}" labelFor="hsTokenInput"/>
+												<smartField:SmartField id="hsTokenInput" value="{InboundToken}" contextEditable="{objectView>/basiceditmode}"  maxLength="255"/>
+												<m:Text/>
+													</layout:VerticalLayout>
+											</smartForm:GroupElement>
+											<smartForm:GroupElement id="orignalIdGroupElement">
+													<layout:VerticalLayout>
+												<m:Label id="orignalIdLabel" text="{i18n>originalId}" labelFor="originalIdInput"/>
+												<smartField:SmartField id="originalIdInput" value="{DigaccTechnicalId}" contextEditable="{objectView>/basiceditmode}" maxLength="50"/>
+											</layout:VerticalLayout>
+											</smartForm:GroupElement>
+										</smartForm:Group>
+										<smartForm:Group id="credentialGroup">
+											<smartForm:GroupElement id="appIdGroupElement">
+													<layout:VerticalLayout>
+												<m:Label id="appIdLabel" text="{i18n>appId}" labelFor="appIdInput" />
+												<smartField:SmartField id="appIdInput" value="{ApiUserId}"  editable="true" contextEditable="{objectView>/basiceditmode}" maxLength="50"
+													/>
+											<m:Text/>
+													</layout:VerticalLayout>
+											</smartForm:GroupElement>
+											<smartForm:GroupElement id="securityIdGroupElement">
+												<layout:VerticalLayout>
+												<m:Label id="securityIdLabel" text="{i18n>securityId}" labelFor="securityIdInput" />
+												<smartField:SmartField id="securityIdInput" value="{ApiUserPassword}"  editable="true" contextEditable="{objectView>/basiceditmode}" maxLength="50"
+												/>
+														</layout:VerticalLayout>
+											</smartForm:GroupElement>
+											<!--<smartForm:GroupElement id="commArrGroupElement">-->
+											<!--		<layout:VerticalLayout>-->
+											<!--	<m:Label id="commArrLabel" text="{i18n>createAccountCommArrange}" labelFor="commArrInput" visible="{objectView>/isCloud}"/>-->
+											<!--	<m:Select id="commArrInput" selectedKey="{CAUUID}" visible="{objectView>/isCloud}"-->
+											<!--		items="{path: 'CAWithNoneModel>/CAList' }" enabled="{objectView>/basiceditmode}">-->
+											<!--		<core:Item key="{CAWithNoneModel>CommArrgmtUUID}" text="{CAWithNoneModel>CommArrgmtName}" enabled="{CAWithNoneModel>BindStatus}"/>-->
+											<!--	</m:Select>-->
+											<!--		</layout:VerticalLayout>-->
+											<!--</smartForm:GroupElement>-->
+										</smartForm:Group>
+										<smartForm:Group id="urlGroup">
+											<smartForm:GroupElement id="ServerUrlGroupElement">
+													<layout:VerticalLayout>
+												<m:Label id="ServerUrlLabel" text="{i18n>serverUrl}" labelFor="serverUrlLink"/>
+												<m:Link id="serverUrlLink" text="{i18n>showServerUrl}" press="onShowServerUrl" width="200px"/>
+											</layout:VerticalLayout>
+											</smartForm:GroupElement>
+										</smartForm:Group>
+									</smartForm:SmartForm>
+								</blocks>
+							</ObjectPageSubSection>
+</core:FragmentDefinition>

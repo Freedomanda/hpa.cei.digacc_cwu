@@ -1,0 +1,201 @@
+[{
+	"TargetGroupId": "TargetGroupId 1",
+	"TargetGroupMemberId": "824ae5ce-30f1-4599-b976-07fb90b404a5",
+	"City": "City 1",
+	"CountryCode": "CountryCode 1",
+	"CountryDescription": "CountryDescription 1",
+	"RegionCode": "RegionCode 1",
+	"RegionDescription": "RegionDescription 1",
+	"Street": "Street 1",
+	"EMailAddress": "EMailAddress 1",
+	"MobilePhoneNumber": "MobilePhoneNumber 1",
+	"PhoneNumber": "PhoneNumber 1",
+	"FullName": "FullName 1",
+	"MemberKey": "MemberKey 1",
+	"MemberKey2": "MemberKey2 1",
+	"MemberKey3": "MemberKey3 1",
+	"__metadata": {
+		"uri": "TargetGroupMembers(guid'824ae5ce-30f1-4599-b976-07fb90b404a5')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroupMember"
+	}
+}, {
+	"TargetGroupId": "TargetGroupId 2",
+	"TargetGroupMemberId": "ea004d93-c8a2-4072-8e14-c1afc1d63428",
+	"City": "City 2",
+	"CountryCode": "CountryCode 2",
+	"CountryDescription": "CountryDescription 2",
+	"RegionCode": "RegionCode 2",
+	"RegionDescription": "RegionDescription 2",
+	"Street": "Street 2",
+	"EMailAddress": "EMailAddress 2",
+	"MobilePhoneNumber": "MobilePhoneNumber 2",
+	"PhoneNumber": "PhoneNumber 2",
+	"FullName": "FullName 2",
+	"MemberKey": "MemberKey 2",
+	"MemberKey2": "MemberKey2 2",
+	"MemberKey3": "MemberKey3 2",
+	"__metadata": {
+		"uri": "TargetGroupMembers(guid'ea004d93-c8a2-4072-8e14-c1afc1d63428')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroupMember"
+	}
+}, {
+	"TargetGroupId": "TargetGroupId 3",
+	"TargetGroupMemberId": "9ce0e2b5-f70b-4d4b-8bd6-a9c7cce2b3d8",
+	"City": "City 3",
+	"CountryCode": "CountryCode 3",
+	"CountryDescription": "CountryDescription 3",
+	"RegionCode": "RegionCode 3",
+	"RegionDescription": "RegionDescription 3",
+	"Street": "Street 3",
+	"EMailAddress": "EMailAddress 3",
+	"MobilePhoneNumber": "MobilePhoneNumber 3",
+	"PhoneNumber": "PhoneNumber 3",
+	"FullName": "FullName 3",
+	"MemberKey": "MemberKey 3",
+	"MemberKey2": "MemberKey2 3",
+	"MemberKey3": "MemberKey3 3",
+	"__metadata": {
+		"uri": "TargetGroupMembers(guid'9ce0e2b5-f70b-4d4b-8bd6-a9c7cce2b3d8')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroupMember"
+	}
+}, {
+	"TargetGroupId": "TargetGroupId 4",
+	"TargetGroupMemberId": "35a94c29-6792-4cab-b5f9-78c8f9c99c2e",
+	"City": "City 4",
+	"CountryCode": "CountryCode 4",
+	"CountryDescription": "CountryDescription 4",
+	"RegionCode": "RegionCode 4",
+	"RegionDescription": "RegionDescription 4",
+	"Street": "Street 4",
+	"EMailAddress": "EMailAddress 4",
+	"MobilePhoneNumber": "MobilePhoneNumber 4",
+	"PhoneNumber": "PhoneNumber 4",
+	"FullName": "FullName 4",
+	"MemberKey": "MemberKey 4",
+	"MemberKey2": "MemberKey2 4",
+	"MemberKey3": "MemberKey3 4",
+	"__metadata": {
+		"uri": "TargetGroupMembers(guid'35a94c29-6792-4cab-b5f9-78c8f9c99c2e')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroupMember"
+	}
+}, {
+	"TargetGroupId": "TargetGroupId 5",
+	"TargetGroupMemberId": "9f929384-6ce7-4f71-9ace-a55e2220bd2c",
+	"City": "City 5",
+	"CountryCode": "CountryCode 5",
+	"CountryDescription": "CountryDescription 5",
+	"RegionCode": "RegionCode 5",
+	"RegionDescription": "RegionDescription 5",
+	"Street": "Street 5",
+	"EMailAddress": "EMailAddress 5",
+	"MobilePhoneNumber": "MobilePhoneNumber 5",
+	"PhoneNumber": "PhoneNumber 5",
+	"FullName": "FullName 5",
+	"MemberKey": "MemberKey 5",
+	"MemberKey2": "MemberKey2 5",
+	"MemberKey3": "MemberKey3 5",
+	"__metadata": {
+		"uri": "TargetGroupMembers(guid'9f929384-6ce7-4f71-9ace-a55e2220bd2c')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroupMember"
+	}
+}, {
+	"TargetGroupId": "TargetGroupId 6",
+	"TargetGroupMemberId": "424dd112-d7f5-4998-8de0-9cce4cf1f2dc",
+	"City": "City 6",
+	"CountryCode": "CountryCode 6",
+	"CountryDescription": "CountryDescription 6",
+	"RegionCode": "RegionCode 6",
+	"RegionDescription": "RegionDescription 6",
+	"Street": "Street 6",
+	"EMailAddress": "EMailAddress 6",
+	"MobilePhoneNumber": "MobilePhoneNumber 6",
+	"PhoneNumber": "PhoneNumber 6",
+	"FullName": "FullName 6",
+	"MemberKey": "MemberKey 6",
+	"MemberKey2": "MemberKey2 6",
+	"MemberKey3": "MemberKey3 6",
+	"__metadata": {
+		"uri": "TargetGroupMembers(guid'424dd112-d7f5-4998-8de0-9cce4cf1f2dc')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroupMember"
+	}
+}, {
+	"TargetGroupId": "TargetGroupId 7",
+	"TargetGroupMemberId": "01d89b4e-e4ff-44ef-9736-91ebcd266466",
+	"City": "City 7",
+	"CountryCode": "CountryCode 7",
+	"CountryDescription": "CountryDescription 7",
+	"RegionCode": "RegionCode 7",
+	"RegionDescription": "RegionDescription 7",
+	"Street": "Street 7",
+	"EMailAddress": "EMailAddress 7",
+	"MobilePhoneNumber": "MobilePhoneNumber 7",
+	"PhoneNumber": "PhoneNumber 7",
+	"FullName": "FullName 7",
+	"MemberKey": "MemberKey 7",
+	"MemberKey2": "MemberKey2 7",
+	"MemberKey3": "MemberKey3 7",
+	"__metadata": {
+		"uri": "TargetGroupMembers(guid'01d89b4e-e4ff-44ef-9736-91ebcd266466')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroupMember"
+	}
+}, {
+	"TargetGroupId": "TargetGroupId 8",
+	"TargetGroupMemberId": "d547f91d-e903-4671-8f6e-859ec6c7ea6f",
+	"City": "City 8",
+	"CountryCode": "CountryCode 8",
+	"CountryDescription": "CountryDescription 8",
+	"RegionCode": "RegionCode 8",
+	"RegionDescription": "RegionDescription 8",
+	"Street": "Street 8",
+	"EMailAddress": "EMailAddress 8",
+	"MobilePhoneNumber": "MobilePhoneNumber 8",
+	"PhoneNumber": "PhoneNumber 8",
+	"FullName": "FullName 8",
+	"MemberKey": "MemberKey 8",
+	"MemberKey2": "MemberKey2 8",
+	"MemberKey3": "MemberKey3 8",
+	"__metadata": {
+		"uri": "TargetGroupMembers(guid'd547f91d-e903-4671-8f6e-859ec6c7ea6f')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroupMember"
+	}
+}, {
+	"TargetGroupId": "TargetGroupId 9",
+	"TargetGroupMemberId": "3dc120ae-75c3-4577-8685-37415775bc7a",
+	"City": "City 9",
+	"CountryCode": "CountryCode 9",
+	"CountryDescription": "CountryDescription 9",
+	"RegionCode": "RegionCode 9",
+	"RegionDescription": "RegionDescription 9",
+	"Street": "Street 9",
+	"EMailAddress": "EMailAddress 9",
+	"MobilePhoneNumber": "MobilePhoneNumber 9",
+	"PhoneNumber": "PhoneNumber 9",
+	"FullName": "FullName 9",
+	"MemberKey": "MemberKey 9",
+	"MemberKey2": "MemberKey2 9",
+	"MemberKey3": "MemberKey3 9",
+	"__metadata": {
+		"uri": "TargetGroupMembers(guid'3dc120ae-75c3-4577-8685-37415775bc7a')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroupMember"
+	}
+}, {
+	"TargetGroupId": "TargetGroupId 10",
+	"TargetGroupMemberId": "d6f2e7ea-f4a1-4362-b044-988aea9019c7",
+	"City": "City 10",
+	"CountryCode": "CountryCode 10",
+	"CountryDescription": "CountryDescription 10",
+	"RegionCode": "RegionCode 10",
+	"RegionDescription": "RegionDescription 10",
+	"Street": "Street 10",
+	"EMailAddress": "EMailAddress 10",
+	"MobilePhoneNumber": "MobilePhoneNumber 10",
+	"PhoneNumber": "PhoneNumber 10",
+	"FullName": "FullName 10",
+	"MemberKey": "MemberKey 10",
+	"MemberKey2": "MemberKey2 10",
+	"MemberKey3": "MemberKey3 10",
+	"__metadata": {
+		"uri": "TargetGroupMembers(guid'd6f2e7ea-f4a1-4362-b044-988aea9019c7')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.TargetGroupMember"
+	}
+}]

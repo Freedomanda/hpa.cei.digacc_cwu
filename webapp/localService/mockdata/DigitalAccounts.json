@@ -1,0 +1,239 @@
+[{
+	"Key": "Key1",
+	"DigaccId": "DigaccId1",
+	"DigaccName": "DigaccName1",
+	"DigaccDesc": "DigaccDesc1",
+	"DigaccTechnicalId": "DigaccTechnicalId 1",
+	"Type": "WEC_SERACC",
+	"StatusCode": "2",
+	"StatusDescription": "StatusDescription 1",
+	"PhoneNumber": "PhoneNumber 1",
+	"EmailAddr": "EmailAddr 1",
+	"MarketingAreaId": "MarketingAreaId 1",
+	"ApiUserId": "ApiUserId 1",
+	"CreatedOn": "/Date(1354333383000)/",
+	"CreatedByUserId": "CreatedByUserId 1",
+	"ChangedOn": "/Date(982467783000)/",
+	"ChangedByUserId": "ChangedByUserId 1",
+	"Rate": 3960.27,
+	"MemberCount": 2721,
+	"NewSubscriberCount": 3063,
+	"MarketingAreaDescription": "MarketingAreaDescription 1",
+	"TypeDescription": "TypeDescription 1",
+	"ApiUserPassword": "ApiUserPassword 1",
+	"InboundToken": "InboundToken 1",
+	"IconUrl": "",
+	"CAUUID": "CAUUID 1",
+	"CAName": "CAName 1",
+	"HostPath": "HostPath 1",
+	"SearchTerm": "SearchTerm 1",
+	"AuthMethod": "AuthMethod 1",
+	"Avatar": "",
+	"CommunicationMedium": "CommunicationMedium 1",
+	"__metadata": {
+		"uri": "DigitalAccounts('Key1')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount"
+	},
+	"ShakeFilterContentSet": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key1')/ShakeFilterContentSet"
+		}
+	},
+	"ShakeFilterLocationSet": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key1')/ShakeFilterLocationSet"
+		}
+	},
+	"DigitalAccountLocationAnalysis": 
+		[{
+			"__metadata": {
+				"id": "LocationAnalysis('1')",
+				"uri": "LocationAnalysis('1')",
+				"type": "CUAN_DIGITAL_ACCOUNT_SRV.LocationAnalysis"
+			},
+			"Key": "1 ",
+			"Date": null,
+			"Year": 0,
+			"LocationKey": "6C0B84B755231ED7A0B267511483B8F3",
+			"Month": 0,
+			"Day": 0,
+			"LocationName": "location1",
+			"ContentKey": "",
+			"IAStatistics": 6,
+			"ICStatistics": 3,
+			"IBeaconStatistics": 0,
+			"SearchTerm": "",
+			"ViewType": "",
+			"DigitalAccountKey": "",
+			"StatusCode": "",
+			"StatusDescription": "",
+			"LocCountryCode": "",
+			"LocCountry": "",
+			"LocRegionCode": "",
+			"LocRegion": "",
+			"LocCity": "",
+			"LocPostcode": "",
+			"LocStreet": "",
+			"LocHouseNum": "",
+			"LocBuilding": "",
+			"LocFloor": "",
+			"LocRoomNo": "",
+			"Timezone": ""
+		}, {
+			"__metadata": {
+				"id": "LocationAnalysis('2')",
+				"uri": "LocationAnalysis('2')",
+				"type": "CUAN_DIGITAL_ACCOUNT_SRV.LocationAnalysis"
+			},
+			"Key": "2 ",
+			"Date": null,
+			"Year": 0,
+			"LocationKey": "6C0B84B755231ED7A0B26751148318F3",
+			"Month": 0,
+			"Day": 0,
+			"LocationName": "location2",
+			"ContentKey": "",
+			"IAStatistics": 3,
+			"ICStatistics": 2,
+			"IBeaconStatistics": 0,
+			"SearchTerm": "",
+			"ViewType": "",
+			"DigitalAccountKey": "",
+			"StatusCode": "",
+			"StatusDescription": "",
+			"LocCountryCode": "",
+			"LocCountry": "",
+			"LocRegionCode": "",
+			"LocRegion": "",
+			"LocCity": "",
+			"LocPostcode": "",
+			"LocStreet": "",
+			"LocHouseNum": "",
+			"LocBuilding": "",
+			"LocFloor": "",
+			"LocRoomNo": "",
+			"Timezone": ""
+		}]
+	,
+	"DigitalAccountContentAnalysis": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%201')/DigitalAccountContentAnalysis"
+		}
+	},
+	"SubscriptionsCDS": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%201')/SubscriptionsCDS"
+		}
+	},
+	"InteractionsCDS": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%201')/InteractionsCDS"
+		}
+	},
+	"DigitalAccountExtAttribute": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%201')/DigitalAccountExtAttribute"
+		}
+	},
+	"DaInteractionAnalys": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%201')/DaInteractionAnalys"
+		}
+	},
+	"DigitalAccountMembers": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%201')/DigitalAccountMembers"
+		}
+	},
+	"DaContactAnalySet": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%201')/DaContactAnalySet"
+		}
+	}
+}, {
+	"Key": "Key 2",
+	"DigaccId": "DigaccId 2",
+	"DigaccName": "DigaccName 2",
+	"DigaccDesc": "DigaccDesc 2",
+	"DigaccTechnicalId": "DigaccTechnicalId 2",
+	"Type": "WEC_SUBACC",
+	"StatusCode": "2",
+	"StatusDescription": "StatusDescription 2",
+	"PhoneNumber": "PhoneNumber 2",
+	"EmailAddr": "EmailAddr 2",
+	"MarketingAreaId": "MarketingAreaId 2",
+	"ApiUserId": "ApiUserId 2",
+	"CreatedOn": "/Date(1049946183000)/",
+	"CreatedByUserId": "CreatedByUserId 2",
+	"ChangedOn": "/Date(1226288583000)/",
+	"ChangedByUserId": "ChangedByUserId 2",
+	"Rate": 644.03,
+	"MemberCount": 59,
+	"NewSubscriberCount": 9761,
+	"MarketingAreaDescription": "MarketingAreaDescription 2",
+	"TypeDescription": "TypeDescription 2",
+	"ApiUserPassword": "ApiUserPassword 2",
+	"InboundToken": "InboundToken 2",
+	"IconUrl": "",
+	"CAUUID": "CAUUID 2",
+	"CAName": "CAName 2",
+	"HostPath": "HostPath 2",
+	"SearchTerm": "SearchTerm 2",
+	"AuthMethod": "AuthMethod 2",
+	"Avatar": "",
+	"CommunicationMedium": "CommunicationMedium 2",
+	"__metadata": {
+		"uri": "DigitalAccounts('Key%202')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount"
+	},
+	"ShakeFilterContentSet": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%202')/ShakeFilterContentSet"
+		}
+	},
+	"ShakeFilterLocationSet": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%202')/ShakeFilterLocationSet"
+		}
+	},
+	"DigitalAccountLocationAnalysis": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%202')/DigitalAccountLocationAnalysis"
+		}
+	},
+	"DigitalAccountContentAnalysis": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%202')/DigitalAccountContentAnalysis"
+		}
+	},
+	"SubscriptionsCDS": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%202')/SubscriptionsCDS"
+		}
+	},
+	"InteractionsCDS": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%202')/InteractionsCDS"
+		}
+	},
+	"DigitalAccountExtAttribute": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%202')/DigitalAccountExtAttribute"
+		}
+	},
+	"DaInteractionAnalys": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%202')/DaInteractionAnalys"
+		}
+	},
+	"DigitalAccountMembers": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%202')/DigitalAccountMembers"
+		}
+	},
+	"DaContactAnalySet": {
+		"__deferred": {
+			"uri": "DigitalAccounts('Key%202')/DaContactAnalySet"
+		}
+	}
+}]

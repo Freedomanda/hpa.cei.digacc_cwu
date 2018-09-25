@@ -1,0 +1,182 @@
+{
+	"_version": "1.7.0",
+	"sap.app": {
+		"_version": "1.2.0",
+		"id": "${project.artifactId}",
+		"type": "application",
+		"resources": "resources.json",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"applicationVersion": {
+			"version": "${project.version}"
+		},
+		"ach": "CEC-MKT-INT-WCH",
+		"dataSources": {
+			"mainService": {
+				"uri": "/sap/opu/odata/sap/CUAN_DIGITAL_ACCOUNT_SRV/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			},
+			"CUAN_DIGITAL_ACCOUNT_SRV": {
+				"uri": "/sap/opu/odata/sap/CUAN_DIGITAL_ACCOUNT_SRV/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "webapp/localService/CUAN_DIGITAL_ACCOUNT_SRV/metadata.xml"
+				}
+			}
+		},
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponent",
+			"version": "0.0.0"
+		}
+	},
+	"sap.copilot": {
+		"_version": "1.0.0",
+		"contextAnalysis": {
+			"allowAddingObjectsFromAppScreenToCollection": false
+		}
+	},
+	"sap.fiori": {
+		"_version": "1.1.0",
+		"registrationIds": ["F2184"],
+		"archeType": "transactional"
+	},
+	"sap.ui": {
+		"_version": "1.2.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "sap-icon://task",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_hcb", "sap_bluecrystal"]
+	},
+	"sap.ui5": {
+		"_version": "1.2.0",
+		"rootView": {
+			"viewName": "hpa.cei.digital_account.view.App",
+			"type": "XML",
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "${sap.ui5.dist.version}",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {
+					"lazy":false
+				},
+				"sap.ushell": {
+					"lazy":false
+				},
+				"sap.ui.layout": {
+					"lazy":false
+				},
+				"sap.ui.comp": {
+					"lazy":false
+				},
+				"sap.suite.ui.commons": {
+					"lazy":false
+				},
+				"sap.viz": {
+					"lazy":false
+				},
+				"sap.uxap": {
+					"lazy":false
+				},
+				"sap.ui.table": {
+					"lazy":false
+				}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "hpa.cei.digital_account.i18n.i18n"
+				}
+			},
+		
+			"": {
+				"dataSource": "mainService",
+				"settings": {
+					"metadataUrlParams": {
+						"sap-documentation": "heading",
+						"defaultBindingMode": "TwoWay"
+					},
+					"useBatch": true,
+					"defaultCountMode": "sap.ui.model.odata.CountMode.Inline"
+				},
+				"preload":true
+			}
+		},
+		"config": {
+			"fullWidth": true,
+			"sapFiori2Adaptation": true
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "hpa.cei.digital_account.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"bypassed": {
+					"target": ["notFound"]
+				},
+				"async": true
+			},
+			"routes": [{
+				"pattern": "",
+				"name": "worklist",
+				"target": ["worklist"]
+			}, {
+				"pattern": "DigitalAccount/{objectId}",
+				"name": "object",
+				"target": ["object"]
+			}],
+			"targets": {
+				"worklist": {
+					"viewName": "Worklist",
+					"viewId": "worklist",
+					"viewLevel": 1
+				},
+				"object": {
+					"viewName": "Object",
+					"viewId": "object",
+					"viewLevel": 2,
+					"transition": "fade"
+				},
+				"objectNotFound": {
+					"viewName": "ObjectNotFound",
+					"viewId": "objectNotFound"
+				},
+				"notFound": {
+					"viewName": "NotFound",
+					"viewId": "notFound"
+				}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		}
+	}
+}

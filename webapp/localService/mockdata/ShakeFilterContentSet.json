@@ -1,0 +1,131 @@
+[{
+	"ContentId": "ContentId 1",
+	"Key": "Key 1",
+	"ContentName": "ContentName 1",
+	"__metadata": {
+		"uri": "ShakeFilterContentSet(ContentId='ContentId 1',Key='Key 1')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterContent"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterContentSet(ContentId='ContentId 1',Key='Key 1')/DigitalAccount"
+		}
+	}
+}, {
+	"ContentId": "ContentId 2",
+	"Key": "Key 2",
+	"ContentName": "ContentName 2",
+	"__metadata": {
+		"uri": "ShakeFilterContentSet(ContentId='ContentId 2',Key='Key 2')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterContent"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterContentSet(ContentId='ContentId 2',Key='Key 2')/DigitalAccount"
+		}
+	}
+}, {
+	"ContentId": "ContentId 3",
+	"Key": "Key 3",
+	"ContentName": "ContentName 3",
+	"__metadata": {
+		"uri": "ShakeFilterContentSet(ContentId='ContentId 3',Key='Key 3')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterContent"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterContentSet(ContentId='ContentId 3',Key='Key 3')/DigitalAccount"
+		}
+	}
+}, {
+	"ContentId": "ContentId 4",
+	"Key": "Key 4",
+	"ContentName": "ContentName 4",
+	"__metadata": {
+		"uri": "ShakeFilterContentSet(ContentId='ContentId 4',Key='Key 4')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterContent"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterContentSet(ContentId='ContentId 4',Key='Key 4')/DigitalAccount"
+		}
+	}
+}, {
+	"ContentId": "ContentId 5",
+	"Key": "Key 5",
+	"ContentName": "ContentName 5",
+	"__metadata": {
+		"uri": "ShakeFilterContentSet(ContentId='ContentId 5',Key='Key 5')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterContent"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterContentSet(ContentId='ContentId 5',Key='Key 5')/DigitalAccount"
+		}
+	}
+}, {
+	"ContentId": "ContentId 6",
+	"Key": "Key 6",
+	"ContentName": "ContentName 6",
+	"__metadata": {
+		"uri": "ShakeFilterContentSet(ContentId='ContentId 6',Key='Key 6')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterContent"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterContentSet(ContentId='ContentId 6',Key='Key 6')/DigitalAccount"
+		}
+	}
+}, {
+	"ContentId": "ContentId 7",
+	"Key": "Key 7",
+	"ContentName": "ContentName 7",
+	"__metadata": {
+		"uri": "ShakeFilterContentSet(ContentId='ContentId 7',Key='Key 7')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterContent"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterContentSet(ContentId='ContentId 7',Key='Key 7')/DigitalAccount"
+		}
+	}
+}, {
+	"ContentId": "ContentId 8",
+	"Key": "Key 8",
+	"ContentName": "ContentName 8",
+	"__metadata": {
+		"uri": "ShakeFilterContentSet(ContentId='ContentId 8',Key='Key 8')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterContent"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterContentSet(ContentId='ContentId 8',Key='Key 8')/DigitalAccount"
+		}
+	}
+}, {
+	"ContentId": "ContentId 9",
+	"Key": "Key 9",
+	"ContentName": "ContentName 9",
+	"__metadata": {
+		"uri": "ShakeFilterContentSet(ContentId='ContentId 9',Key='Key 9')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterContent"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterContentSet(ContentId='ContentId 9',Key='Key 9')/DigitalAccount"
+		}
+	}
+}, {
+	"ContentId": "ContentId 10",
+	"Key": "Key 10",
+	"ContentName": "ContentName 10",
+	"__metadata": {
+		"uri": "ShakeFilterContentSet(ContentId='ContentId 10',Key='Key 10')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterContent"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterContentSet(ContentId='ContentId 10',Key='Key 10')/DigitalAccount"
+		}
+	}
+}]

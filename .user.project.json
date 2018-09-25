@@ -1,0 +1,438 @@
+{
+  "run": [
+    {
+      "filePath": "/webapp/test/integration/opaTests.qunit.html",
+      "previewMode": 1,
+      "dataMode": 0,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": "",
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "hashParameter": "",
+      "backendSystem": [
+        {
+          "source": "ANACLNT100",
+          "destinations": "ABDCLNT100"
+        }
+      ],
+      "_metadata": {
+        "id": 3635224,
+        "runnerId": "webapprunner",
+        "displayName": "OPA Tests",
+        "lastRunTimeStamp": 1521171192187
+      }
+    },
+    {
+      "filePath": "/hpa.cei.digital_account/webapp/test/flpSandbox.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "hashParameter": "DigitalAccount-display",
+      "ui5ActiveVersion": "snapshot-1.42",
+      "ui5VerSource": "internal",
+      "isDefaultVersion": 1,
+      "backendSystem": [
+        {
+          "source": "ANACLNT100",
+          "destinations": "ABDCLNT100"
+        }
+      ],
+      "_metadata": {
+        "id": 1978925,
+        "runnerId": "webapprunner",
+        "displayName": "App in FLP Sandbox",
+        "lastRunTimeStamp": 1510281617489
+      }
+    },
+    {
+      "filePath": "/hpa.cei.digital_account/webapp/test/unit/unitTests.qunit.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 1,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "_metadata": {
+        "id": 8735167,
+        "runnerId": "webapprunner",
+        "displayName": "Unit Tests"
+      }
+    },
+    {
+      "filePath": "/webapp/test/flpSandbox.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [
+        {
+          "source": "ANACLNT100",
+          "destinations": "ANACLNT100"
+        }
+      ],
+      "_metadata": {
+        "id": 2727508,
+        "runnerId": "webapprunner",
+        "displayName": "Run flpSandbox.html",
+        "hasIssues": true
+      }
+    },
+    {
+      "filePath": "/webapp/test/flpSandbox.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [
+        {
+          "source": "ANACLNT100",
+          "destinations": "ANACLNT100"
+        }
+      ],
+      "_metadata": {
+        "id": 7419507,
+        "runnerId": "webapprunner",
+        "displayName": "Run flpSandbox.html"
+      }
+    },
+    {
+      "filePath": "/webapp/test/flpSandbox.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [
+        {
+          "source": "ANACLNT100",
+          "destinations": "ANACLNT100"
+        }
+      ],
+      "_metadata": {
+        "id": 9743248,
+        "runnerId": "webapprunner",
+        "displayName": "Run flpSandbox.html"
+      }
+    },
+    {
+      "filePath": "/webapp/test/flpSandbox.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [
+        {
+          "source": "ANACLNT100",
+          "destinations": "ANACLNT100"
+        }
+      ],
+      "_metadata": {
+        "id": 5209838,
+        "runnerId": "webapprunner",
+        "displayName": "Run flpSandbox.html"
+      }
+    },
+    {
+      "filePath": "/webapp/test/flpSandbox.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [
+        {
+          "source": "ANACLNT100",
+          "destinations": "ANACLNT100"
+        }
+      ],
+      "_metadata": {
+        "id": 585418,
+        "runnerId": "webapprunner",
+        "displayName": "Run flpSandbox.html"
+      }
+    },
+    {
+      "filePath": "/webapp/test/flpSandbox.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [
+        {
+          "source": "ANACLNT100",
+          "destinations": "ANACLNT100"
+        }
+      ],
+      "_metadata": {
+        "id": 8946210,
+        "runnerId": "webapprunner",
+        "displayName": "Run flpSandbox.html"
+      }
+    },
+    {
+      "filePath": "/webapp/test/flpSandbox.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [
+        {
+          "source": "ANACLNT100",
+          "destinations": "ANACLNT100"
+        }
+      ],
+      "_metadata": {
+        "id": 7030515,
+        "runnerId": "webapprunner",
+        "displayName": "Run flpSandbox.html"
+      }
+    },
+    {
+      "filePath": "/webapp/test/flpSandbox.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [
+        {
+          "source": "ANACLNT100",
+          "destinations": "ANACLNT100"
+        }
+      ],
+      "_metadata": {
+        "id": 977282,
+        "runnerId": "webapprunner",
+        "displayName": "Run flpSandbox.html"
+      }
+    },
+    {
+      "filePath": "/webapp/test/flpSandbox.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [
+        {
+          "source": "ANACLNT100",
+          "destinations": "ANACLNT100"
+        }
+      ],
+      "_metadata": {
+        "id": 731564,
+        "runnerId": "webapprunner",
+        "displayName": "Run flpSandbox.html"
+      }
+    },
+    {
+      "filePath": "/hpa.cei.digital_account/webapp/test/unit/unitTests.qunit.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 1,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "_metadata": {
+        "id": 5419545,
+        "runnerId": "webapprunner",
+        "displayName": "Unit Tests"
+      }
+    },
+    {
+      "filePath": "/hpa.cei.digital_account/webapp/test/flpSandboxMockServer.html",
+      "previewMode": 1,
+      "dataMode": 0,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "hashParameter": "DigitalAccount-display",
+      "ui5ActiveVersion": "",
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "backendSystem": [
+        {
+          "source": "ANACLNT100",
+          "destinations": "ANACLNT100"
+        }
+      ],
+      "_metadata": {
+        "id": 1978926,
+        "runnerId": "webapprunner",
+        "displayName": "App in FLP Sandbox (Mock Server)"
+      }
+    },
+    {
+      "filePath": "/hpa.cei.digital_account/webapp/test/testsuite.qunit.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 1,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "hashParameter": "",
+      "_metadata": {
+        "id": 7524840,
+        "runnerId": "webapprunner",
+        "displayName": "Test Suite (Unit, OPA)"
+      }
+    },
+    {
+      "filePath": "/hpa.cei.digital_account/webapp/Component.js",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": "snapshot",
+      "ui5VerSource": null,
+      "isDefaultVersion": 1,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "hashParameter": "",
+      "backendSystem": [
+        {
+          "source": "ANACLNT100",
+          "destinations": "ANACLNT100"
+        }
+      ],
+      "_metadata": {
+        "id": 5239014,
+        "runnerId": "fiorirunner",
+        "displayName": "App as Fiori Component"
+      }
+    },
+    {
+      "flpAppName": "cuan_digital_acc",
+      "flpDestName": "ANACLNT100",
+      "hcpAccount": "fiori",
+      "flpName": "",
+      "hcpProvider": "",
+      "emdType": "ABAP",
+      "filePath": "/hpa.cei.digital_account",
+      "workspaceApplications": [],
+      "urlParametersNotNeeded": false,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": ""
+        }
+      ],
+      "_metadata": {
+        "id": 1915910,
+        "runnerId": "embeddedrunner",
+        "displayName": "Run hpa.cei.digital_account"
+      }
+    }
+  ]
+}

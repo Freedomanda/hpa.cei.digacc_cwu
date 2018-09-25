@@ -1,0 +1,20 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<f:SimpleForm id="typeSpecContent" minWidth="512" maxContainerCols="2" layout="ResponsiveLayout" editable="true" labelMinWidth="256">
+		<!--<Label id="accountCreateIdInputLabel" labelFor="accountCreateIdInput" text="{i18n>createAccountId}" tooltip="{i18n>createAccountId}"-->
+		<!--	required="true" width="auto"/>-->
+		<!--<Input id="accountCreateIdInput" valueState="None" valueStateText="{i18n>AccountIdPlaceholder}" liveChange="onAccountCreateChanged"-->
+		<!--	maxLength="50"/>-->
+		<!--<Label id="accountCreateHSTokenInputLabel" labelFor="accountCreateHSTokenInput" text="{i18n>createAccountHSToken}"-->
+		<!--	tooltip="{i18n>createAccountHSToken}" required="true" width="auto"/>-->
+		<!--<Input id="accountCreateHSTokenInput" valueState="None" type="Password" valueStateText="{i18n>AccountHSTokenPlaceholder}"-->
+		<!--	liveChange="onAccountCreateChanged" maxLength="255"/>-->
+		<!--<Label id="accountCreateAppIdInputLabel" labelFor="accountCreateAppIdInput" text="{i18n>createAccountAppId}"-->
+		<!--	tooltip="{i18n>createAccountAppId}" required="true" width="auto"/>-->
+		<!--<Input id="accountCreateAppIdInput" valueState="None" type="Password" valueStateText="{i18n>AccountAppIdPlaceholder}"-->
+		<!--	liveChange="onAccountCreateChanged" maxLength="50"/>-->
+		<!--<Label id="accountCreateSecIdInputLabel" labelFor="accountCreateSecIdInput" text="{i18n>createAccountAppSec}"-->
+		<!--	tooltip="{i18n>createAccountAppSec}" required="true" visible="{systemView>/isOnPremise}" width="auto"/>-->
+		<!--<Input id="accountCreateSecIdInput" valueState="None" type="Password" valueStateText="{i18n>AccountSecIdPlaceholder}"-->
+		<!--	liveChange="onAccountCreateChanged" maxLength="50"/>-->
+	</f:SimpleForm>
+</core:FragmentDefinition>

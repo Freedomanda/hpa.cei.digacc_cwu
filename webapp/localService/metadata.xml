@@ -1,0 +1,1204 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Uri="">
+<edmx:Include Namespace="com.sap.da.UI.v1" Alias="UI"/>
+</edmx:Reference>
+<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Uri="">
+<edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+</edmx:Reference>
+<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Uri="">
+<edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+</edmx:Reference>
+<edmx:DataServices m:DataServiceVersion="2.0">
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="CUAN_DIGITAL_ACCOUNT_SRV" xml:lang="en" sap:schema-version="1">
+<EntityType Name="ShakeFilterContent" sap:content-version="1">
+<Key>
+<PropertyRef Name="ContentId"/>
+<PropertyRef Name="Key"/>
+</Key>
+<Property Name="ContentId" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Content ID" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="Key" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Key" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="ContentName" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Content Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<NavigationProperty Name="DigitalAccount" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountShakeFilterContent" FromRole="ToRole_DigitalAccountShakeFilterContent" ToRole="FromRole_DigitalAccountShakeFilterContent"/>
+</EntityType>
+<EntityType Name="ShakeFilterLocation" sap:content-version="1">
+<Key>
+<PropertyRef Name="Key"/>
+<PropertyRef Name="LocationKey"/>
+</Key>
+<Property Name="Key" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Key" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="LocationKey" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Location Key" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="LocationName" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Location Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<NavigationProperty Name="DigitalAccount" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountShakeFilterLocation" FromRole="ToRole_DigitalAccountShakeFilterLocation" ToRole="FromRole_DigitalAccountShakeFilterLocation"/>
+</EntityType>
+<EntityType Name="LocationAnalysis" sap:content-version="1">
+<Key>
+<PropertyRef Name="Key"/>
+</Key>
+<Property Name="Key" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Key" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Date" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Date" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="Year" Type="Edm.Int32" sap:unicode="false" sap:label="Year" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="LocationKey" Type="Edm.String" sap:unicode="false" sap:label="Location ID" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="Month" Type="Edm.Int32" sap:unicode="false" sap:label="Month" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Day" Type="Edm.Int32" sap:unicode="false" sap:label="Day" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="LocationName" Type="Edm.String" MaxLength="80" sap:unicode="false" sap:label="Location Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ContentKey" Type="Edm.String" sap:unicode="false" sap:label="Content Key" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="IAStatistics" Type="Edm.Int32" sap:unicode="false" sap:label="Number of Interactions" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ICStatistics" Type="Edm.Int32" sap:unicode="false" sap:label="Number of Contacts" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="IBeaconStatistics" Type="Edm.Int32" sap:unicode="false" sap:label="Number of Beacons" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="SearchTerm" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:label="Search Term" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ViewType" Type="Edm.String" MaxLength="5" sap:unicode="false" sap:label="View Type" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="DigitalAccountKey" Type="Edm.String" sap:unicode="false" sap:label="Digital Account Key" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="StatusCode" Type="Edm.String" MaxLength="10" sap:unicode="false" sap:label="Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="StatusDescription" Type="Edm.String" MaxLength="60" sap:unicode="false" sap:label="Status Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="LocCountryCode" Type="Edm.String" MaxLength="3" sap:unicode="false" sap:label="Country" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="LocCountry" Type="Edm.String" MaxLength="15" sap:unicode="false" sap:label="Country Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="LocRegionCode" Type="Edm.String" MaxLength="3" sap:unicode="false" sap:label="Region" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="LocRegion" Type="Edm.String" MaxLength="15" sap:unicode="false" sap:label="Region Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="LocCity" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="City" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="LocPostcode" Type="Edm.String" MaxLength="10" sap:unicode="false" sap:label="Postal Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="LocStreet" Type="Edm.String" MaxLength="60" sap:unicode="false" sap:label="Street" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="LocHouseNum" Type="Edm.String" MaxLength="10" sap:unicode="false" sap:label="House Number" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="LocBuilding" Type="Edm.String" MaxLength="20" sap:unicode="false" sap:label="Building" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="LocFloor" Type="Edm.String" MaxLength="10" sap:unicode="false" sap:label="Floor" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="LocRoomNo" Type="Edm.String" MaxLength="10" sap:unicode="false" sap:label="Room Number" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Timezone" Type="Edm.String" sap:unicode="false" sap:label="Time Zone" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="ContentAnalysis" sap:content-version="1">
+<Key>
+<PropertyRef Name="Key"/>
+</Key>
+<Property Name="Key" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Key" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Date" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Date" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="Year" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Year" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Month" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Month" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Day" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Day" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="LocationKey" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Location Key" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="IAStatistics" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Number of Interactions" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="LocationKeyStatistics" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Number of Locations" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ICStatistics" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Number of Contacts" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="IBeaconStatistics" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Number of Beacons" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="SearchTerm" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Search Term" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="BeaconId" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Beacon ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ContentPageUrl" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Content Page URL" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ContentUrl" Type="Edm.String" Nullable="false" MaxLength="200" sap:unicode="false" sap:label="Picture URL" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ContentKey" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Content ID" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="ContentTitle" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Content Title" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ContentTypeCode" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Content Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ContentTypeDescription" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Content Type Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Comments" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Comments" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ViewType" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="View Type" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="DigitalAccountKey" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Digital Account Key" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="StatusCode" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="StatusDescription" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Status Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="PreviousDimention" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Previous Dimension" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="CreationDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Creation Date" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="Timezone" Type="Edm.String" sap:unicode="false" sap:label="Time Zone" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="IBeaconAnalysis" sap:content-version="1">
+<Key>
+<PropertyRef Name="Key"/>
+</Key>
+<Property Name="ContentKey" Type="Edm.String" sap:unicode="false" sap:label="Content Key" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="Key" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Key" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Date" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Date" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="LocationKey" Type="Edm.String" sap:unicode="false" sap:label="Location ID" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="LocationName" Type="Edm.String" MaxLength="80" sap:unicode="false" sap:label="Location Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="IAStatistics" Type="Edm.Int32" sap:unicode="false" sap:label="Number of Interactions" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ICStatistics" Type="Edm.Int32" sap:unicode="false" sap:label="Number of Contacts" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ContentStatistics" Type="Edm.Int32" sap:unicode="false" sap:label="Number of Content Pages" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="SearchTerm" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:label="Search Term" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="BeaconKey" Type="Edm.String" sap:unicode="false" sap:label="Beacon Key" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="BeaconID" Type="Edm.String" sap:unicode="false" sap:label="Beacon ID" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="BeaconDescription" Type="Edm.String" MaxLength="30" sap:unicode="false" sap:label="Beacon Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="Major" Type="Edm.String" sap:unicode="false" sap:label="Major ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Minor" Type="Edm.String" sap:unicode="false" sap:label="Minor ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ViewType" Type="Edm.String" MaxLength="5" sap:unicode="false" sap:label="View Type" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="DigitalAccountKey" Type="Edm.String" sap:unicode="false" sap:label="Digital Account Key" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="StatusCode" Type="Edm.String" MaxLength="10" sap:unicode="false" sap:label="Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="StatusDescription" Type="Edm.String" MaxLength="60" sap:unicode="false" sap:label="Status Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Timezone" Type="Edm.String" sap:unicode="false" sap:label="Time Zone" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="SystemType" sap:content-version="1">
+<Key>
+<PropertyRef Name="SystemTypeCode"/>
+</Key>
+<Property Name="SystemTypeName" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="System Type Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="SystemTypeCode" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="System Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="DigitalAccountExtAttribute" sap:content-version="1">
+<Key>
+<PropertyRef Name="AttributeName"/>
+<PropertyRef Name="DigitalAccountKey"/>
+</Key>
+<Property Name="AttributeName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Attribute Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="AttributeValue" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Attribute Value" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="DigitalAccountKey" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Digital Account Key" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="DigitalAccountAttributeDef" sap:content-version="1">
+<Key>
+<PropertyRef Name="CommunicationMedium"/>
+<PropertyRef Name="AttributeName"/>
+</Key>
+<Property Name="Sequence" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Sequence" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Tooltip" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Tooltip" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="AttributeLabel" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Attribute Label" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="IsMandatory" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Is Mandatory" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="MaxLength" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Max Length" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="IsVisible" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Is Visible" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="IsSecure" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Is Secure" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="CommunicationMedium" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Communication Medium" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="AttributeName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Attribute Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="DigitalAccount" sap:content-version="1">
+<Key>
+<PropertyRef Name="Key"/>
+</Key>
+<Property Name="Key" Type="Edm.String" Nullable="false" sap:unicode="false" sap:visible="false" sap:label="Key" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="DigaccId" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="DigaccName" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false" sap:visible="false" sap:label="Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="DigaccDesc" Type="Edm.String" MaxLength="255" sap:unicode="false" sap:label="Description" sap:sortable="false" sap:filterable="false"/>
+<Property Name="DigaccTechnicalId" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:label="Technical ID" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Type" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:visible="false" sap:label="Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="StatusCode" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:visible="false" sap:label="Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="StatusDescription" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:visible="false" sap:label="Status Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="PhoneNumber" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:visible="false" sap:label="Telephone Number" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="EmailAddr" Type="Edm.String" MaxLength="241" sap:unicode="false" sap:label="E-Mail Address" sap:sortable="false" sap:filterable="false"/>
+<Property Name="MarketingAreaId" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:visible="false" sap:label="Marketing Area ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ApiUserId" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:label="App ID" sap:sortable="false" sap:filterable="false"/>
+<Property Name="CreatedOn" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Creation Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="CreatedByUserId" Type="Edm.String" MaxLength="12" sap:unicode="false" sap:label="Created By" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ChangedOn" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Last Changed On" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ChangedByUserId" Type="Edm.String" MaxLength="12" sap:unicode="false" sap:label="Last Changed By" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Rate" Type="Edm.Decimal" Nullable="false" Precision="11" Scale="4" sap:unicode="false" sap:visible="false" sap:label="Monthly Follower Growth Rate" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="MemberCount" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:visible="false" sap:label="Total Number of Followers" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="NewSubscriberCount" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:visible="false" sap:label="Number of New Followers" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="MarketingAreaDescription" Type="Edm.String" Nullable="false" MaxLength="120" sap:unicode="false" sap:label="Marketing Area" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="TypeDescription" Type="Edm.String" Nullable="false" MaxLength="120" sap:unicode="false" sap:visible="false" sap:label="Type Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ApiUserPassword" Type="Edm.String" MaxLength="255" sap:unicode="false" sap:label="Secure ID" sap:sortable="false" sap:filterable="false"/>
+<Property Name="InboundToken" Type="Edm.String" MaxLength="255" sap:unicode="false" sap:label="Inbound Token" sap:sortable="false" sap:filterable="false"/>
+<Property Name="IconUrl" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false" sap:visible="false" sap:label="Icon URL" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="CAUUID" Type="Edm.String" Nullable="false" sap:unicode="false" sap:visible="false" sap:label="Communication Arrangement UUID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="CAName" Type="Edm.String" Nullable="false" sap:unicode="false" sap:visible="false" sap:label="Communication Arrangement Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="HostPath" Type="Edm.String" Nullable="false" sap:unicode="false" sap:visible="false" sap:label="Host Path" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="SearchTerm" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:visible="false" sap:label="Search" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="AuthMethod" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Authorization Method" sap:creatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Avatar" Type="Edm.String" sap:unicode="false" sap:label="URI" sap:creatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="CommunicationMedium" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="Communication Medium" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<NavigationProperty Name="ShakeFilterContentSet" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountShakeFilterContent" FromRole="FromRole_DigitalAccountShakeFilterContent" ToRole="ToRole_DigitalAccountShakeFilterContent"/>
+<NavigationProperty Name="ShakeFilterLocationSet" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountShakeFilterLocation" FromRole="FromRole_DigitalAccountShakeFilterLocation" ToRole="ToRole_DigitalAccountShakeFilterLocation"/>
+<NavigationProperty Name="DigitalAccountLocationAnalysis" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountLocationAnalysis" FromRole="FromRole_DigitalAccountLocationAnalysis" ToRole="ToRole_DigitalAccountLocationAnalysis"/>
+<NavigationProperty Name="DigitalAccountContentAnalysis" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountContentAnalysis" FromRole="FromRole_DigitalAccountContentAnalysis" ToRole="ToRole_DigitalAccountContentAnalysis"/>
+<NavigationProperty Name="SubscriptionsCDS" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountSubscriptionsCDS" FromRole="FromRole_DigitalAccountSubscriptionsCDS" ToRole="ToRole_DigitalAccountSubscriptionsCDS"/>
+<NavigationProperty Name="InteractionsCDS" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountInteractionsCDS" FromRole="FromRole_DigitalAccountInteractionsCDS" ToRole="ToRole_DigitalAccountInteractionsCDS"/>
+<NavigationProperty Name="DigitalAccountExtAttribute" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountExtendAttribute" FromRole="FromRole_DigitalAccountExtendAttribute" ToRole="ToRole_DigitalAccountExtendAttribute"/>
+<NavigationProperty Name="DaInteractionAnalys" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountInteractionAnaly" FromRole="FromRole_DigitalAccountInteractionAnaly" ToRole="ToRole_DigitalAccountInteractionAnaly"/>
+<NavigationProperty Name="DigitalAccountMembers" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountMember" FromRole="FromRole_DigitalAccountMember" ToRole="ToRole_DigitalAccountMember"/>
+<NavigationProperty Name="DaContactAnalySet" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountDaContactAnaly" FromRole="FromRole_DigitalAccountDaContactAnaly" ToRole="ToRole_DigitalAccountDaContactAnaly"/>
+</EntityType>
+<EntityType Name="Subscriber" sap:content-version="1">
+<Key>
+<PropertyRef Name="Key"/>
+</Key>
+<Property Name="Key" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Key" sap:updatable="false" sap:sortable="false"/>
+<Property Name="ContactName" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false" sap:label="Contact Name" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="SubscriberName" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="WeChat Name" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="MobilePhoneNumner" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Telephone Number" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="CountryCode" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Country" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="CountryDescription" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Country Description" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="RegionCode" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Region" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="RegionDescription" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Region Description" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="City" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="City" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Email" Type="Edm.String" Nullable="false" MaxLength="241" sap:unicode="false" sap:label="E-Mail Address" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Street" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Street" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="HouseNumber" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="House Number" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="MarketingArea" sap:content-version="1">
+<Key>
+<PropertyRef Name="MarketingAreaId"/>
+</Key>
+<Property Name="MarketingAreaId" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Marketing Area ID" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+<Property Name="MarketingAreaDescription" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Marketing Area Description" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="TargetGroupMember" sap:content-version="1">
+<Key>
+<PropertyRef Name="TargetGroupMemberId"/>
+</Key>
+<Property Name="TargetGroupId" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Target Group ID" sap:creatable="false" sap:updatable="false"/>
+<Property Name="TargetGroupMemberId" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="Member ID" sap:creatable="false"/>
+<Property Name="City" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="City" sap:creatable="false" sap:updatable="false"/>
+<Property Name="CountryCode" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Country" sap:creatable="false" sap:updatable="false"/>
+<Property Name="CountryDescription" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Country Description" sap:creatable="false" sap:updatable="false"/>
+<Property Name="RegionCode" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Region" sap:creatable="false" sap:updatable="false"/>
+<Property Name="RegionDescription" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Region Description" sap:creatable="false" sap:updatable="false"/>
+<Property Name="Street" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Street" sap:creatable="false" sap:updatable="false"/>
+<Property Name="EMailAddress" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Email Address" sap:creatable="false" sap:updatable="false"/>
+<Property Name="MobilePhoneNumber" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Mobile Number" sap:creatable="false" sap:updatable="false"/>
+<Property Name="PhoneNumber" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Phone Number" sap:creatable="false" sap:updatable="false"/>
+<Property Name="FullName" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Full Name" sap:creatable="false" sap:updatable="false"/>
+<Property Name="MemberKey" Type="Edm.String" sap:unicode="false" sap:label="Member Key" sap:creatable="false" sap:updatable="false"/>
+<Property Name="MemberKey2" Type="Edm.String" sap:unicode="false" sap:label="Member Key 2" sap:creatable="false" sap:updatable="false"/>
+<Property Name="MemberKey3" Type="Edm.String" sap:unicode="false" sap:label="Member Key 3" sap:creatable="false" sap:updatable="false"/>
+</EntityType>
+<EntityType Name="InteractionType" sap:content-version="1">
+<Key>
+<PropertyRef Name="InteractionTypeCode"/>
+</Key>
+<Property Name="InteractionTypeCode" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="Interaction Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="InteractionTypeDescription" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Interaction Type Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Type" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Diigital Account Type" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+</EntityType>
+<EntityType Name="InteractionAnalysis" sap:content-version="1">
+<Key>
+<PropertyRef Name="Key"/>
+</Key>
+<Property Name="InteractionTypeCode" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="Interaction Type" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="InteractionTypeDescription" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Interaction Type Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="InteractionCount" Type="Edm.Int64" Nullable="false" sap:unicode="false" sap:label="Number of Interactions" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ContactCount" Type="Edm.Int64" Nullable="false" sap:unicode="false" sap:label="Number of Contacts" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="DigitalAccountKey" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Digital Account Key" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Date" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Date" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="Key" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Node ID" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+</EntityType>
+<EntityType Name="SubscriberAnalysis" sap:content-version="1">
+<Key>
+<PropertyRef Name="Key"/>
+</Key>
+<Property Name="Date" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="NewSubscriberCount" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Number of New Followers" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="NewUnSubscriberCount" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Number of New Unfollowers" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="NetNewSubscriberCount" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Net Number of New Followers" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="MemberCount" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Total Number of Followers" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="DigitalAccountKey" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Digital Account Key" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="Key" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Key" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<NavigationProperty Name="DigitalAccountDaContactAnaly" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountDaContactAnaly" FromRole="ToRole_DigitalAccountDaContactAnaly" ToRole="FromRole_DigitalAccountDaContactAnaly"/>
+</EntityType>
+<EntityType Name="TargetGroup" sap:content-version="1">
+<Key>
+<PropertyRef Name="DBKey"/>
+</Key>
+<Property Name="DBKey" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Node ID" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Id" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="TargetGroupName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="LifeCycleStatus" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Description" Type="Edm.String" Nullable="false" MaxLength="1000" sap:unicode="false" sap:label="Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Origin" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Origin" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="MemberType" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Member Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="MktAreaId" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Marketing Area ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<NavigationProperty Name="TargetGroupMembers" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.TargetGroupTargetGroupMember" FromRole="FromRole_TargetGroupTargetGroupMember" ToRole="ToRole_TargetGroupTargetGroupMember"/>
+</EntityType>
+<EntityType Name="IconTabFilter" sap:content-version="1">
+<Key>
+<PropertyRef Name="Key"/>
+</Key>
+<Property Name="Key" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Key" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="Type" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Type" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="Count" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Number" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="CommMedium" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="Communication Medium" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="CommMediumDesc" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Communication Medium Descriptoin" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="CommMediumIcon" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="COMM_MEDIUM_SAPUI5_ICON_NAME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="CREA_UNAME" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="User Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+</EntityType>
+<EntityType Name="DigitalAccountType" sap:content-version="1">
+<Key>
+<PropertyRef Name="TypeCode"/>
+</Key>
+<Property Name="TypeCode" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Type" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="TypeDescription" Type="Edm.String" Nullable="false" MaxLength="120" sap:unicode="false" sap:label="Type Description" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="CommMedium" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="Communication Medium" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+</EntityType>
+<EntityType Name="C_MKT_DGTLACCTSUBSCRPNQResult" sap:label="Acquisition of Digital Account Followers" sap:semantics="aggregate" sap:content-version="1">
+<Key>
+<PropertyRef Name="ID"/>
+</Key>
+<Property Name="ID" Type="Edm.String" Nullable="false" sap:filterable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="TotaledProperties" Type="Edm.String" sap:aggregation-role="totaled-properties-list" sap:is-annotation="true" sap:updatable="false" sap:sortable="false"/>
+<Property Name="DigitalAccountName" Type="Edm.String" MaxLength="80" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Digital Account Name"/>
+<Property Name="InteractionUTCDate" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:creatable="false" sap:semantics="yearmonthday" sap:text="InteractionUTCDate_T" sap:updatable="false" sap:label="UTC Date"/>
+<Property Name="InteractionUTCDate_T" Type="Edm.String" MaxLength="10" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="UTC Date (Description)"/>
+<Property Name="StreetName" Type="Edm.String" MaxLength="60" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Street"/>
+<Property Name="CalendarYear" Type="Edm.String" MaxLength="4" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Calendar Year"/>
+<Property Name="Country" Type="Edm.String" MaxLength="3" sap:aggregation-role="dimension" sap:creatable="false" sap:text="CountryName" sap:updatable="false" sap:label="Country"/>
+<Property Name="CountryName" Type="Edm.String" MaxLength="1333" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="Country (Description)"/>
+<Property Name="CityName" Type="Edm.String" MaxLength="40" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="City"/>
+<Property Name="FullName" Type="Edm.String" MaxLength="80" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Name"/>
+<Property Name="YearWeek" Type="Edm.String" MaxLength="6" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Year Week"/>
+<Property Name="DigitalAccountType" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:creatable="false" sap:text="DigitalAccountTypeName" sap:updatable="false" sap:label="Digital Account Type"/>
+<Property Name="DigitalAccountTypeName" Type="Edm.String" MaxLength="1333" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="Digital Account Type (Description)"/>
+<Property Name="GenderCode" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:creatable="false" sap:text="GenderCodeName" sap:updatable="false" sap:label="Gender"/>
+<Property Name="GenderCodeName" Type="Edm.String" MaxLength="1333" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="Gender (Description)"/>
+<Property Name="ItemOfInterest" Type="Edm.String" MaxLength="40" sap:aggregation-role="dimension" sap:creatable="false" sap:text="ItemOfInterestName" sap:updatable="false" sap:label="Item of Interest"/>
+<Property Name="ItemOfInterestName" Type="Edm.String" MaxLength="1333" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="Item of Interest (Description)"/>
+<Property Name="MarketingArea" Type="Edm.String" MaxLength="40" sap:aggregation-role="dimension" sap:creatable="false" sap:text="MarketingAreaName" sap:updatable="false" sap:label="Marketing Area ID"/>
+<Property Name="MarketingAreaName" Type="Edm.String" MaxLength="1333" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="Marketing Area ID (Description)"/>
+<Property Name="AddressRegion" Type="Edm.String" MaxLength="3" sap:aggregation-role="dimension" sap:creatable="false" sap:super-ordinate="Country" sap:text="RegionName" sap:updatable="false" sap:label="Region"/>
+<Property Name="RegionName" Type="Edm.String" MaxLength="1333" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="Region (Description)"/>
+<Property Name="DigitalAccountUUID" Type="Edm.String" MaxLength="32" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Digital Account UUID"/>
+<Property Name="EmailAddress" Type="Edm.String" MaxLength="241" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="E-Mail Address"/>
+<Property Name="DigitalAccount" Type="Edm.String" MaxLength="40" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Digital Account ID"/>
+<Property Name="YearQuarter" Type="Edm.String" MaxLength="5" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Year Quarter"/>
+<Property Name="AddressHouseNumber" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="House Number"/>
+<Property Name="MobileNumber" Type="Edm.String" MaxLength="30" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Mobile Number"/>
+<Property Name="YearMonth" Type="Edm.String" MaxLength="6" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Year Month"/>
+<Property Name="NumberOfFollowers" Type="Edm.Decimal" Precision="42" Scale="0" sap:aggregation-role="measure" sap:creatable="false" sap:filterable="false" sap:text="NumberOfFollowers_F" sap:updatable="false" sap:label="No. of New Followers"/>
+<Property Name="NumberOfFollowers_F" Type="Edm.String" MaxLength="60" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="No. of New Followers (Formatted)"/>
+<Property Name="NumberOfUnfollowers" Type="Edm.Decimal" Precision="42" Scale="0" sap:aggregation-role="measure" sap:creatable="false" sap:filterable="false" sap:text="NumberOfUnfollowers_F" sap:updatable="false" sap:label="No. of Unfollowers"/>
+<Property Name="NumberOfUnfollowers_F" Type="Edm.String" MaxLength="60" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="No. of Unfollowers (Formatted)"/>
+<Property Name="NetNumberOfFollowers" Type="Edm.Decimal" Precision="42" Scale="0" sap:aggregation-role="measure" sap:creatable="false" sap:filterable="false" sap:text="NetNumberOfFollowers_F" sap:updatable="false" sap:label="Net No. of New Fllw."/>
+<Property Name="NetNumberOfFollowers_F" Type="Edm.String" MaxLength="60" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="Net No. of New Fllw. (Formatted)"/>
+<NavigationProperty Name="Parameters" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.CMKT_DASUBSCRQParametersToResult" FromRole="ToRole_CMKT_DASUBSCRQParametersToResult" ToRole="FromRole_CMKT_DASUBSCRQParametersToResult"/>
+<NavigationProperty Name="CountryDetails" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.CountryToListOfValues" FromRole="ToRole_CountryToListOfValues" ToRole="FromRole_CountryToListOfValues"/>
+<NavigationProperty Name="AddressRegionDetails" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.AddressRegionToListOfValues" FromRole="ToRole_AddressRegionToListOfValues" ToRole="FromRole_AddressRegionToListOfValues"/>
+<NavigationProperty Name="GenderCodeDetails" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.GenderCodeToListOfValues" FromRole="ToRole_GenderCodeToListOfValues" ToRole="FromRole_GenderCodeToListOfValues"/>
+<NavigationProperty Name="ItemOfInterestDetails" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.ItemOfInterestToListOfValues" FromRole="ToRole_ItemOfInterestToListOfValues" ToRole="FromRole_ItemOfInterestToListOfValues"/>
+<NavigationProperty Name="DigitalAccountTypeDetails" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountTypeToListOfValues" FromRole="ToRole_DigitalAccountTypeToListOfValues" ToRole="FromRole_DigitalAccountTypeToListOfValues"/>
+<NavigationProperty Name="MarketingAreaDetails" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.MarketingAreaToListOfValues" FromRole="ToRole_MarketingAreaToListOfValues" ToRole="FromRole_MarketingAreaToListOfValues"/>
+</EntityType>
+<EntityType Name="C_MKT_DGTLACCTSUBSCRPNQParameters" sap:semantics="parameters" sap:content-version="1">
+<Key>
+<PropertyRef Name="P_StartDate"/>
+<PropertyRef Name="P_EndDate"/>
+</Key>
+<Property Name="P_StartDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:display-format="Date" sap:parameter="mandatory" sap:text="P_StartDateText" sap:label="Start Date" sap:sortable="false" sap:filterable="false"/>
+<Property Name="P_StartDateText" Type="Edm.String" MaxLength="60" sap:label="Start Date" sap:sortable="false" sap:filterable="false"/>
+<Property Name="P_EndDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:display-format="Date" sap:parameter="mandatory" sap:text="P_EndDateText" sap:label="End Date" sap:sortable="false" sap:filterable="false"/>
+<Property Name="P_EndDateText" Type="Edm.String" MaxLength="60" sap:label="End Date" sap:sortable="false" sap:filterable="false"/>
+<NavigationProperty Name="Results" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.CMKT_DASUBSCRQParametersToResult" FromRole="FromRole_CMKT_DASUBSCRQParametersToResult" ToRole="ToRole_CMKT_DASUBSCRQParametersToResult"/>
+</EntityType>
+<EntityType Name="Country" sap:content-version="1">
+<Key>
+<PropertyRef Name="Country"/>
+</Key>
+<Property Name="Country" Type="Edm.String" Nullable="false" sap:parameter="optional" sap:text="CountryText" sap:label="Country" sap:sortable="false"/>
+<Property Name="CountryText" Type="Edm.String" MaxLength="60" sap:label="Country" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="AddressRegion" sap:content-version="1">
+<Key>
+<PropertyRef Name="AddressRegion"/>
+</Key>
+<Property Name="AddressRegion" Type="Edm.String" Nullable="false" sap:parameter="optional" sap:super-ordinate="Country" sap:text="AddressRegionText" sap:label="Region" sap:sortable="false"/>
+<Property Name="AddressRegionText" Type="Edm.String" MaxLength="60" sap:label="Region" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="GenderCode" sap:content-version="1">
+<Key>
+<PropertyRef Name="GenderCode"/>
+</Key>
+<Property Name="GenderCode" Type="Edm.String" Nullable="false" sap:parameter="optional" sap:text="GenderCodeText" sap:label="Gender" sap:sortable="false"/>
+<Property Name="GenderCodeText" Type="Edm.String" MaxLength="60" sap:label="Gender" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="ItemOfInterest" sap:content-version="1">
+<Key>
+<PropertyRef Name="ItemOfInterest"/>
+</Key>
+<Property Name="ItemOfInterest" Type="Edm.String" Nullable="false" sap:parameter="optional" sap:text="ItemOfInterestText" sap:label="Item of Interest" sap:sortable="false"/>
+<Property Name="ItemOfInterestText" Type="Edm.String" MaxLength="60" sap:label="Item of Interest" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="DigitalAccountType" sap:content-version="1">
+<Key>
+<PropertyRef Name="DigitalAccountType"/>
+</Key>
+<Property Name="DigitalAccountType" Type="Edm.String" Nullable="false" sap:parameter="optional" sap:text="DigitalAccountTypeText" sap:label="Digital Account Type" sap:sortable="false"/>
+<Property Name="DigitalAccountTypeText" Type="Edm.String" MaxLength="60" sap:label="Digital Account Type" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="MarketingArea" sap:content-version="1">
+<Key>
+<PropertyRef Name="MarketingArea"/>
+</Key>
+<Property Name="MarketingArea" Type="Edm.String" Nullable="false" sap:parameter="optional" sap:text="MarketingAreaText" sap:label="Marketing Area ID" sap:sortable="false"/>
+<Property Name="MarketingAreaText" Type="Edm.String" MaxLength="60" sap:label="Marketing Area ID" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="ODataQueryAdditionalMetadata" sap:content-version="1">
+<Key>
+<PropertyRef Name="ODataQueryMetadata"/>
+</Key>
+<Property Name="ODataQueryMetadata" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ODataQueryMetadataValue_Current" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ODataQueryMetadataValueAtDefine" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="C_MKT_DGTLACCTINTACTNQResult" sap:label="Interactions of Digital Account" sap:semantics="aggregate" sap:content-version="1">
+<Key>
+<PropertyRef Name="ID"/>
+</Key>
+<Property Name="ID" Type="Edm.String" Nullable="false" sap:filterable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="TotaledProperties" Type="Edm.String" sap:aggregation-role="totaled-properties-list" sap:is-annotation="true" sap:updatable="false" sap:sortable="false"/>
+<Property Name="DigitalAccountName" Type="Edm.String" MaxLength="80" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Digital Account Name"/>
+<Property Name="InteractionUTCDate" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:creatable="false" sap:semantics="yearmonthday" sap:text="InteractionUTCDate_T" sap:updatable="false" sap:label="UTC Date"/>
+<Property Name="InteractionUTCDate_T" Type="Edm.String" MaxLength="10" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="UTC Date (Description)"/>
+<Property Name="InteractionType" Type="Edm.String" MaxLength="20" sap:aggregation-role="dimension" sap:creatable="false" sap:text="InteractionTypeName" sap:updatable="false" sap:label="Interaction Type"/>
+<Property Name="InteractionTypeName" Type="Edm.String" MaxLength="1333" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="Interaction Type (Description)"/>
+<Property Name="EmailAddress" Type="Edm.String" MaxLength="241" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="E-Mail Address"/>
+<Property Name="DigitalAccountUUID" Type="Edm.String" MaxLength="32" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Digital Account UUID"/>
+<Property Name="Country" Type="Edm.String" MaxLength="3" sap:aggregation-role="dimension" sap:creatable="false" sap:text="CountryName" sap:updatable="false" sap:label="Country"/>
+<Property Name="CountryName" Type="Edm.String" MaxLength="1333" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="Country (Description)"/>
+<Property Name="CityName" Type="Edm.String" MaxLength="40" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="City"/>
+<Property Name="FullName" Type="Edm.String" MaxLength="80" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Name"/>
+<Property Name="StreetName" Type="Edm.String" MaxLength="60" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Street"/>
+<Property Name="YearMonth" Type="Edm.String" MaxLength="6" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Year Month"/>
+<Property Name="YearWeek" Type="Edm.String" MaxLength="6" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Year Week"/>
+<Property Name="DigitalAccountType" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:creatable="false" sap:text="DigitalAccountTypeName" sap:updatable="false" sap:label="Digital Account Type"/>
+<Property Name="DigitalAccountTypeName" Type="Edm.String" MaxLength="1333" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="Digital Account Type (Description)"/>
+<Property Name="GenderCode" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:creatable="false" sap:text="GenderCodeName" sap:updatable="false" sap:label="Gender"/>
+<Property Name="GenderCodeName" Type="Edm.String" MaxLength="1333" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="Gender (Description)"/>
+<Property Name="ItemOfInterest" Type="Edm.String" MaxLength="40" sap:aggregation-role="dimension" sap:creatable="false" sap:text="ItemOfInterestName" sap:updatable="false" sap:label="Item of Interest"/>
+<Property Name="ItemOfInterestName" Type="Edm.String" MaxLength="1333" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="Item of Interest (Description)"/>
+<Property Name="MarketingArea" Type="Edm.String" MaxLength="40" sap:aggregation-role="dimension" sap:creatable="false" sap:text="MarketingAreaName" sap:updatable="false" sap:label="Marketing Area ID"/>
+<Property Name="MarketingAreaName" Type="Edm.String" MaxLength="1333" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="Marketing Area ID (Description)"/>
+<Property Name="AddressRegion" Type="Edm.String" MaxLength="3" sap:aggregation-role="dimension" sap:creatable="false" sap:super-ordinate="Country" sap:text="RegionName" sap:updatable="false" sap:label="Region"/>
+<Property Name="RegionName" Type="Edm.String" MaxLength="1333" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="Region (Description)"/>
+<Property Name="AddressHouseNumber" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="House Number"/>
+<Property Name="YearQuarter" Type="Edm.String" MaxLength="5" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Year Quarter"/>
+<Property Name="CalendarYear" Type="Edm.String" MaxLength="4" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Calendar Year"/>
+<Property Name="DigitalAccount" Type="Edm.String" MaxLength="40" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Digital Account ID"/>
+<Property Name="MobileNumber" Type="Edm.String" MaxLength="30" sap:aggregation-role="dimension" sap:creatable="false" sap:updatable="false" sap:label="Mobile Number"/>
+<Property Name="NumberOfInteractions" Type="Edm.Decimal" Precision="42" Scale="0" sap:aggregation-role="measure" sap:creatable="false" sap:filterable="false" sap:text="NumberOfInteractions_F" sap:updatable="false" sap:label="No. of Interactions"/>
+<Property Name="NumberOfInteractions_F" Type="Edm.String" MaxLength="60" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="No. of Interactions (Formatted)"/>
+<Property Name="NumberOfInteractionContacts" Type="Edm.Decimal" Precision="42" Scale="0" sap:aggregation-role="measure" sap:creatable="false" sap:filterable="false" sap:text="NumberOfInteractionContacts_F" sap:updatable="false" sap:label="No. of Contacts"/>
+<Property Name="NumberOfInteractionContacts_F" Type="Edm.String" MaxLength="60" sap:creatable="false" sap:filterable="false" sap:updatable="false" sap:label="No. of Contacts (Formatted)"/>
+<NavigationProperty Name="Parameters" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.CMKT_DAIAQParametersToResult" FromRole="ToRole_CMKT_DAIAQParametersToResult" ToRole="FromRole_CMKT_DAIAQParametersToResult"/>
+<NavigationProperty Name="ItemOfInterestDetails" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.ItemOfInterestToListOfValues" FromRole="ToRole_ItemOfInterestToListOfValues" ToRole="FromRole_ItemOfInterestToListOfValues"/>
+<NavigationProperty Name="CountryDetails" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.CountryToListOfValues" FromRole="ToRole_CountryToListOfValues" ToRole="FromRole_CountryToListOfValues"/>
+<NavigationProperty Name="AddressRegionDetails" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.AddressRegionToListOfValues" FromRole="ToRole_AddressRegionToListOfValues" ToRole="FromRole_AddressRegionToListOfValues"/>
+<NavigationProperty Name="GenderCodeDetails" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.GenderCodeToListOfValues" FromRole="ToRole_GenderCodeToListOfValues" ToRole="FromRole_GenderCodeToListOfValues"/>
+<NavigationProperty Name="DigitalAccountTypeDetails" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountTypeToListOfValues" FromRole="ToRole_DigitalAccountTypeToListOfValues" ToRole="FromRole_DigitalAccountTypeToListOfValues"/>
+<NavigationProperty Name="MarketingAreaDetails" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.MarketingAreaToListOfValues" FromRole="ToRole_MarketingAreaToListOfValues" ToRole="FromRole_MarketingAreaToListOfValues"/>
+</EntityType>
+<EntityType Name="C_MKT_DGTLACCTINTACTNQParameters" sap:semantics="parameters" sap:content-version="1">
+<Key>
+<PropertyRef Name="P_StartDate"/>
+<PropertyRef Name="P_EndDate"/>
+</Key>
+<Property Name="P_StartDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:display-format="Date" sap:parameter="mandatory" sap:text="P_StartDateText" sap:label="Start Date" sap:sortable="false" sap:filterable="false"/>
+<Property Name="P_StartDateText" Type="Edm.String" MaxLength="60" sap:label="Start Date" sap:sortable="false" sap:filterable="false"/>
+<Property Name="P_EndDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:display-format="Date" sap:parameter="mandatory" sap:text="P_EndDateText" sap:label="End Date" sap:sortable="false" sap:filterable="false"/>
+<Property Name="P_EndDateText" Type="Edm.String" MaxLength="60" sap:label="End Date" sap:sortable="false" sap:filterable="false"/>
+<NavigationProperty Name="Results" Relationship="CUAN_DIGITAL_ACCOUNT_SRV.CMKT_DAIAQParametersToResult" FromRole="FromRole_CMKT_DAIAQParametersToResult" ToRole="ToRole_CMKT_DAIAQParametersToResult"/>
+</EntityType>
+<EntityType Name="ItemOfInterest" sap:content-version="1">
+<Key>
+<PropertyRef Name="ItemOfInterest"/>
+</Key>
+<Property Name="ItemOfInterest" Type="Edm.String" Nullable="false" sap:parameter="optional" sap:text="ItemOfInterestText" sap:label="Item of Interest" sap:sortable="false"/>
+<Property Name="ItemOfInterestText" Type="Edm.String" MaxLength="60" sap:label="Item of Interest" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="Country" sap:content-version="1">
+<Key>
+<PropertyRef Name="Country"/>
+</Key>
+<Property Name="Country" Type="Edm.String" Nullable="false" sap:parameter="optional" sap:text="CountryText" sap:label="Country" sap:sortable="false"/>
+<Property Name="CountryText" Type="Edm.String" MaxLength="60" sap:label="Country" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="AddressRegion" sap:content-version="1">
+<Key>
+<PropertyRef Name="AddressRegion"/>
+</Key>
+<Property Name="AddressRegion" Type="Edm.String" Nullable="false" sap:parameter="optional" sap:super-ordinate="Country" sap:text="AddressRegionText" sap:label="Region" sap:sortable="false"/>
+<Property Name="AddressRegionText" Type="Edm.String" MaxLength="60" sap:label="Region" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="GenderCode" sap:content-version="1">
+<Key>
+<PropertyRef Name="GenderCode"/>
+</Key>
+<Property Name="GenderCode" Type="Edm.String" Nullable="false" sap:parameter="optional" sap:text="GenderCodeText" sap:label="Gender" sap:sortable="false"/>
+<Property Name="GenderCodeText" Type="Edm.String" MaxLength="60" sap:label="Gender" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="DigitalAccountType" sap:content-version="1">
+<Key>
+<PropertyRef Name="DigitalAccountType"/>
+</Key>
+<Property Name="DigitalAccountType" Type="Edm.String" Nullable="false" sap:parameter="optional" sap:text="DigitalAccountTypeText" sap:label="Digital Account Type" sap:sortable="false"/>
+<Property Name="DigitalAccountTypeText" Type="Edm.String" MaxLength="60" sap:label="Digital Account Type" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="MarketingArea" sap:content-version="1">
+<Key>
+<PropertyRef Name="MarketingArea"/>
+</Key>
+<Property Name="MarketingArea" Type="Edm.String" Nullable="false" sap:parameter="optional" sap:text="MarketingAreaText" sap:label="Marketing Area ID" sap:sortable="false"/>
+<Property Name="MarketingAreaText" Type="Edm.String" MaxLength="60" sap:label="Marketing Area ID" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="ODataQueryAdditionalMetadata" sap:content-version="1">
+<Key>
+<PropertyRef Name="ODataQueryMetadata"/>
+</Key>
+<Property Name="ODataQueryMetadata" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ODataQueryMetadataValue_Current" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="ODataQueryMetadataValueAtDefine" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<ComplexType Name="BOAuthorizationCT">
+<Property Name="Object" Type="Edm.String" Nullable="false" sap:label="Object Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Display" Type="Edm.Boolean" Nullable="false" sap:label="Display" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Change" Type="Edm.Boolean" Nullable="false" sap:label="Change" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Create" Type="Edm.Boolean" Nullable="false" sap:label="Create" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+</ComplexType>
+<Association Name="TargetGroupTargetGroupMember" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.TargetGroup" Multiplicity="1" Role="FromRole_TargetGroupTargetGroupMember"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.TargetGroupMember" Multiplicity="*" Role="ToRole_TargetGroupTargetGroupMember"/>
+</Association>
+<Association Name="DigitalAccountShakeFilterLocation" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount" Multiplicity="1" Role="FromRole_DigitalAccountShakeFilterLocation"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterLocation" Multiplicity="*" Role="ToRole_DigitalAccountShakeFilterLocation"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_DigitalAccountShakeFilterLocation">
+<PropertyRef Name="Key"/>
+</Principal>
+<Dependent Role="ToRole_DigitalAccountShakeFilterLocation">
+<PropertyRef Name="Key"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="DigitalAccountLocationAnalysis" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount" Multiplicity="1" Role="FromRole_DigitalAccountLocationAnalysis"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.LocationAnalysis" Multiplicity="*" Role="ToRole_DigitalAccountLocationAnalysis"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_DigitalAccountLocationAnalysis">
+<PropertyRef Name="Key"/>
+</Principal>
+<Dependent Role="ToRole_DigitalAccountLocationAnalysis">
+<PropertyRef Name="DigitalAccountKey"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="DigitalAccountContentAnalysis" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount" Multiplicity="1" Role="FromRole_DigitalAccountContentAnalysis"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.ContentAnalysis" Multiplicity="*" Role="ToRole_DigitalAccountContentAnalysis"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_DigitalAccountContentAnalysis">
+<PropertyRef Name="Key"/>
+</Principal>
+<Dependent Role="ToRole_DigitalAccountContentAnalysis">
+<PropertyRef Name="DigitalAccountKey"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="DigitalAccountSubscriptionsCDS" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount" Multiplicity="1" Role="FromRole_DigitalAccountSubscriptionsCDS"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTSUBSCRPNQResult" Multiplicity="*" Role="ToRole_DigitalAccountSubscriptionsCDS"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_DigitalAccountSubscriptionsCDS">
+<PropertyRef Name="Key"/>
+</Principal>
+<Dependent Role="ToRole_DigitalAccountSubscriptionsCDS">
+<PropertyRef Name="DigitalAccountUUID"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="DigitalAccountInteractionsCDS" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount" Multiplicity="1" Role="FromRole_DigitalAccountInteractionsCDS"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult" Multiplicity="*" Role="ToRole_DigitalAccountInteractionsCDS"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_DigitalAccountInteractionsCDS">
+<PropertyRef Name="Key"/>
+</Principal>
+<Dependent Role="ToRole_DigitalAccountInteractionsCDS">
+<PropertyRef Name="DigitalAccountUUID"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="DigitalAccountExtendAttribute" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount" Multiplicity="1" Role="FromRole_DigitalAccountExtendAttribute"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountExtAttribute" Multiplicity="*" Role="ToRole_DigitalAccountExtendAttribute"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_DigitalAccountExtendAttribute">
+<PropertyRef Name="Key"/>
+</Principal>
+<Dependent Role="ToRole_DigitalAccountExtendAttribute">
+<PropertyRef Name="DigitalAccountKey"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="DigitalAccountMember" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount" Multiplicity="1" Role="FromRole_DigitalAccountMember"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.Subscriber" Multiplicity="*" Role="ToRole_DigitalAccountMember"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_DigitalAccountMember">
+<PropertyRef Name="Key"/>
+</Principal>
+<Dependent Role="ToRole_DigitalAccountMember">
+<PropertyRef Name="Key"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="DigitalAccountInteractionAnaly" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount" Multiplicity="1" Role="FromRole_DigitalAccountInteractionAnaly"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.InteractionAnalysis" Multiplicity="*" Role="ToRole_DigitalAccountInteractionAnaly"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_DigitalAccountInteractionAnaly">
+<PropertyRef Name="Key"/>
+</Principal>
+<Dependent Role="ToRole_DigitalAccountInteractionAnaly">
+<PropertyRef Name="DigitalAccountKey"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="DigitalAccountDaContactAnaly" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount" Multiplicity="1" Role="FromRole_DigitalAccountDaContactAnaly"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis" Multiplicity="*" Role="ToRole_DigitalAccountDaContactAnaly"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_DigitalAccountDaContactAnaly">
+<PropertyRef Name="Key"/>
+</Principal>
+<Dependent Role="ToRole_DigitalAccountDaContactAnaly">
+<PropertyRef Name="DigitalAccountKey"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="DigitalAccountShakeFilterContent" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount" Multiplicity="1" Role="FromRole_DigitalAccountShakeFilterContent"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterContent" Multiplicity="*" Role="ToRole_DigitalAccountShakeFilterContent"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_DigitalAccountShakeFilterContent">
+<PropertyRef Name="Key"/>
+</Principal>
+<Dependent Role="ToRole_DigitalAccountShakeFilterContent">
+<PropertyRef Name="Key"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="MarketingAreaToListOfValues" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.MarketingArea" Multiplicity="1" Role="FromRole_MarketingAreaToListOfValues"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTSUBSCRPNQResult" Multiplicity="*" Role="ToRole_MarketingAreaToListOfValues"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_MarketingAreaToListOfValues">
+<PropertyRef Name="MarketingArea"/>
+</Principal>
+<Dependent Role="ToRole_MarketingAreaToListOfValues">
+<PropertyRef Name="MarketingArea"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="AddressRegionToListOfValues" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.AddressRegion" Multiplicity="1" Role="FromRole_AddressRegionToListOfValues"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTSUBSCRPNQResult" Multiplicity="*" Role="ToRole_AddressRegionToListOfValues"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_AddressRegionToListOfValues">
+<PropertyRef Name="AddressRegion"/>
+</Principal>
+<Dependent Role="ToRole_AddressRegionToListOfValues">
+<PropertyRef Name="AddressRegion"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="CMKT_DASUBSCRQParametersToResult" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTSUBSCRPNQParameters" Multiplicity="1" Role="FromRole_CMKT_DASUBSCRQParametersToResult"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTSUBSCRPNQResult" Multiplicity="*" Role="ToRole_CMKT_DASUBSCRQParametersToResult"/>
+</Association>
+<Association Name="ItemOfInterestToListOfValues" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.ItemOfInterest" Multiplicity="1" Role="FromRole_ItemOfInterestToListOfValues"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTSUBSCRPNQResult" Multiplicity="*" Role="ToRole_ItemOfInterestToListOfValues"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_ItemOfInterestToListOfValues">
+<PropertyRef Name="ItemOfInterest"/>
+</Principal>
+<Dependent Role="ToRole_ItemOfInterestToListOfValues">
+<PropertyRef Name="ItemOfInterest"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="CountryToListOfValues" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.Country" Multiplicity="1" Role="FromRole_CountryToListOfValues"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTSUBSCRPNQResult" Multiplicity="*" Role="ToRole_CountryToListOfValues"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_CountryToListOfValues">
+<PropertyRef Name="Country"/>
+</Principal>
+<Dependent Role="ToRole_CountryToListOfValues">
+<PropertyRef Name="Country"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="GenderCodeToListOfValues" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.GenderCode" Multiplicity="1" Role="FromRole_GenderCodeToListOfValues"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTSUBSCRPNQResult" Multiplicity="*" Role="ToRole_GenderCodeToListOfValues"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_GenderCodeToListOfValues">
+<PropertyRef Name="GenderCode"/>
+</Principal>
+<Dependent Role="ToRole_GenderCodeToListOfValues">
+<PropertyRef Name="GenderCode"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="DigitalAccountTypeToListOfValues" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountType" Multiplicity="1" Role="FromRole_DigitalAccountTypeToListOfValues"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTSUBSCRPNQResult" Multiplicity="*" Role="ToRole_DigitalAccountTypeToListOfValues"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_DigitalAccountTypeToListOfValues">
+<PropertyRef Name="DigitalAccountType"/>
+</Principal>
+<Dependent Role="ToRole_DigitalAccountTypeToListOfValues">
+<PropertyRef Name="DigitalAccountType"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="MarketingAreaToListOfValues" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.MarketingArea" Multiplicity="1" Role="FromRole_MarketingAreaToListOfValues"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult" Multiplicity="*" Role="ToRole_MarketingAreaToListOfValues"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_MarketingAreaToListOfValues">
+<PropertyRef Name="MarketingArea"/>
+</Principal>
+<Dependent Role="ToRole_MarketingAreaToListOfValues">
+<PropertyRef Name="MarketingArea"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="AddressRegionToListOfValues" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.AddressRegion" Multiplicity="1" Role="FromRole_AddressRegionToListOfValues"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult" Multiplicity="*" Role="ToRole_AddressRegionToListOfValues"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_AddressRegionToListOfValues">
+<PropertyRef Name="AddressRegion"/>
+</Principal>
+<Dependent Role="ToRole_AddressRegionToListOfValues">
+<PropertyRef Name="AddressRegion"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="ItemOfInterestToListOfValues" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.ItemOfInterest" Multiplicity="1" Role="FromRole_ItemOfInterestToListOfValues"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult" Multiplicity="*" Role="ToRole_ItemOfInterestToListOfValues"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_ItemOfInterestToListOfValues">
+<PropertyRef Name="ItemOfInterest"/>
+</Principal>
+<Dependent Role="ToRole_ItemOfInterestToListOfValues">
+<PropertyRef Name="ItemOfInterest"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="CountryToListOfValues" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.Country" Multiplicity="1" Role="FromRole_CountryToListOfValues"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult" Multiplicity="*" Role="ToRole_CountryToListOfValues"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_CountryToListOfValues">
+<PropertyRef Name="Country"/>
+</Principal>
+<Dependent Role="ToRole_CountryToListOfValues">
+<PropertyRef Name="Country"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="GenderCodeToListOfValues" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.GenderCode" Multiplicity="1" Role="FromRole_GenderCodeToListOfValues"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult" Multiplicity="*" Role="ToRole_GenderCodeToListOfValues"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_GenderCodeToListOfValues">
+<PropertyRef Name="GenderCode"/>
+</Principal>
+<Dependent Role="ToRole_GenderCodeToListOfValues">
+<PropertyRef Name="GenderCode"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="DigitalAccountTypeToListOfValues" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountType" Multiplicity="1" Role="FromRole_DigitalAccountTypeToListOfValues"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult" Multiplicity="*" Role="ToRole_DigitalAccountTypeToListOfValues"/>
+<ReferentialConstraint>
+<Principal Role="FromRole_DigitalAccountTypeToListOfValues">
+<PropertyRef Name="DigitalAccountType"/>
+</Principal>
+<Dependent Role="ToRole_DigitalAccountTypeToListOfValues">
+<PropertyRef Name="DigitalAccountType"/>
+</Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="CMKT_DAIAQParametersToResult" sap:content-version="1">
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQParameters" Multiplicity="1" Role="FromRole_CMKT_DAIAQParametersToResult"/>
+<End Type="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult" Multiplicity="*" Role="ToRole_CMKT_DAIAQParametersToResult"/>
+</Association>
+<EntityContainer Name="CUAN_DIGITAL_ACCOUNT_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+<EntitySet Name="ShakeFilterContentSet" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterContent" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="ShakeFilterLocationSet" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterLocation" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="LocationAnalysis" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.LocationAnalysis" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="ContentAnalysis" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.ContentAnalysis" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="IBeaconAnalysis" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.IBeaconAnalysis" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="SystemTypeSet" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.SystemType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="DigitalAccountExtAttributeSet" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountExtAttribute" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="DigitalAccountAttributeDefSet" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountAttributeDef" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="DigitalAccounts" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount" sap:deletable="false" sap:searchable="true" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="Subscribers" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.Subscriber" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="MarketingAreas" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.MarketingArea" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="TargetGroupMembers" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.TargetGroupMember" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="InteractionTypes" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.InteractionType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="InteractionAnalysis" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.InteractionAnalysis" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="SubscriberAnalysis" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.SubscriberAnalysis" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="TargetGroups" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.TargetGroup" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="IconTabFilters" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.IconTabFilter" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="DigitalAccountTypes" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="Country" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.Country" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+<EntitySet Name="AddressRegion" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.AddressRegion" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+<EntitySet Name="GenderCode" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.GenderCode" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+<EntitySet Name="ItemOfInterest" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.ItemOfInterest" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+<EntitySet Name="DigitalAccountType" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+<EntitySet Name="MarketingArea" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.MarketingArea" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+<EntitySet Name="AdditionalMetadata" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.ODataQueryAdditionalMetadata" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+<EntitySet Name="C_MKT_DGTLACCTSUBSCRPNQResults" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTSUBSCRPNQResult" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="C_MKT_DGTLACCTSUBSCRPNQ" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTSUBSCRPNQParameters" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+<EntitySet Name="ItemOfInterest" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.ItemOfInterest" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+<EntitySet Name="Country" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.Country" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+<EntitySet Name="AddressRegion" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.AddressRegion" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+<EntitySet Name="GenderCode" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.GenderCode" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+<EntitySet Name="DigitalAccountType" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+<EntitySet Name="MarketingArea" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.MarketingArea" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+<EntitySet Name="AdditionalMetadata" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.ODataQueryAdditionalMetadata" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+<EntitySet Name="C_MKT_DGTLACCTINTACTNQResults" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQResult" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:addressable="false" sap:content-version="1"/>
+<EntitySet Name="C_MKT_DGTLACCTINTACTNQ" EntityType="CUAN_DIGITAL_ACCOUNT_SRV.C_MKT_DGTLACCTINTACTNQParameters" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+<AssociationSet Name="DigitalAccountInteractionAnalys" Association="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountInteractionAnaly" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="DigitalAccounts" Role="FromRole_DigitalAccountInteractionAnaly"/>
+<End EntitySet="InteractionAnalysis" Role="ToRole_DigitalAccountInteractionAnaly"/>
+</AssociationSet>
+<AssociationSet Name="DigitalAccountExtendAttribute_AssocSet" Association="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountExtendAttribute" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="DigitalAccounts" Role="FromRole_DigitalAccountExtendAttribute"/>
+<End EntitySet="DigitalAccountExtAttributeSet" Role="ToRole_DigitalAccountExtendAttribute"/>
+</AssociationSet>
+<AssociationSet Name="DigitalAccountContentAnalysis" Association="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountContentAnalysis" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="DigitalAccounts" Role="FromRole_DigitalAccountContentAnalysis"/>
+<End EntitySet="ContentAnalysis" Role="ToRole_DigitalAccountContentAnalysis"/>
+</AssociationSet>
+<AssociationSet Name="DigitalAccountShakeFilterLocationSet" Association="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountShakeFilterLocation" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="DigitalAccounts" Role="FromRole_DigitalAccountShakeFilterLocation"/>
+<End EntitySet="ShakeFilterLocationSet" Role="ToRole_DigitalAccountShakeFilterLocation"/>
+</AssociationSet>
+<AssociationSet Name="DigitalAccountDaContactAnalys" Association="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountDaContactAnaly" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="DigitalAccounts" Role="FromRole_DigitalAccountDaContactAnaly"/>
+<End EntitySet="SubscriberAnalysis" Role="ToRole_DigitalAccountDaContactAnaly"/>
+</AssociationSet>
+<AssociationSet Name="DigitalAccountShakeFilterContentSet" Association="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountShakeFilterContent" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="DigitalAccounts" Role="FromRole_DigitalAccountShakeFilterContent"/>
+<End EntitySet="ShakeFilterContentSet" Role="ToRole_DigitalAccountShakeFilterContent"/>
+</AssociationSet>
+<AssociationSet Name="DigitalAccountInteractionsCDS" Association="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountInteractionsCDS" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="DigitalAccounts" Role="FromRole_DigitalAccountInteractionsCDS"/>
+<End EntitySet="C_MKT_DGTLACCTINTACTNQResults" Role="ToRole_DigitalAccountInteractionsCDS"/>
+</AssociationSet>
+<AssociationSet Name="DigitalAccountMembers" Association="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountMember" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="DigitalAccounts" Role="FromRole_DigitalAccountMember"/>
+<End EntitySet="Subscribers" Role="ToRole_DigitalAccountMember"/>
+</AssociationSet>
+<AssociationSet Name="DigitalAccountSubscriptionsCDS" Association="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountSubscriptionsCDS" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="DigitalAccounts" Role="FromRole_DigitalAccountSubscriptionsCDS"/>
+<End EntitySet="C_MKT_DGTLACCTSUBSCRPNQResults" Role="ToRole_DigitalAccountSubscriptionsCDS"/>
+</AssociationSet>
+<AssociationSet Name="TargetGroupTargetGroupMembers" Association="CUAN_DIGITAL_ACCOUNT_SRV.TargetGroupTargetGroupMember" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="TargetGroups" Role="FromRole_TargetGroupTargetGroupMember"/>
+<End EntitySet="TargetGroupMembers" Role="ToRole_TargetGroupTargetGroupMember"/>
+</AssociationSet>
+<AssociationSet Name="DigitalAccountLocationAnalysis" Association="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountLocationAnalysis" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="DigitalAccounts" Role="FromRole_DigitalAccountLocationAnalysis"/>
+<End EntitySet="LocationAnalysis" Role="ToRole_DigitalAccountLocationAnalysis"/>
+</AssociationSet>
+<AssociationSet Name="AddressRegionToListOfValues_AssocSet" Association="CUAN_DIGITAL_ACCOUNT_SRV.AddressRegionToListOfValues" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="AddressRegion" Role="FromRole_AddressRegionToListOfValues"/>
+<End EntitySet="C_MKT_DGTLACCTSUBSCRPNQResults" Role="ToRole_AddressRegionToListOfValues"/>
+</AssociationSet>
+<AssociationSet Name="GenderCodeToListOfValues_AssocSet" Association="CUAN_DIGITAL_ACCOUNT_SRV.GenderCodeToListOfValues" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="GenderCode" Role="FromRole_GenderCodeToListOfValues"/>
+<End EntitySet="C_MKT_DGTLACCTSUBSCRPNQResults" Role="ToRole_GenderCodeToListOfValues"/>
+</AssociationSet>
+<AssociationSet Name="CMKT_DASUBSCRQParametersToResult_AssocSe" Association="CUAN_DIGITAL_ACCOUNT_SRV.CMKT_DASUBSCRQParametersToResult" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="C_MKT_DGTLACCTSUBSCRPNQ" Role="FromRole_CMKT_DASUBSCRQParametersToResult"/>
+<End EntitySet="C_MKT_DGTLACCTSUBSCRPNQResults" Role="ToRole_CMKT_DASUBSCRQParametersToResult"/>
+</AssociationSet>
+<AssociationSet Name="ItemOfInterestToListOfValues_AssocSet" Association="CUAN_DIGITAL_ACCOUNT_SRV.ItemOfInterestToListOfValues" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="ItemOfInterest" Role="FromRole_ItemOfInterestToListOfValues"/>
+<End EntitySet="C_MKT_DGTLACCTSUBSCRPNQResults" Role="ToRole_ItemOfInterestToListOfValues"/>
+</AssociationSet>
+<AssociationSet Name="MarketingAreaToListOfValues_AssocSet" Association="CUAN_DIGITAL_ACCOUNT_SRV.MarketingAreaToListOfValues" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="MarketingArea" Role="FromRole_MarketingAreaToListOfValues"/>
+<End EntitySet="C_MKT_DGTLACCTSUBSCRPNQResults" Role="ToRole_MarketingAreaToListOfValues"/>
+</AssociationSet>
+<AssociationSet Name="DigitalAccountTypeToListOfValues_AssocSe" Association="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountTypeToListOfValues" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="DigitalAccountType" Role="FromRole_DigitalAccountTypeToListOfValues"/>
+<End EntitySet="C_MKT_DGTLACCTSUBSCRPNQResults" Role="ToRole_DigitalAccountTypeToListOfValues"/>
+</AssociationSet>
+<AssociationSet Name="CountryToListOfValues_AssocSet" Association="CUAN_DIGITAL_ACCOUNT_SRV.CountryToListOfValues" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="Country" Role="FromRole_CountryToListOfValues"/>
+<End EntitySet="C_MKT_DGTLACCTSUBSCRPNQResults" Role="ToRole_CountryToListOfValues"/>
+</AssociationSet>
+<AssociationSet Name="CMKT_DAIAQParametersToResult_AssocSet" Association="CUAN_DIGITAL_ACCOUNT_SRV.CMKT_DAIAQParametersToResult" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="C_MKT_DGTLACCTINTACTNQ" Role="FromRole_CMKT_DAIAQParametersToResult"/>
+<End EntitySet="C_MKT_DGTLACCTINTACTNQResults" Role="ToRole_CMKT_DAIAQParametersToResult"/>
+</AssociationSet>
+<AssociationSet Name="AddressRegionToListOfValues_AssocSet" Association="CUAN_DIGITAL_ACCOUNT_SRV.AddressRegionToListOfValues" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="AddressRegion" Role="FromRole_AddressRegionToListOfValues"/>
+<End EntitySet="C_MKT_DGTLACCTINTACTNQResults" Role="ToRole_AddressRegionToListOfValues"/>
+</AssociationSet>
+<AssociationSet Name="GenderCodeToListOfValues_AssocSet" Association="CUAN_DIGITAL_ACCOUNT_SRV.GenderCodeToListOfValues" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="GenderCode" Role="FromRole_GenderCodeToListOfValues"/>
+<End EntitySet="C_MKT_DGTLACCTINTACTNQResults" Role="ToRole_GenderCodeToListOfValues"/>
+</AssociationSet>
+<AssociationSet Name="ItemOfInterestToListOfValues_AssocSet" Association="CUAN_DIGITAL_ACCOUNT_SRV.ItemOfInterestToListOfValues" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="ItemOfInterest" Role="FromRole_ItemOfInterestToListOfValues"/>
+<End EntitySet="C_MKT_DGTLACCTINTACTNQResults" Role="ToRole_ItemOfInterestToListOfValues"/>
+</AssociationSet>
+<AssociationSet Name="MarketingAreaToListOfValues_AssocSet" Association="CUAN_DIGITAL_ACCOUNT_SRV.MarketingAreaToListOfValues" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="MarketingArea" Role="FromRole_MarketingAreaToListOfValues"/>
+<End EntitySet="C_MKT_DGTLACCTINTACTNQResults" Role="ToRole_MarketingAreaToListOfValues"/>
+</AssociationSet>
+<AssociationSet Name="DigitalAccountTypeToListOfValues_AssocSe" Association="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountTypeToListOfValues" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="DigitalAccountType" Role="FromRole_DigitalAccountTypeToListOfValues"/>
+<End EntitySet="C_MKT_DGTLACCTINTACTNQResults" Role="ToRole_DigitalAccountTypeToListOfValues"/>
+</AssociationSet>
+<AssociationSet Name="CountryToListOfValues_AssocSet" Association="CUAN_DIGITAL_ACCOUNT_SRV.CountryToListOfValues" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+<End EntitySet="Country" Role="FromRole_CountryToListOfValues"/>
+<End EntitySet="C_MKT_DGTLACCTINTACTNQResults" Role="ToRole_CountryToListOfValues"/>
+</AssociationSet>
+<FunctionImport Name="READBOAUTHORIZATION" ReturnType="Collection(CUAN_DIGITAL_ACCOUNT_SRV.BOAuthorizationCT)" m:HttpMethod="GET">
+<Parameter Name="BOName" Type="Edm.String" Mode="In"/>
+</FunctionImport>
+</EntityContainer>
+<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount/ApiUserId">
+<Annotation Term="com.sap.vocabularies.Common.v1.Masked"/>
+</Annotations>
+<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount/ApiUserPassword">
+<Annotation Term="com.sap.vocabularies.Common.v1.Masked"/>
+</Annotations>
+<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount/InboundToken">
+<Annotation Term="com.sap.vocabularies.Common.v1.Masked"/>
+</Annotations>
+<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccount/DigaccDesc">
+<Annotation Term="com.sap.vocabularies.UI.v1.MultiLineText"/>
+</Annotations>
+<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="C_MKT_DGTLACCTSUBSCRPNQ_CDS.C_MKT_DGTLACCTSUBSCRPNQResult/Country">
+<Annotation Term="Common.ValueList">
+<Record>
+<PropertyValue Property="Label" String="Country"/>
+<PropertyValue Property="CollectionPath" String="Country"/>
+<PropertyValue Property="SearchSupported" Bool="false"/>
+<PropertyValue Property="Parameters">
+<Collection>
+<Record Type="Common.ValueListParameterInOut">
+<PropertyValue Property="LocalDataProperty" PropertyPath="Country"/>
+<PropertyValue Property="ValueListProperty" String="Country"/>
+</Record>
+<Record Type="Common.ValueListParameterDisplayOnly">
+<PropertyValue Property="ValueListProperty" String="CountryText"/>
+</Record>
+</Collection>
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="C_MKT_DGTLACCTSUBSCRPNQ_CDS.C_MKT_DGTLACCTSUBSCRPNQResult/AddressRegion">
+<Annotation Term="Common.ValueList">
+<Record>
+<PropertyValue Property="Label" String="Region"/>
+<PropertyValue Property="CollectionPath" String="AddressRegion"/>
+<PropertyValue Property="SearchSupported" Bool="false"/>
+<PropertyValue Property="Parameters">
+<Collection>
+<Record Type="Common.ValueListParameterInOut">
+<PropertyValue Property="LocalDataProperty" PropertyPath="AddressRegion"/>
+<PropertyValue Property="ValueListProperty" String="AddressRegion"/>
+</Record>
+<Record Type="Common.ValueListParameterDisplayOnly">
+<PropertyValue Property="ValueListProperty" String="AddressRegionText"/>
+</Record>
+</Collection>
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="C_MKT_DGTLACCTSUBSCRPNQ_CDS.C_MKT_DGTLACCTSUBSCRPNQResult/GenderCode">
+<Annotation Term="Common.ValueList">
+<Record>
+<PropertyValue Property="Label" String="Gender"/>
+<PropertyValue Property="CollectionPath" String="GenderCode"/>
+<PropertyValue Property="SearchSupported" Bool="false"/>
+<PropertyValue Property="Parameters">
+<Collection>
+<Record Type="Common.ValueListParameterInOut">
+<PropertyValue Property="LocalDataProperty" PropertyPath="GenderCode"/>
+<PropertyValue Property="ValueListProperty" String="GenderCode"/>
+</Record>
+<Record Type="Common.ValueListParameterDisplayOnly">
+<PropertyValue Property="ValueListProperty" String="GenderCodeText"/>
+</Record>
+</Collection>
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="C_MKT_DGTLACCTSUBSCRPNQ_CDS.C_MKT_DGTLACCTSUBSCRPNQResult/ItemOfInterest">
+<Annotation Term="Common.ValueList">
+<Record>
+<PropertyValue Property="Label" String="Item of Interest"/>
+<PropertyValue Property="CollectionPath" String="ItemOfInterest"/>
+<PropertyValue Property="SearchSupported" Bool="false"/>
+<PropertyValue Property="Parameters">
+<Collection>
+<Record Type="Common.ValueListParameterInOut">
+<PropertyValue Property="LocalDataProperty" PropertyPath="ItemOfInterest"/>
+<PropertyValue Property="ValueListProperty" String="ItemOfInterest"/>
+</Record>
+<Record Type="Common.ValueListParameterDisplayOnly">
+<PropertyValue Property="ValueListProperty" String="ItemOfInterestText"/>
+</Record>
+</Collection>
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="C_MKT_DGTLACCTSUBSCRPNQ_CDS.C_MKT_DGTLACCTSUBSCRPNQResult/DigitalAccountType">
+<Annotation Term="Common.ValueList">
+<Record>
+<PropertyValue Property="Label" String="Digital Account Type"/>
+<PropertyValue Property="CollectionPath" String="DigitalAccountType"/>
+<PropertyValue Property="SearchSupported" Bool="false"/>
+<PropertyValue Property="Parameters">
+<Collection>
+<Record Type="Common.ValueListParameterInOut">
+<PropertyValue Property="LocalDataProperty" PropertyPath="DigitalAccountType"/>
+<PropertyValue Property="ValueListProperty" String="DigitalAccountType"/>
+</Record>
+<Record Type="Common.ValueListParameterDisplayOnly">
+<PropertyValue Property="ValueListProperty" String="DigitalAccountTypeText"/>
+</Record>
+</Collection>
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="C_MKT_DGTLACCTSUBSCRPNQ_CDS.C_MKT_DGTLACCTSUBSCRPNQResult/MarketingArea">
+<Annotation Term="Common.ValueList">
+<Record>
+<PropertyValue Property="Label" String="Marketing Area ID"/>
+<PropertyValue Property="CollectionPath" String="MarketingArea"/>
+<PropertyValue Property="SearchSupported" Bool="false"/>
+<PropertyValue Property="Parameters">
+<Collection>
+<Record Type="Common.ValueListParameterInOut">
+<PropertyValue Property="LocalDataProperty" PropertyPath="MarketingArea"/>
+<PropertyValue Property="ValueListProperty" String="MarketingArea"/>
+</Record>
+<Record Type="Common.ValueListParameterDisplayOnly">
+<PropertyValue Property="ValueListProperty" String="MarketingAreaText"/>
+</Record>
+</Collection>
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="C_MKT_DGTLACCTINTACTNQ_CDS.C_MKT_DGTLACCTINTACTNQResult/ItemOfInterest">
+<Annotation Term="Common.ValueList">
+<Record>
+<PropertyValue Property="Label" String="Item of Interest"/>
+<PropertyValue Property="CollectionPath" String="ItemOfInterest"/>
+<PropertyValue Property="SearchSupported" Bool="false"/>
+<PropertyValue Property="Parameters">
+<Collection>
+<Record Type="Common.ValueListParameterInOut">
+<PropertyValue Property="LocalDataProperty" PropertyPath="ItemOfInterest"/>
+<PropertyValue Property="ValueListProperty" String="ItemOfInterest"/>
+</Record>
+<Record Type="Common.ValueListParameterDisplayOnly">
+<PropertyValue Property="ValueListProperty" String="ItemOfInterestText"/>
+</Record>
+</Collection>
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="C_MKT_DGTLACCTINTACTNQ_CDS.C_MKT_DGTLACCTINTACTNQResult/Country">
+<Annotation Term="Common.ValueList">
+<Record>
+<PropertyValue Property="Label" String="Country"/>
+<PropertyValue Property="CollectionPath" String="Country"/>
+<PropertyValue Property="SearchSupported" Bool="false"/>
+<PropertyValue Property="Parameters">
+<Collection>
+<Record Type="Common.ValueListParameterInOut">
+<PropertyValue Property="LocalDataProperty" PropertyPath="Country"/>
+<PropertyValue Property="ValueListProperty" String="Country"/>
+</Record>
+<Record Type="Common.ValueListParameterDisplayOnly">
+<PropertyValue Property="ValueListProperty" String="CountryText"/>
+</Record>
+</Collection>
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="C_MKT_DGTLACCTINTACTNQ_CDS.C_MKT_DGTLACCTINTACTNQResult/AddressRegion">
+<Annotation Term="Common.ValueList">
+<Record>
+<PropertyValue Property="Label" String="Region"/>
+<PropertyValue Property="CollectionPath" String="AddressRegion"/>
+<PropertyValue Property="SearchSupported" Bool="false"/>
+<PropertyValue Property="Parameters">
+<Collection>
+<Record Type="Common.ValueListParameterInOut">
+<PropertyValue Property="LocalDataProperty" PropertyPath="AddressRegion"/>
+<PropertyValue Property="ValueListProperty" String="AddressRegion"/>
+</Record>
+<Record Type="Common.ValueListParameterDisplayOnly">
+<PropertyValue Property="ValueListProperty" String="AddressRegionText"/>
+</Record>
+</Collection>
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="C_MKT_DGTLACCTINTACTNQ_CDS.C_MKT_DGTLACCTINTACTNQResult/GenderCode">
+<Annotation Term="Common.ValueList">
+<Record>
+<PropertyValue Property="Label" String="Gender"/>
+<PropertyValue Property="CollectionPath" String="GenderCode"/>
+<PropertyValue Property="SearchSupported" Bool="false"/>
+<PropertyValue Property="Parameters">
+<Collection>
+<Record Type="Common.ValueListParameterInOut">
+<PropertyValue Property="LocalDataProperty" PropertyPath="GenderCode"/>
+<PropertyValue Property="ValueListProperty" String="GenderCode"/>
+</Record>
+<Record Type="Common.ValueListParameterDisplayOnly">
+<PropertyValue Property="ValueListProperty" String="GenderCodeText"/>
+</Record>
+</Collection>
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="C_MKT_DGTLACCTINTACTNQ_CDS.C_MKT_DGTLACCTINTACTNQResult/DigitalAccountType">
+<Annotation Term="Common.ValueList">
+<Record>
+<PropertyValue Property="Label" String="Digital Account Type"/>
+<PropertyValue Property="CollectionPath" String="DigitalAccountType"/>
+<PropertyValue Property="SearchSupported" Bool="false"/>
+<PropertyValue Property="Parameters">
+<Collection>
+<Record Type="Common.ValueListParameterInOut">
+<PropertyValue Property="LocalDataProperty" PropertyPath="DigitalAccountType"/>
+<PropertyValue Property="ValueListProperty" String="DigitalAccountType"/>
+</Record>
+<Record Type="Common.ValueListParameterDisplayOnly">
+<PropertyValue Property="ValueListProperty" String="DigitalAccountTypeText"/>
+</Record>
+</Collection>
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="C_MKT_DGTLACCTINTACTNQ_CDS.C_MKT_DGTLACCTINTACTNQResult/MarketingArea">
+<Annotation Term="Common.ValueList">
+<Record>
+<PropertyValue Property="Label" String="Marketing Area ID"/>
+<PropertyValue Property="CollectionPath" String="MarketingArea"/>
+<PropertyValue Property="SearchSupported" Bool="false"/>
+<PropertyValue Property="Parameters">
+<Collection>
+<Record Type="Common.ValueListParameterInOut">
+<PropertyValue Property="LocalDataProperty" PropertyPath="MarketingArea"/>
+<PropertyValue Property="ValueListProperty" String="MarketingArea"/>
+</Record>
+<Record Type="Common.ValueListParameterDisplayOnly">
+<PropertyValue Property="ValueListProperty" String="MarketingAreaText"/>
+</Record>
+</Collection>
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href=""/>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href=""/>
+</Schema>
+</edmx:DataServices>
+</edmx:Edmx>

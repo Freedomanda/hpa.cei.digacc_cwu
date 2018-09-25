@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+		<ViewSettingsDialog confirm="onFilterConfirm" sortDescending="true" title="{i18n>contactFilterDialogTitle}">
+		<filterItems>
+		    <ViewSettingsCustomItem id="contactdatePeriodFilter"  key="datePeriod"
+				text="{i18n>intListFilterDatePeroid}">
+				<customControl>
+				<DateRangeSelection id="contactFilterDatePeroidDate"/>
+				</customControl>
+			</ViewSettingsCustomItem>
+		   
+			<!-- TODO: extension point -->
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

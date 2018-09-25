@@ -1,0 +1,52 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns="sap.m">
+	<!--<Dialog title="{i18n>intFilterDialogTitle}">-->
+	<!--	<content>-->
+	<!--		<f:SimpleForm id="analyFilterForm" title="" maxContainerCols="2" layout="ResponsiveLayout" labelMinWidth="250" editable="true"-->
+	<!--			labelSpanL="1" labelSpanM="1" columnsL="2" columnsM="2">-->
+	<!--			<f:content>-->
+	<!--				<Label id="datePeriodFilterLabel" text="{i18n>intListFilterDatePeroid}" labelFor="intFilterDatePeroidInput"/>-->
+	<!--				<DateRangeSelection id="intFilterDatePeroidDate"/>-->
+	<!--				<Label id="intTypeFilterLabel" text="{i18n>intListFilterIntType}" labelFor="intFilterIntTypeComboBox"/>-->
+	<!--				<MultiComboBox id="intFilterIntTypeComboBox" width="500px" items="{ path: '/InteractionTypes', sorter: { path: 'IaType' } }">-->
+	<!--					<core:Item key="{IaType}" text="{IaTypeDesc}"/>-->
+	<!--				</MultiComboBox>-->
+					<!--<Label text="{i18n>intListFilterIntItem}" labelFor="intFilterIntItemInput"/>-->
+					<!--<MultiInput id="intFilterIntItemInput" width="500px" suggestionItems="{ path: '/ProductCollection', sorter: { path: 'Name' } }"-->
+					<!--	showValueHelp="false">-->
+					<!--	<core:Item key="{ProductId}" text="{Name}"/>-->
+					<!--</MultiInput>-->
+	<!--			</f:content>-->
+	<!--		</f:SimpleForm>-->
+	<!--	</content>-->
+	<!--	<buttons>-->
+	<!--		<Button id="filterIntButton" text="{i18n>filterButton}" press="onFilterConfirm"/>-->
+	<!--		<Button id="filterCancelButton" text="{i18n>cancelButton}" press="onFilterCancel"/>-->
+	<!--	</buttons>-->
+	<!--</Dialog>-->
+	<ViewSettingsDialog confirm="onFilterConfirm" sortDescending="true" title="{i18n>intFilterDialogTitle}">
+		<filterItems>
+		    <ViewSettingsCustomItem id="IntdatePeriodFilter"  key="datePeriod"
+				text="{i18n>intListFilterDatePeroid}">
+				<customControl>
+				<DateRangeSelection id="intFilterDatePeroidDate" change="onDateChange"/>
+				</customControl>
+			</ViewSettingsCustomItem>
+		    
+			<ViewSettingsFilterItem id="intTypeFilter" items="{ path: 'intTypeModel>/IntType', sorter: { path: 'InteractionTypeCode'}}" key="InteractionTypeCode"
+				text="{i18n>intListFilterIntType}">
+				<items>
+					<ViewSettingsItem key="{intTypeModel>InteractionTypeCode}" text="{intTypeModel>InteractionTypeDescription}" selected="true">
+						<customData>
+							<core:CustomData key="InteractionTypeCode" value=""></core:CustomData>
+						</customData>
+					</ViewSettingsItem>
+				</items>
+			</ViewSettingsFilterItem>
+		
+			<!-- TODO: extension point -->
+		</filterItems>
+	</ViewSettingsDialog>
+
+	
+	
+</core:FragmentDefinition>

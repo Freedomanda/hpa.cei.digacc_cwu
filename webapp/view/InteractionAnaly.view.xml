@@ -1,0 +1,73 @@
+<mvc:View controllerName="hpa.cei.digital_account.controller.InteractionAnaly" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
+	xmlns:footerbar="sap.ushell.ui.footerbar" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns="sap.m"
+	xmlns:filterbar="sap.ui.comp.filterbar" xmlns:viz="sap.viz.ui5.controls" xmlns:coms="sap.suite.ui.commons" xmlns:viz.data="sap.viz.ui5.data"
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds">
+
+	<coms:ChartContainer id="barChartContainer" showFullScreen="true" autoAdjustHeight="false"  showLegendButton="true"
+		showZoom="true" showPersonalization="false" >
+		<coms:dimensionSelectors>
+			<Label id="labelForMeasure" text="{i18n>measureLabel}" labelFor="measureSelect" visible="{InteAnalyView>/isChartView}" class="sapUiMediumMarginBegin"></Label>
+			<Select id="measureSelect" change="onHandleMeasureChange" visible="{InteAnalyView>/isBarChartView}">
+				<core:Item id="measureSelectCount" key="{i18n>interactionCountMeasure}" text="{i18n>intCount}"/>
+				<core:Item id="measureSelectContact" key="{i18n>contactCountMeasure}" text="{i18n>contactCount}"/>
+			</Select>
+		</coms:dimensionSelectors>
+		
+		<coms:customIcons>
+			<core:Icon src="sap-icon://filter" id="filterButton" press="onFilter" tooltip="{i18n>filterButtonTooltip}"
+			/>
+		</coms:customIcons>
+		
+		<coms:content >
+			<coms:ChartContainerContent icon="sap-icon://horizontal-bar-chart" title="{i18n>barChartTitle}">
+				<coms:content>
+					<!--<viz:Popover id="intAnalyBarPopOver"></viz:Popover>-->
+					<viz:VizFrame id="intAnalyBar" uiConfig="{applicationSet:'fiori'}" vizType="bar" height="500px">
+						<viz:dataset>
+							<viz.data:FlattenedDataset data="{intAnalyCountModel>/IntAnalySum}">
+								<viz.data:dimensions>
+									<viz.data:DimensionDefinition name="{i18n>typeDimension}" value="{IntTypeDesc}"/>
+								</viz.data:dimensions>
+								<viz.data:measures>
+									<viz.data:MeasureDefinition name="{i18n>interactionCountMeasure}" value="{intAnalyCountModel>NumberOfInteractions}"/>
+									<viz.data:MeasureDefinition name="{i18n>contactCountMeasure}" value="{intAnalyCountModel>NumberOfInteractionContacts}"/>
+								</viz.data:measures>
+							</viz.data:FlattenedDataset>
+						</viz:dataset>
+						<viz:feeds>
+							<viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure" />
+							<viz.feeds:FeedItem id="categoryAxisFeed" uid="categoryAxis" type="Dimension" />
+						</viz:feeds>
+					</viz:VizFrame>
+				</coms:content>
+			</coms:ChartContainerContent>
+			
+			<coms:ChartContainerContent icon="sap-icon://line-chart" title="{i18n>lineChartTitle}">
+				<coms:content>
+					<!--<viz:Popover id="intAnalyLinePopOver"></viz:Popover>-->
+					<viz:VizFrame id="intAnalyLine" uiConfig="{applicationSet:'fiori'}" vizType="line" height="500px">
+						<viz:dataset>
+							<viz.data:FlattenedDataset
+								data="{path: 'intAnalyDateModel>/DaInteractionAnalys' , sorter: { path: 'InteractionUTCDate',descending: false }}">
+								<viz.data:dimensions>
+									<viz.data:DimensionDefinition name="{i18n>dateDimension}" value="{path: 'intAnalyDateModel>InteractionUTCDate', formatter: '.formatter.formatDate'}"/>
+									<viz.data:DimensionDefinition name="inttype" value="{intAnalyDateModel>InteractionTypeName}"/>
+								</viz.data:dimensions>
+								<viz.data:measures>
+									<viz.data:MeasureDefinition name="{i18n>interactionCountMeasure}" value="{intAnalyDateModel>NumberOfInteractions}"/>
+									<viz.data:MeasureDefinition name="{i18n>contactCountMeasure}" value="{intAnalyDateModel>NumberOfInteractionContacts}"/>
+									<!--    <viz.data:MeasureDefinition name="contact" value="{ContactCount}"/>-->
+								</viz.data:measures>
+							</viz.data:FlattenedDataset>
+						</viz:dataset>
+						<viz:feeds>
+							<viz.feeds:FeedItem id="lineValueAxisId" uid="valueAxis" type="Measure" />
+							<viz.feeds:FeedItem id="lineCategoryAxisFeed" uid="categoryAxis" type="Dimension" />
+							<viz.feeds:FeedItem id="lineColor" uid="color" type="Dimension" />
+						</viz:feeds>
+					</viz:VizFrame>
+				</coms:content>
+			</coms:ChartContainerContent>
+		</coms:content>
+	</coms:ChartContainer>
+</mvc:View>

@@ -1,0 +1,81 @@
+[{
+	"InteractionTypeCode": "InteractionTypeCode 21",
+	"InteractionTypeDescription": "InteractionTypeDescription 21",
+	"Type": "Type 21",
+	"__metadata": {
+		"uri": "InteractionTypes('InteractionTypeCode%2021')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionType"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 22",
+	"InteractionTypeDescription": "InteractionTypeDescription 22",
+	"Type": "Type 22",
+	"__metadata": {
+		"uri": "InteractionTypes('InteractionTypeCode%2022')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionType"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 23",
+	"InteractionTypeDescription": "InteractionTypeDescription 23",
+	"Type": "Type 23",
+	"__metadata": {
+		"uri": "InteractionTypes('InteractionTypeCode%2023')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionType"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 24",
+	"InteractionTypeDescription": "InteractionTypeDescription 24",
+	"Type": "Type 24",
+	"__metadata": {
+		"uri": "InteractionTypes('InteractionTypeCode%2024')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionType"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 25",
+	"InteractionTypeDescription": "InteractionTypeDescription 25",
+	"Type": "Type 25",
+	"__metadata": {
+		"uri": "InteractionTypes('InteractionTypeCode%2025')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionType"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 26",
+	"InteractionTypeDescription": "InteractionTypeDescription 26",
+	"Type": "Type 26",
+	"__metadata": {
+		"uri": "InteractionTypes('InteractionTypeCode%2026')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionType"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 27",
+	"InteractionTypeDescription": "InteractionTypeDescription 27",
+	"Type": "Type 27",
+	"__metadata": {
+		"uri": "InteractionTypes('InteractionTypeCode%2027')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionType"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 28",
+	"InteractionTypeDescription": "InteractionTypeDescription 28",
+	"Type": "Type 28",
+	"__metadata": {
+		"uri": "InteractionTypes('InteractionTypeCode%2028')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionType"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 29",
+	"InteractionTypeDescription": "InteractionTypeDescription 29",
+	"Type": "Type 29",
+	"__metadata": {
+		"uri": "InteractionTypes('InteractionTypeCode%2029')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionType"
+	}
+}, {
+	"InteractionTypeCode": "InteractionTypeCode 30",
+	"InteractionTypeDescription": "InteractionTypeDescription 30",
+	"Type": "Type 30",
+	"__metadata": {
+		"uri": "InteractionTypes('InteractionTypeCode%2030')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.InteractionType"
+	}
+}]

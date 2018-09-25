@@ -1,0 +1,73 @@
+<mvc:View controllerName="hpa.cei.digital_account.controller.ContactList" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:navpop="sap.ui.comp.navpopover">
+	<Table busyIndicatorDelay="{contactListView>/tableBusyDelay}" class="sapUiResponsiveMargin" growing="true" growingScrollToLoad="true"
+		id="contactTable" items="{path: 'DigitalAccountMembers'}" mode="MultiSelect" includeItemInSelection="true"
+		noDataText="{contactlistView>/tableNoDataText}" updateFinished="onUpdateFinished" width="auto" selectionChange="onSelectContact">
+		<headerToolbar>
+			<Toolbar id="contactListToolbar">
+				<ToolbarSpacer/>
+				<SearchField id="searchField" search="onSearch" tooltip="{i18n>contactlistSearchTooltip}" width="auto"></SearchField>
+				<Button id="createTGButton" press="onCreateTGPress" text="{i18n>createTGText}" visible="{contactListView>/canCreateTG}"
+					enabled="{contactListView>/createTGEnabled}" type="Transparent" tooltip="{i18n>createTGText}"/>
+				<Button icon="sap-icon://drop-down-list" id="sortButton" press="onFilterSort" tooltip="{i18n>sortButtonTooltip}"/>
+				<Button icon="sap-icon://action-settings" id="persButton" press="onPersonalize" tooltip="{i18n>personlaizeButtonTooltip}"/>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column id="contactColumn" minScreenWidth="Tablet" demandPopin="true">
+				<Text id="contactColumnTitle" text="{i18n>contactColumnTitle}"/>
+			</Column>
+			<Column id="nickNameColumn" minScreenWidth="Tablet" demandPopin="true">
+				<Text id="nickNameColumnTitle" text="{i18n>nickNameColumnTitle}"/>
+			</Column>
+			<Column id="mobileColumn">
+				<Text id="mobileColumnTitle" text="{i18n>mobileColumnTitle}"/>
+			</Column>
+			<Column id="countryColumn" minScreenWidth="Tablet" demandPopin="false">
+				<Text id="countryColumnTitle" text="{i18n>countryColumnTitle}"/>
+			</Column>
+			<Column id="regionColumn" minScreenWidth="Tablet" demandPopin="false">
+				<Text id="regionColumnTitle" text="{i18n>regionColumnTitle}"/>
+			</Column>
+			<Column id="cityColumn" minScreenWidth="Tablet" demandPopin="false">
+				<Text id="cityColumnTitle" text="{i18n>cityColumnTitle}"/>
+			</Column>
+			<Column id="emailColumn" minScreenWidth="Tablet" demandPopin="true">
+				<Text id="emailColumnTitle" text="{i18n>emailColumnTitle}"/>
+			</Column>
+			<Column id="streetColumn" minScreenWidth="Tablet" demandPopin="false">
+				<Text id="streetColumnTitle" text="{i18n>streetColumnTitle}"/>
+			</Column>
+			<Column id="houseNoColumn" minScreenWidth="Tablet" demandPopin="false">
+				<Text id="houseNoColumnTitle" text="{i18n>houseNoColumnTitle}"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<navpop:SmartLink text="{ContactName}" enableAvailableActionsPersonalization="false" semanticObject="MarketingContact"  fieldName="Key" navigationTargetsObtained="onNavigationObtained"  >
+						<navpop:innerControl>
+								<Link text="{ContactName}" >
+						<customData>
+							<core:CustomData key="{Key}"/>
+						</customData>
+					
+					</Link>
+							
+						</navpop:innerControl>
+						
+					</navpop:SmartLink>
+				
+					<Text text="{SubscriberName}"/>
+					<Text text="{MobilePhoneNumner}"/>
+					<Text text="{CountryDescription}"/>
+					<Text text="{RegionDescription}"/>
+					<Text text="{City}"/>
+					<Text text="{Email}"/>
+					<Text text="{Street}"/>
+					<Text text="{HouseNumber}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</mvc:View>

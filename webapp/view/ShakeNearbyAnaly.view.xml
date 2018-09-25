@@ -1,0 +1,206 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:fb="sap.ui.comp.filterbar"
+	controllerName="hpa.cei.digital_account.controller.ShakeNearbyAnaly" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:coms="sap.suite.ui.commons" xmlns:viz.data="sap.viz.ui5.data"
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds">
+	<VBox id="breadCrumbContainer" visible="{shakeControlView>/canSeeBreadChart}">
+		
+		
+	</VBox>
+	
+	<VBox id="breadCrumbTableContainer" visible="{shakeControlView>/canSeeBreadTable}">
+		
+		
+	</VBox>
+	
+
+	<coms:ChartContainer id="shakeAnalyChart" showFullScreen="true" autoAdjustHeight="false"  showLegendButton="true"
+		showZoom="true" showPersonalization="false" contentChange="onChartContentChange">
+		<coms:dimensionSelectors>
+			<!--<Label id="labelForDimension" text="{i18n>dimensionLabel}" labelFor="dimensionSelect" class="sapUiMediumMarginBegin"-->
+			<!--	visible="{shakeControlView>/canSeeDimChart}"></Label>-->
+			<Select id="dimensionSelect" change="onHandleMeasureChange" visible="{shakeControlView>/canSeeDimChart}"
+				enabled="{shakeControlView>/canEditFilter}" tooltip="{i18n>dimensionLabel}">
+				<core:Item id="measureSelectCountByLoc" key="countbyLoc" text="{i18n>countByLocation}"/>
+				<core:Item id="measureSelectPersonByLoc" key="personByLoc" text="{i18n>personByLocation}"/>
+				<core:Item id="measureSelectCountByCon" key="countByCon" text="{i18n>countByContent}"/>
+				<core:Item id="measureSelectPersonByCon" key="personByCon" text="{i18n>personByContent}"/>
+			</Select>
+			<!--<Label text="{i18n>dimensionLabel}" labelFor="dimensionSelect" class="sapUiMediumMarginBegin" visible="{shakeControlView>/canSeeDimTable}"></Label>-->
+			<Select change="onHandleTableMeasureChange" visible="{shakeControlView>/canSeeDimTable}" enabled="{shakeControlView>/canEditDimTable}" tooltip="{i18n>dimensionLabel}">
+				<core:Item key="byLocation" text="{i18n>listForLocation}"/>
+				<core:Item key="byContent" text="{i18n>listForContent}"/>
+			</Select>
+
+			<SearchField id="searchField" visible="{shakeControlView>/canSeeDimTable}" search="onSearch" tooltip="{i18n>shakeTableSearchTooltip}" width="auto"></SearchField>
+		
+		</coms:dimensionSelectors>
+		<coms:customIcons>
+			<core:Icon src="sap-icon://filter" id="filterButton" press="onFilter" tooltip="{i18n>filterButtonTooltip}" visible="false"/>
+		</coms:customIcons>
+		<!--				        <coms:customIcons>-->
+		<!--	<core:Icon src="sap-icon://filter" id="filterButton" press="onFilter" tooltip="{i18n>filterButtonTooltip}"-->
+		<!--	/>-->
+		<!--</coms:customIcons>-->
+		<coms:content >
+			<coms:ChartContainerContent id="shakeBarChart" icon="sap-icon://horizontal-bar-chart" title="{i18n>barChartTitle}">
+				<coms:content>
+					<!--<viz:Popover id="intAnalyBarPopOver"></viz:Popover>-->
+					<viz:VizFrame id="shakeAnalyBar" uiConfig="{applicationSet:'fiori'}" vizType="bar" height="500px" selectData="onSelectBarData">
+						<viz:dataset>
+							<viz.data:FlattenedDataset data="{shakeAnalyModel>/ShakeCountData}">
+								<viz.data:dimensions>
+									<viz.data:DimensionDefinition name="{i18n>locationDimension}" displayValue="{shakeAnalyModel>LocationDesc}"
+										value="{shakeAnalyModel>LocationId}"/>
+								</viz.data:dimensions>
+								<viz.data:measures>
+									<viz.data:MeasureDefinition name="{i18n>shakeMeasure}" value="{shakeAnalyModel>Count}"/>
+									<viz.data:MeasureDefinition name="{i18n>uniqueShakeMeasure}" value="{shakeAnalyModel>Count}"/>
+									<!--<viz.data:MeasureDefinition name="{i18n>personMeasure}" value="{shakeAnalyModel>Person}"/>-->
+								</viz.data:measures>
+							</viz.data:FlattenedDataset>
+						</viz:dataset>
+						<viz:feeds>
+							<viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure" />
+							<viz.feeds:FeedItem id="categoryAxisFeed" uid="categoryAxis" type="Dimension" />
+						</viz:feeds>
+					</viz:VizFrame>
+				</coms:content>
+			</coms:ChartContainerContent>
+			<coms:ChartContainerContent id="shakeLineChart" icon="sap-icon://line-chart" title="{i18n>lineChartTitle}">
+				<coms:content>
+					<!--<viz:Popover id="intAnalyLinePopOver"></viz:Popover>-->
+					<viz:VizFrame id="shakeAnalyLine" uiConfig="{applicationSet:'fiori'}" vizType="line" height="500px">
+						<viz:dataset>
+							<viz.data:FlattenedDataset
+								data="{path: 'shakeAnalyDateModel>/shakeDateAnalys' , sorter: { path: 'Date', descending: false }}">
+								<viz.data:dimensions>
+									<viz.data:DimensionDefinition name="{i18n>dateDimension}" value="{path: 'shakeAnalyDateModel>Date', formatter: '.formatter.formatDate'}"/>
+									<viz.data:DimensionDefinition name="{i18n>locationDimension}" value="{shakeAnalyDateModel>LocationDescription}"/>
+								</viz.data:dimensions>
+								<viz.data:measures>
+									<viz.data:MeasureDefinition name="{i18n>shakeMeasure}" value="{shakeAnalyDateModel>Count}"/>
+									<viz.data:MeasureDefinition name="{i18n>uniqueShakeMeasure}" value="{shakeAnalyDateModel>Count}"/>
+								</viz.data:measures>
+							</viz.data:FlattenedDataset>
+						</viz:dataset>
+						<viz:feeds>
+							<viz.feeds:FeedItem id="lineValueAxisId" uid="valueAxis" type="Measure"/>
+							<viz.feeds:FeedItem id="lineCategoryAxisFeed" uid="categoryAxis" type="Dimension" />
+							<viz.feeds:FeedItem id="lineColor" uid="color" type="Dimension"/>
+						</viz:feeds>
+					</viz:VizFrame>
+				</coms:content>
+			</coms:ChartContainerContent>
+			<coms:ChartContainerContent id="shakeTableChart" icon="sap-icon://table-chart" title="{i18n>tableChartTitle}">
+				<coms:content>
+					<Table id="shakeTable" items="{path: '/'}"  width="auto" inset="false">
+						<columns>
+							<Column id="shakeTableLocation" width="12em" minScreenWidth="Tablet" demandPopin="true" hAlign="Left" visible="{shakeTableControl>/location}">
+								<Text text="{i18n>shakeTableLocation}"/>
+							</Column>
+							<Column id="shakeTableLocCountry" minScreenWidth="Tablet" demandPopin="true" hAlign="Center" visible="{shakeTableControl>/location}">
+								<Text text="{i18n>shakeTableLocCountry}"/>
+							</Column>
+							<Column id="shakeTableLocRegion" minScreenWidth="Tablet" demandPopin="true" hAlign="Left" visible="{shakeTableControl>/location}">
+								<Text text="{i18n>shakeTableLocRegion}"/>
+							</Column>
+							<Column id="shakeTableLocCity" minScreenWidth="Tablet" demandPopin="true" hAlign="Left" visible="{shakeTableControl>/location}">
+								<Text text="{i18n>shakeTableLocCity}"/>
+							</Column>
+							<Column id="shakeTableLocCounts" minScreenWidth="Tablet" demandPopin="false" hAlign="Right" visible="{shakeTableControl>/location}">
+								<Text text="{i18n>shakeTableLocationCounts}"/>
+							</Column>
+							<Column id="shakeTableLocPerson" minScreenWidth="Tablet" demandPopin="false" hAlign="Right" visible="{shakeTableControl>/location}">
+								<Text text="{i18n>shakeTableLocationPerson}"/>
+							</Column>
+							<Column id="shakeTableLocBeacon" demandPopin="true" hAlign="Right" visible="{shakeTableControl>/location}">
+								<Text text="{i18n>shakeTableLocationBeacon}"/>
+							</Column>
+							<!-- Beacon list -->
+							<Column id="shakeTableBeacon" minScreenWidth="Tablet" demandPopin="false" hAlign="Left" visible="{shakeTableControl>/beacon}">
+								<Text text="{i18n>shakeTableBeacon}"/>
+							</Column>
+							<Column id="shakeTableBeaconDesc" minScreenWidth="Tablet" demandPopin="true" hAlign="Left" visible="{shakeTableControl>/beacon}">
+								<Text text="{i18n>shakeTableBeaconDesc}"/>
+							</Column>
+							<Column id="shakeTableBeaconMajor" minScreenWidth="Tablet" demandPopin="true" hAlign="Left" visible="{shakeTableControl>/beacon}">
+								<Text text="{i18n>shakeTableBeaconMajor}"/>
+							</Column>
+							<Column id="shakeTableBeaconMinor" minScreenWidth="Tablet" demandPopin="true" hAlign="Left" visible="{shakeTableControl>/beacon}">
+								<Text text="{i18n>shakeTableBeaconMinor}"/>
+							</Column>
+							<Column id="shakeTableBeaconLoc" minScreenWidth="Tablet" demandPopin="false" hAlign="Left" visible="{shakeTableControl>/beacon}">
+								<Text text="{i18n>shakeTableBeaconLocation}"/>
+							</Column>
+							<Column id="shakeTableBeaconCounts" minScreenWidth="Tablet" demandPopin="false" hAlign="Right" visible="{shakeTableControl>/beacon}">
+								<Text text="{i18n>shakeTableBeaconCounts}"/>
+							</Column>
+							<Column id="shakeTableBeaconPerson" minScreenWidth="Tablet" demandPopin="false" hAlign="Right" visible="{shakeTableControl>/beacon}">
+								<Text text="{i18n>shakeTableBeaconPerson}"/>
+							</Column>
+							<Column id="shakeTableBeaconPage" demandPopin="false" hAlign="Right" visible="{shakeTableControl>/beacon}">
+								<Text text="{i18n>shakeTableBeaconPages}"/>
+							</Column>
+							<!-- content list -->
+							<Column id="shakeTableContentImage" minScreenWidth="Tablet" demandPopin="false" hAlign="Left" visible="{shakeTableControl>/content}">
+								<Text text="{i18n>shakeTableContentImage}"/>
+							</Column>
+							<Column id="shakeTableContentTitle" minScreenWidth="Tablet" demandPopin="true" hAlign="Left" visible="{shakeTableControl>/content}">
+								<Text text="{i18n>shakeTableContentTitle}"/>
+							</Column>
+							<!--<Column id="shakeTableContentCTime" minScreenWidth="Tablet" demandPopin="true" hAlign="Left" visible="{shakeTableControl>/content}">-->
+							<!--	<Text text="{i18n>shakeTableContentCTime}"/>-->
+							<!--</Column>-->
+							<Column id="shakeTableContentComments" minScreenWidth="Tablet" demandPopin="true" hAlign="Left" visible="{shakeTableControl>/content}">
+								<Text text="{i18n>shakeTableContentComments}"/>
+							</Column>
+							<Column id="shakeTableContentCounts" minScreenWidth="Tablet" demandPopin="false" hAlign="Right" visible="{shakeTableControl>/content}">
+								<Text text="{i18n>shakeTableContentCounts}"/>
+							</Column>
+							<Column id="shakeTableContentPerson" minScreenWidth="Tablet" demandPopin="false" hAlign="Right" visible="{shakeTableControl>/content}">
+								<Text text="{i18n>shakeTableContentPerson}"/>
+							</Column>
+							<Column id="shakeTableContentBeacon" minScreenWidth="Tablet" demandPopin="false" hAlign="Right" visible="{shakeTableControl>/contentBeacon}">
+								<Text text="{i18n>shakeTableContentBeacon}"/>
+							</Column>
+							<Column id="shakeTableContentLoc" demandPopin="false" hAlign="Right" visible="{shakeTableControl>/contentLocation}">
+								<Text text="{i18n>shakeTableContentLoc}"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem press="onTableItemPress" vAlign="Middle" type="{shakeTableControl>/columnListItemType}">
+								<cells>
+									<Link text="{LocationName}" subtle="true" href="{LocationUrl}" target="_blank"/>
+									<Text text="{LocCountry}"/>
+									<Text text="{LocRegion}"/>
+									<Text text="{LocCity}"/>
+									<Text text="{IAStatistics}"/>
+									<Text text="{ICStatistics}"/>
+									<Text text="{IBeaconStatistics}" />
+									<!-- beacon list -->
+									<Text text="{BeaconID}"/>
+									<Text text="{BeaconDescription}"/>
+									<Text text="{Major}"/>
+									<Text text="{Minor}"/>
+									<Link text="{LocationName}" subtle="true" href="{LocationUrl}" target="_blank"/>
+									<Text text="{IAStatistics}"/>
+									<Text text="{ICStatistics}"/>
+									<Text text="{ContentStatistics}"/>
+									<!-- Content list -->
+									<Image src="{ContentUrl}" width="60px" alt="{ContentTitle}"/>
+									<Link text="{ContentTitle}" href="{ContentPageUrl}" target="_blank"/>
+									<!--<Text text="{ContentCreateTime}"/>-->
+									<Text text="{Comments}"/>
+									<Text text="{IAStatistics}"/>
+									<Text text="{ICStatistics}"/>
+									<Text text="{IBeaconStatistics}"/>
+									<Text text="{LocationKeyStatistics}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</coms:content>
+			</coms:ChartContainerContent>
+		</coms:content>
+	</coms:ChartContainer>
+</mvc:View>

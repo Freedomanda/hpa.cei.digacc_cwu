@@ -1,0 +1,47 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns="sap.m">
+	<ViewSettingsDialog confirm="onShakeFilterConfirm" sortDescending="true" title="{i18n>shakeFilterDialogTitle}">
+		<filterItems>
+		    <ViewSettingsCustomItem id="ShakedatePeriodFilter"  key="datePeriod"
+				text="{i18n>shakeNearbyFilterDateRange}" >
+				<customControl>
+				<DateRangeSelection id="shakeNearbyDateRange" change="onDateChange" />
+				</customControl>
+			</ViewSettingsCustomItem>
+		    
+			<ViewSettingsFilterItem id="shakeLocationFilter" items="{ path: 'locationListFilterModel>/LocationList'}" key="LocationKey"
+				text="{i18n>shakeNearbyFilterLocation}" multiSelect="true">
+				<items>
+					<ViewSettingsItem key="{locationListFilterModel>LocationKey}" text="{locationListFilterModel>LocationName}" selected="{locationListFilterModel>Selected}" >
+						<!--<customData>-->
+						<!--	<core:CustomData key="LocationKey" value=""></core:CustomData>-->
+						<!--</customData>-->
+					</ViewSettingsItem>
+				</items>
+			</ViewSettingsFilterItem>
+			
+			<ViewSettingsFilterItem id="shakeContentFilter" items="{ path: 'contentListFilterModel>/ContentList'}" key="ContentId"
+				text="{i18n>shakeNearbyFilterContent}">
+				<items>
+					<ViewSettingsItem key="{contentListFilterModel>ContentId}" text="{contentListFilterModel>ContentName}" selected="{contentListFilterModel>Selected}" >
+						<!--<customData>-->
+						<!--	<core:CustomData key="ContentId" value=""></core:CustomData>-->
+						<!--</customData>-->
+					</ViewSettingsItem>
+				</items>
+			</ViewSettingsFilterItem>
+		 <ViewSettingsCustomItem id="ShakeTopFilter"  key="top"
+				text="{i18n>shakeNearbyLocFilterTop}">
+				<customControl>
+								<Input id="shakeNearbyTop" type="Number" width="100%" placeholder="{i18n>shakeNearbyFilterTopLocPlaceholder}"/>
+
+				</customControl>
+			</ViewSettingsCustomItem>
+		
+		
+			<!-- TODO: extension point -->
+		</filterItems>
+	</ViewSettingsDialog>
+
+	
+	
+</core:FragmentDefinition>

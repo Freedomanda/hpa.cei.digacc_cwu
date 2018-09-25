@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<ViewSettingsDialog confirm="onSortConfirm" sortDescending="true" title="{i18n>memberAnalySortDialogTitle}">
+		<sortItems>
+			<ViewSettingsItem text="{i18n>memberAnalyListSortNewNum}" key="NumberOfFollowers"/>
+			<ViewSettingsItem text="{i18n>memberAnalyListSortUnfollownum}" key="NumberOfUnfollowers"/>
+			<ViewSettingsItem text="{i18n>memberAnalyListSortNetnum}" key="NetNumberOfFollowers"/>
+		
+		</sortItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

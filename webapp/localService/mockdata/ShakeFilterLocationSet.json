@@ -1,0 +1,131 @@
+[{
+	"Key": "6C0B84B755231ED7A0B267511483B8F3",
+	"LocationKey": "6C0B84B755231ED7A0B267511483B8F3",
+	"LocationName": "LocationName 1",
+	"__metadata": {
+		"uri": "ShakeFilterLocationSet(Key='6C0B84B755231ED7A0B267511483B8F3',LocationKey='6C0B84B755231ED7A0B267511483B8F3')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterLocation"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterLocationSet(Key='Key 1',LocationKey='LocationKey 1')/DigitalAccount"
+		}
+	}
+}, {
+	"Key": "Key 2",
+	"LocationKey": "LocationKey 2",
+	"LocationName": "LocationName 2",
+	"__metadata": {
+		"uri": "ShakeFilterLocationSet(Key='Key 2',LocationKey='LocationKey 2')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterLocation"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterLocationSet(Key='Key 2',LocationKey='LocationKey 2')/DigitalAccount"
+		}
+	}
+}, {
+	"Key": "Key 3",
+	"LocationKey": "LocationKey 3",
+	"LocationName": "LocationName 3",
+	"__metadata": {
+		"uri": "ShakeFilterLocationSet(Key='Key 3',LocationKey='LocationKey 3')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterLocation"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterLocationSet(Key='Key 3',LocationKey='LocationKey 3')/DigitalAccount"
+		}
+	}
+}, {
+	"Key": "Key 4",
+	"LocationKey": "LocationKey 4",
+	"LocationName": "LocationName 4",
+	"__metadata": {
+		"uri": "ShakeFilterLocationSet(Key='Key 4',LocationKey='LocationKey 4')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterLocation"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterLocationSet(Key='Key 4',LocationKey='LocationKey 4')/DigitalAccount"
+		}
+	}
+}, {
+	"Key": "Key 5",
+	"LocationKey": "LocationKey 5",
+	"LocationName": "LocationName 5",
+	"__metadata": {
+		"uri": "ShakeFilterLocationSet(Key='Key 5',LocationKey='LocationKey 5')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterLocation"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterLocationSet(Key='Key 5',LocationKey='LocationKey 5')/DigitalAccount"
+		}
+	}
+}, {
+	"Key": "Key 6",
+	"LocationKey": "LocationKey 6",
+	"LocationName": "LocationName 6",
+	"__metadata": {
+		"uri": "ShakeFilterLocationSet(Key='Key 6',LocationKey='LocationKey 6')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterLocation"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterLocationSet(Key='Key 6',LocationKey='LocationKey 6')/DigitalAccount"
+		}
+	}
+}, {
+	"Key": "Key 7",
+	"LocationKey": "LocationKey 7",
+	"LocationName": "LocationName 7",
+	"__metadata": {
+		"uri": "ShakeFilterLocationSet(Key='Key 7',LocationKey='LocationKey 7')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterLocation"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterLocationSet(Key='Key 7',LocationKey='LocationKey 7')/DigitalAccount"
+		}
+	}
+}, {
+	"Key": "Key 8",
+	"LocationKey": "LocationKey 8",
+	"LocationName": "LocationName 8",
+	"__metadata": {
+		"uri": "ShakeFilterLocationSet(Key='Key 8',LocationKey='LocationKey 8')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterLocation"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterLocationSet(Key='Key 8',LocationKey='LocationKey 8')/DigitalAccount"
+		}
+	}
+}, {
+	"Key": "Key 9",
+	"LocationKey": "LocationKey 9",
+	"LocationName": "LocationName 9",
+	"__metadata": {
+		"uri": "ShakeFilterLocationSet(Key='Key 9',LocationKey='LocationKey 9')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterLocation"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterLocationSet(Key='Key 9',LocationKey='LocationKey 9')/DigitalAccount"
+		}
+	}
+}, {
+	"Key": "Key 10",
+	"LocationKey": "LocationKey 10",
+	"LocationName": "LocationName 10",
+	"__metadata": {
+		"uri": "ShakeFilterLocationSet(Key='Key 10',LocationKey='LocationKey 10')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.ShakeFilterLocation"
+	},
+	"DigitalAccount": {
+		"__deferred": {
+			"uri": "ShakeFilterLocationSet(Key='Key 10',LocationKey='LocationKey 10')/DigitalAccount"
+		}
+	}
+}]

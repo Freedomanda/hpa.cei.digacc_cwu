@@ -1,0 +1,81 @@
+[{
+	"AttributeName": "AttributeName 1",
+	"AttributeValue": "AttributeValue 1",
+	"DigitalAccountKey": "Key 1",
+	"__metadata": {
+		"uri": "DigitalAccountExtAttributeSet(AttributeName='AttributeName%201',DigitalAccountKey='DigitalAccountKey%201')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountExtAttribute"
+	}
+}, {
+	"AttributeName": "AttributeName 2",
+	"AttributeValue": "AttributeValue 2",
+	"DigitalAccountKey": "Key 2",
+	"__metadata": {
+		"uri": "DigitalAccountExtAttributeSet(AttributeName='AttributeName%202',DigitalAccountKey='DigitalAccountKey%202')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountExtAttribute"
+	}
+}, {
+	"AttributeName": "AttributeName 3",
+	"AttributeValue": "AttributeValue 3",
+	"DigitalAccountKey": "Key 3",
+	"__metadata": {
+		"uri": "DigitalAccountExtAttributeSet(AttributeName='AttributeName%203',DigitalAccountKey='DigitalAccountKey%203')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountExtAttribute"
+	}
+}, {
+	"AttributeName": "AttributeName 4",
+	"AttributeValue": "AttributeValue 4",
+	"DigitalAccountKey": "Key 4",
+	"__metadata": {
+		"uri": "DigitalAccountExtAttributeSet(AttributeName='AttributeName%204',DigitalAccountKey='DigitalAccountKey%204')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountExtAttribute"
+	}
+}, {
+	"AttributeName": "AttributeName 5",
+	"AttributeValue": "AttributeValue 5",
+	"DigitalAccountKey": "Key 5",
+	"__metadata": {
+		"uri": "DigitalAccountExtAttributeSet(AttributeName='AttributeName%205',DigitalAccountKey='DigitalAccountKey%205')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountExtAttribute"
+	}
+}, {
+	"AttributeName": "AttributeName 6",
+	"AttributeValue": "AttributeValue 6",
+	"DigitalAccountKey": "Key 6",
+	"__metadata": {
+		"uri": "DigitalAccountExtAttributeSet(AttributeName='AttributeName%206',DigitalAccountKey='DigitalAccountKey%206')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountExtAttribute"
+	}
+}, {
+	"AttributeName": "AttributeName 7",
+	"AttributeValue": "AttributeValue 7",
+	"DigitalAccountKey": "Key 7",
+	"__metadata": {
+		"uri": "DigitalAccountExtAttributeSet(AttributeName='AttributeName%207',DigitalAccountKey='DigitalAccountKey%207')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountExtAttribute"
+	}
+}, {
+	"AttributeName": "AttributeName 8",
+	"AttributeValue": "AttributeValue 8",
+	"DigitalAccountKey": "Key 8",
+	"__metadata": {
+		"uri": "DigitalAccountExtAttributeSet(AttributeName='AttributeName%208',DigitalAccountKey='DigitalAccountKey%208')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountExtAttribute"
+	}
+}, {
+	"AttributeName": "AttributeName 9",
+	"AttributeValue": "AttributeValue 9",
+	"DigitalAccountKey": "Key 9",
+	"__metadata": {
+		"uri": "DigitalAccountExtAttributeSet(AttributeName='AttributeName%209',DigitalAccountKey='DigitalAccountKey%209')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountExtAttribute"
+	}
+}, {
+	"AttributeName": "AttributeName 10",
+	"AttributeValue": "AttributeValue 10",
+	"DigitalAccountKey": "Key 10",
+	"__metadata": {
+		"uri": "DigitalAccountExtAttributeSet(AttributeName='AttributeName%2010',DigitalAccountKey='DigitalAccountKey%2010')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.DigitalAccountExtAttribute"
+	}
+}]

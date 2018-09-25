@@ -1,0 +1,71 @@
+[{
+	"AddressRegion": "AddressRegion 1",
+	"AddressRegionText": "AddressRegionText 1",
+	"__metadata": {
+		"uri": "AddressRegion(AddressRegion='AddressRegion%201',AddressRegion='AddressRegion%201')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.AddressRegion"
+	}
+}, {
+	"AddressRegion": "AddressRegion 2",
+	"AddressRegionText": "AddressRegionText 2",
+	"__metadata": {
+		"uri": "AddressRegion(AddressRegion='AddressRegion%202',AddressRegion='AddressRegion%202')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.AddressRegion"
+	}
+}, {
+	"AddressRegion": "AddressRegion 3",
+	"AddressRegionText": "AddressRegionText 3",
+	"__metadata": {
+		"uri": "AddressRegion(AddressRegion='AddressRegion%203',AddressRegion='AddressRegion%203')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.AddressRegion"
+	}
+}, {
+	"AddressRegion": "AddressRegion 4",
+	"AddressRegionText": "AddressRegionText 4",
+	"__metadata": {
+		"uri": "AddressRegion(AddressRegion='AddressRegion%204',AddressRegion='AddressRegion%204')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.AddressRegion"
+	}
+}, {
+	"AddressRegion": "AddressRegion 5",
+	"AddressRegionText": "AddressRegionText 5",
+	"__metadata": {
+		"uri": "AddressRegion(AddressRegion='AddressRegion%205',AddressRegion='AddressRegion%205')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.AddressRegion"
+	}
+}, {
+	"AddressRegion": "AddressRegion 6",
+	"AddressRegionText": "AddressRegionText 6",
+	"__metadata": {
+		"uri": "AddressRegion(AddressRegion='AddressRegion%206',AddressRegion='AddressRegion%206')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.AddressRegion"
+	}
+}, {
+	"AddressRegion": "AddressRegion 7",
+	"AddressRegionText": "AddressRegionText 7",
+	"__metadata": {
+		"uri": "AddressRegion(AddressRegion='AddressRegion%207',AddressRegion='AddressRegion%207')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.AddressRegion"
+	}
+}, {
+	"AddressRegion": "AddressRegion 8",
+	"AddressRegionText": "AddressRegionText 8",
+	"__metadata": {
+		"uri": "AddressRegion(AddressRegion='AddressRegion%208',AddressRegion='AddressRegion%208')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.AddressRegion"
+	}
+}, {
+	"AddressRegion": "AddressRegion 9",
+	"AddressRegionText": "AddressRegionText 9",
+	"__metadata": {
+		"uri": "AddressRegion(AddressRegion='AddressRegion%209',AddressRegion='AddressRegion%209')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.AddressRegion"
+	}
+}, {
+	"AddressRegion": "AddressRegion 10",
+	"AddressRegionText": "AddressRegionText 10",
+	"__metadata": {
+		"uri": "AddressRegion(AddressRegion='AddressRegion%2010',AddressRegion='AddressRegion%2010')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.AddressRegion"
+	}
+}]

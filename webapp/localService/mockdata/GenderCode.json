@@ -1,0 +1,71 @@
+[{
+	"GenderCode": "GenderCode 1",
+	"GenderCodeText": "GenderCodeText 1",
+	"__metadata": {
+		"uri": "GenderCode(GenderCode='GenderCode%201',GenderCode='GenderCode%201')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.GenderCode"
+	}
+}, {
+	"GenderCode": "GenderCode 2",
+	"GenderCodeText": "GenderCodeText 2",
+	"__metadata": {
+		"uri": "GenderCode(GenderCode='GenderCode%202',GenderCode='GenderCode%202')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.GenderCode"
+	}
+}, {
+	"GenderCode": "GenderCode 3",
+	"GenderCodeText": "GenderCodeText 3",
+	"__metadata": {
+		"uri": "GenderCode(GenderCode='GenderCode%203',GenderCode='GenderCode%203')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.GenderCode"
+	}
+}, {
+	"GenderCode": "GenderCode 4",
+	"GenderCodeText": "GenderCodeText 4",
+	"__metadata": {
+		"uri": "GenderCode(GenderCode='GenderCode%204',GenderCode='GenderCode%204')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.GenderCode"
+	}
+}, {
+	"GenderCode": "GenderCode 5",
+	"GenderCodeText": "GenderCodeText 5",
+	"__metadata": {
+		"uri": "GenderCode(GenderCode='GenderCode%205',GenderCode='GenderCode%205')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.GenderCode"
+	}
+}, {
+	"GenderCode": "GenderCode 6",
+	"GenderCodeText": "GenderCodeText 6",
+	"__metadata": {
+		"uri": "GenderCode(GenderCode='GenderCode%206',GenderCode='GenderCode%206')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.GenderCode"
+	}
+}, {
+	"GenderCode": "GenderCode 7",
+	"GenderCodeText": "GenderCodeText 7",
+	"__metadata": {
+		"uri": "GenderCode(GenderCode='GenderCode%207',GenderCode='GenderCode%207')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.GenderCode"
+	}
+}, {
+	"GenderCode": "GenderCode 8",
+	"GenderCodeText": "GenderCodeText 8",
+	"__metadata": {
+		"uri": "GenderCode(GenderCode='GenderCode%208',GenderCode='GenderCode%208')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.GenderCode"
+	}
+}, {
+	"GenderCode": "GenderCode 9",
+	"GenderCodeText": "GenderCodeText 9",
+	"__metadata": {
+		"uri": "GenderCode(GenderCode='GenderCode%209',GenderCode='GenderCode%209')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.GenderCode"
+	}
+}, {
+	"GenderCode": "GenderCode 10",
+	"GenderCodeText": "GenderCodeText 10",
+	"__metadata": {
+		"uri": "GenderCode(GenderCode='GenderCode%2010',GenderCode='GenderCode%2010')",
+		"type": "CUAN_DIGITAL_ACCOUNT_SRV.GenderCode"
+	}
+}]
